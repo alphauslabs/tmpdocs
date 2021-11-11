@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Footnotes
 
 Footnotes are a great way to add supplemental or additional information to a

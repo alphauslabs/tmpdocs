@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Admonitions
 
 Admonitions, also known as _call-outs_, are an excellent choice for including

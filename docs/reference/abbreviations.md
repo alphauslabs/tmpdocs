@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Abbreviations
 
 Technical documentation often incurs the usage of many acronyms, which may

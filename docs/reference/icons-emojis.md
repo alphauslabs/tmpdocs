@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Icons + Emojis
 
 One of the best features of Material for MkDocs is the possibility to use [more

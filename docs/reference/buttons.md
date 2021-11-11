@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Buttons
 
 Material for MkDocs provides dedicated styles for primary and secondary buttons

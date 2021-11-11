@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Meta tags
 
 In HTML, `meta` tags allow to provide additional metadata for a document, e.g.

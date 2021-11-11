@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Adding a comment system
 
 Material for MkDocs is natively integrated with [Disqus], a comment system that

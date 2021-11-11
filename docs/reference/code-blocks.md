@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Code blocks
 
 Code blocks and examples are an essential part of technical project

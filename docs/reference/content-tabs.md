@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Content tabs
 
 Sometimes, it's desirable to group alternative content under different tabs,

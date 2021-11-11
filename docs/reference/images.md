@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Images
 
 While images are first-class citizens of Markdown and part of the core syntax, 

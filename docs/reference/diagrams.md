@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Diagrams
 
 Diagrams help to communicate complex relationships and interconnections between

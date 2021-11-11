@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Data tables
 
 Material for MkDocs defines default styles for data tables – an excellent way

@@ -1,7 +1,3 @@
----
-template: overrides/main.html
----
-
 # Lists
 
 Material for MkDocs supports several flavors of lists that cater to different
