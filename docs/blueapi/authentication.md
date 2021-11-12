@@ -1,101 +1,42 @@
 # Authentication
+Blue uses API client credentials for authentication. You can generate your API credentials either from Ripple under "Tools > API Access Tokens", or Wave(Pro) under "Settings > API Access Tokens".
 
-Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `Authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens (JWT)](https://datatracker.ietf.org/doc/html/rfc7519).
-
-Use the following endpoints to acquire product-specific access tokens. Tokens are not compatible between the two. Ripple access tokens can only be used for Ripple endpoints; Wave(Pro) access tokens are only valid on Wave(Pro) endpoints.
-
-```sh
-# Ripple
-https://login.alphaus.cloud/ripple/access_token
-
-# Wave(Pro)
-https://login.alphaus.cloud/access_token
-```
-
-### Request
-
-To obtain an access token, send a POST message to the access token endpoint using the format described below.
-
-```
-POST {access-token-url} HTTP1.1
-Content-Type: multipart/form-data
-
-{body formdata}
-```
-
-| **Name** | **Value** |
-|---|---|
-| `grant_type` | Valid value(s): `password`, `client_credentials` |
-| `client_id` | The client id you received from Alphaus or from API. |
-| `client_secret` | The client secret you received from Alphaus or from API. |
-| `username` | You account username. Required if `grant_type` is set to `password`. |
-| `password` | You account password. Required if `grant_type` is set to `password`. |
-| `scope` | Valid value(s): `openid` |
-
-### Response
-
-```json
-{
-  "id_token": "eyJ0eXAiOiJKV1Q...",
-  "token_type": "Bearer",
-  "expires_in": 86400,
-  "access_token": "eyJ0eXAiOiJKV1Q...",
-  "refresh_token": "def50200..."
-}
-```
-
-### Example
-
-Create an access token entry under Tools > API Access Tokens in Ripple, or Settings > API Access Tokens in Wave(Pro).
-
-```sh
-# Example for Ripple access token:
-$ curl -X POST \
-  -F client_id={client-id} \
-  -F client_secret={client-secret} \
-  -F grant_type=client_credentials \
-  -F scope=openid \
-  https://login.alphaus.cloud/ripple/access_token
-```
-
-## Using API keys
-
-Authentication for Blue uses API keys. You can generate your API keys either from Ripple or Wave consoles.
-
-If you're mainly a Ripple user, we recommend you to set the following environment variables:
+## Environment setup
+Set the environment variables below if you are using [bluectl](https://github.com/alphauslabs/bluectl) our any of our supported client libraries. If you're mainly a Ripple user, set the following:
 ```sh
 ALPHAUS_CLIENT_ID={ripple-client-id}
 ALPHAUS_CLIENT_SECRET={ripple-client-secret}
 ```
 
-If you're mainly a Wave(Pro) user, we recommend you to set the following environment variables:
+If you're mainly a Wave(Pro) user, set the following:
 ```sh
 ALPHAUS_CLIENT_ID={wave-client-id}
 ALPHAUS_CLIENT_SECRET={wave-client-secret}
 ALPHAUS_AUTH_URL=https://login.alphaus.cloud/access_token
 ```
 
-```warning
-Currently, setting both Ripple and Wave(Pro) client credentials is not supported. If both are set, authentication will default to Ripple.
+You can use `bluectl` to validate. To install:
+```sh
+# Should work with Linux, MacOS, and Windows through WSL/2:
+$ brew install alphauslabs/tap/bluectl
 ```
 
-If you're using either `bluectl` or any of our [supported client libraries](https://alphauslabs.github.io/blueapi/sdks/), the authentication flow is as follows. First, it will look for the following environment variables:
+ Then run the following command:
+```sh
+$ bluectl whoami
+```
+
+If successful, it will output some information about the authenticated user.
+
+At the moment, setting both Ripple and Wave(Pro) client credentials is not supported. If both are set, authentication will default to Ripple.
+
+If you're using either `bluectl` or any of our supported client libraries, the authentication flow is as follows. First, it will look for the following environment variables:
 ```sh
 ALPHAUS_CLIENT_ID
 ALPHAUS_CLIENT_SECRET
 ```
 
-The following environment variable is optional.
-```sh
-ALPHAUS_AUTH_URL
-```
-
-For Ripple users, this can be set to:
-```sh
-ALPHAUS_AUTH_URL=https://login.alphaus.cloud/ripple/access_token
-```
-
-For Wave(Pro) users, this can be set to:
+The `ALPHAUS_AUTH_URL` environment variable is optional for Ripple. For Wave(Pro) users, this can be set to:
 ```sh
 ALPHAUS_AUTH_URL=https://login.alphaus.cloud/access_token
 ```
@@ -113,13 +54,8 @@ ALPHAUS_WAVE_CLIENT_SECRET
 ```
 
 ## Using bluectl
-
-Once you set the environment variables above, we recommend you to install our official command line tool, [`bluectl`](https://github.com/alphauslabs/bluectl), to handle token generation:
-
+If you prefer to call the Blue API HTTP endpoints directly, you can use `bluectl` to generate the access token. Useful for scripting.
 ```sh
-# Should work with Linux, MacOS, and Windows through WSL/2:
-$ brew install alphauslabs/tap/bluectl
-
 # Get access token for production:
 $ bluectl access-token
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd...
@@ -148,4 +84,59 @@ $ curl -H "Authorization: Bearer $(bluectl access-token)" https://api.alphaus.cl
 {
   ...
 }
+```
+
+## Access token endpoints
+The following are the endpoints used to acquire product-specific access tokens. You will then use these tokens in your calls to the API using the `Authorization: Bearer {token}` HTTP header. Access tokens are not compatible between the two. Ripple access tokens can only be used for Ripple endpoints; Wave(Pro) access tokens are only valid on Wave(Pro) endpoints.
+
+```sh
+# Ripple
+https://login.alphaus.cloud/ripple/access_token
+
+# Wave(Pro)
+https://login.alphaus.cloud/access_token
+```
+
+To obtain an access token, send a POST message to the access token endpoint using the format described below.
+
+**Request**
+
+```
+POST {access-token-url} HTTP1.1
+Content-Type: multipart/form-data
+
+{body formdata}
+```
+
+| **Name** | **Value** |
+|---|---|
+| `grant_type` | Valid value(s): `password`, `client_credentials` |
+| `client_id` | The client id you received from Alphaus or from API. |
+| `client_secret` | The client secret you received from Alphaus or from API. |
+| `username` | You account username. Required if `grant_type` is set to `password`. |
+| `password` | You account password. Required if `grant_type` is set to `password`. |
+| `scope` | Valid value(s): `openid** |
+
+**Response**
+
+```json
+{
+  "id_token": "eyJ0eXAiOiJKV1Q...",
+  "token_type": "Bearer",
+  "expires_in": 86400,
+  "access_token": "eyJ0eXAiOiJKV1Q...",
+  "refresh_token": "def50200..."
+}
+```
+
+**Example**
+
+```sh
+# Example for Ripple access token:
+$ curl -X POST \
+  -F client_id={client-id} \
+  -F client_secret={client-secret} \
+  -F grant_type=client_credentials \
+  -F scope=openid \
+  https://login.alphaus.cloud/ripple/access_token
 ```
