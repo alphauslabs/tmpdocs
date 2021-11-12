@@ -1,4 +1,4 @@
-# Organization API
+# IAM API
 
 Reference: [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam)
 
