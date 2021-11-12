@@ -1,6 +1,7 @@
 site_name: Alphaus Documentation
 theme:
   name: material
+  logo: assets/alphaus.png
 nav:
 - 'index.md'
 - 'getting-started.md'
