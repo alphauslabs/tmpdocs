@@ -120,7 +120,7 @@ Content-Type: multipart/form-data
 | `client_secret` | The client secret you received from Alphaus or from API. |
 | `username` | You account username. Required if `grant_type` is set to `password`. |
 | `password` | You account password. Required if `grant_type` is set to `password`. |
-| `scope` | Valid value(s): `openid** |
+| `scope` | Valid value(s): `openid` |
 
 **Response**
 
