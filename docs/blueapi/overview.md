@@ -7,8 +7,4 @@ Blue API allows you to programmatically access our services such as [Ripple](htt
 
 At the moment, Blue API is still a work in progress. Most of the APIs currently supported in Ripple and Wave are still not available. In the meantime, you can still use our JSON/REST APIs [here](https://docs.mobingi.com/v/api-reference/). We plan to upgrade as many of our JSON/REST APIs as possible over to gRPC as it is significantly more efficient in terms of throughput and CPU usage compared to JSON/REST API. However, we don't intend to deprecate our JSON/REST APIs once the transition is completed. You should be able to use both.
 
-We are in the process of generating client libraries (SDKs) for [programming languages supported in gRPC](https://grpc.io/docs/languages/). If you have a particular programming language in the list you want supported, contact us through our contact channels and we will try to prioritize it. You can also check out our OpenAPI reference for Blue [here](https://alphauslabs.github.io/blueapidocs/).
-
-## Pricing
-
-This API is still in beta, so its usage will be free. Once released, we will also announce the pricing details.
+We are in the process of generating client libraries (SDKs) for [programming languages supported in gRPC](https://grpc.io/docs/languages/). If you have a particular programming language in the list you want supported, contact us through our contact channels and we will try to prioritize it.
