@@ -36,7 +36,7 @@ You can also write file contents as value:
 $ cat /tmp/test.json
 {
   "title":"JP text",
-  "message":"日本へようこそ"
+  "message":"日本"
 }
 
 # Write the key/value from file, key=json
@@ -44,7 +44,7 @@ $ bluectl kv write json --from-file=/tmp/test.json
 
 # Let's try reading the "message" section using jq
 $ bluectl kv read json --bare | jq -r .message
-日本へようこそ
+日本
 ```
 
 You can also scan multiple keys:
@@ -52,7 +52,7 @@ You can also scan multiple keys:
 # Read all keys
 $ bluectl kv scan --outfmt=json
 {"key":"hello","value":"world"}
-{"key":"json","value":"{\n  \"title\":\"JP text\",\n  \"message\":\"日本へようこそ\"\n}"}
+{"key":"json","value":"{\n  \"title\":\"JP text\",\n  \"message\":\"日本\"\n}"}
 {"key":"space","value":"this value has spaces"}
 
 # Or just some keys using SQL's LIKE operator
