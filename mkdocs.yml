@@ -14,6 +14,7 @@ nav:
 - 'Blue API':
   - 'blueapi/overview.md'
   - 'blueapi/authentication.md'
+  - 'blueapi/client-sdks.md'
 
 markdown_extensions:
 - admonition
