@@ -9,5 +9,6 @@ nav:
   - 'index.md'
   - 'getting-started.md'
 - 'Blue API':
+  - 'blueapi/overview.md'
   - 'changing-the-colors.md'
   - 'adding-a-comment-system.md'
