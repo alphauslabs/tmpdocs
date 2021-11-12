@@ -1,4 +1,4 @@
-# Organization API
+# Cost API
 
 Reference: [https://alphauslabs.github.io/blueapidocs/#/Cost](https://alphauslabs.github.io/blueapidocs/#/Cost)
 
