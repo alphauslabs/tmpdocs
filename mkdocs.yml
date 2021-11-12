@@ -1,9 +1,11 @@
 site_name: Alphaus Documentation
+
 theme:
   name: material
   logo: assets/alphaus.png
   features:
   - navigation.tabs
+
 nav:
 - 'General':
   - 'index.md'
@@ -11,3 +13,8 @@ nav:
 - 'Blue API':
   - 'blueapi/overview.md'
   - 'blueapi/getting-started.md'
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
