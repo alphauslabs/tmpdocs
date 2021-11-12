@@ -137,7 +137,6 @@ Content-Type: multipart/form-data
 **Example**
 
 ```sh
-# Example for Ripple access token:
 $ curl -X POST \
   -F client_id={client-id} \
   -F client_secret={client-secret} \
