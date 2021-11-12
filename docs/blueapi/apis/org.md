@@ -1,3 +1,3 @@
 # Organization API
 
-Check out [here](https://alphauslabs.github.io/blueapidocs/#/Organization).
+Reference: [https://alphauslabs.github.io/blueapidocs/#/Organization](https://alphauslabs.github.io/blueapidocs/#/Organization)

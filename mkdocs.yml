@@ -6,6 +6,7 @@ theme:
   favicon: assets/alphaus.png
   features:
   - navigation.tabs
+  - navigation.expand
 
 nav:
 - 'General':
@@ -14,9 +15,10 @@ nav:
 - 'Blue API':
   - 'blueapi/overview.md'
   - 'blueapi/authentication.md'
-  - 'blueapi/client-sdks.md'
   - 'APIs':
     - 'blueapi/apis/org.md'
+    - 'blueapi/apis/kvstore.md'
+  - 'blueapi/client-sdks.md'
 
 markdown_extensions:
 - admonition
