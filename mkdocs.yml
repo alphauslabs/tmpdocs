@@ -3,6 +3,7 @@ site_name: Alphaus Documentation
 theme:
   name: material
   logo: assets/alphaus.png
+  favicon: assets/alphaus.png
   features:
   - navigation.tabs
 
