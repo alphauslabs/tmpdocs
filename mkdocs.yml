@@ -19,6 +19,7 @@ nav:
     - 'blueapi/apis/org.md'
     - 'blueapi/apis/kvstore.md'
     - 'blueapi/apis/iam.md'
+    - 'blueapi/apis/cost.md'
   - 'blueapi/client-sdks.md'
 
 markdown_extensions:
