@@ -1,3 +1,8 @@
 site_name: Alphaus Documentation
 theme:
   name: material
+nav:
+- 'index.md'
+- 'getting-started.md'
+- 'changing-the-colors.md'
+- 'adding-a-comment-system.md'
