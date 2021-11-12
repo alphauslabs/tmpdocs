@@ -5,8 +5,9 @@ theme:
   features:
   - navigation.tabs
 nav:
-- 'General': 'index.md'
-- 'Section1':
+- 'General':
+  - 'index.md'
   - 'getting-started.md'
+- 'Blue API':
   - 'changing-the-colors.md'
   - 'adding-a-comment-system.md'
