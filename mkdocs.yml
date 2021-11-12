@@ -5,7 +5,8 @@ theme:
   features:
   - navigation.tabs
 nav:
-- 'index.md'
-- 'getting-started.md'
-- 'changing-the-colors.md'
-- 'adding-a-comment-system.md'
+- 'General': 'index.md'
+- 'Section1':
+  - 'getting-started.md'
+  - 'changing-the-colors.md'
+  - 'adding-a-comment-system.md'
