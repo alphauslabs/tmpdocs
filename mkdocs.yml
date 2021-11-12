@@ -11,7 +11,7 @@ theme:
 nav:
 - 'General':
   - 'index.md'
-  - 'getting-started.md'
+  - 'System status': 'https://status.alphaus.cloud/'
 - 'Blue API':
   - 'blueapi/overview.md'
   - 'blueapi/authentication.md'
