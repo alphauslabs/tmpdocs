@@ -12,7 +12,7 @@ nav:
   - 'getting-started.md'
 - 'Blue API':
   - 'blueapi/overview.md'
-  - 'blueapi/getting-started.md'
+  - 'blueapi/authentication.md'
 
 markdown_extensions:
 - admonition
