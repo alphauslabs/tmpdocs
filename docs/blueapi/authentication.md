@@ -60,8 +60,10 @@ If you prefer to call the Blue API HTTP endpoints directly, you can use `bluectl
 $ bluectl access-token
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd...
 
-# You can use the command above to provide access tokens to your other commands. For example:
-$ curl -H "Authorization: Bearer $(bluectl access-token)" https://api.alphaus.cloud/m/blue/iam/v1/whoami | jq
+# You can use the command above to provide access tokens to your other commands.
+# For example:
+$ curl -H "Authorization: Bearer $(bluectl access-token)" \
+  https://api.alphaus.cloud/m/blue/iam/v1/whoami | jq
 {
   "id":"test",
   "parent":"MSP-xxxxxxx",
@@ -69,8 +71,10 @@ $ curl -H "Authorization: Bearer $(bluectl access-token)" https://api.alphaus.cl
 }
 
 # If you want to access our NEXT (BETA) environment, you can do:
-$ curl -H "Authorization: Bearer $(bluectl access-token --client-id $MY_CLIENT_ID_NEXT \
-  --client-secret $MY_CLIENT_SECRET_NEXT --beta)" https://apinext.alphaus.cloud/m/blue/iam/v1/whoami | jq
+$ curl -H "Authorization: Bearer $(bluectl access-token \
+  --client-id $MY_CLIENT_ID_NEXT \
+  --client-secret $MY_CLIENT_SECRET_NEXT --beta)" \
+  https://apinext.alphaus.cloud/m/blue/iam/v1/whoami | jq
 {
   "id":"test",
   "parent":"MSP-xxxxxxx",
@@ -80,7 +84,8 @@ $ curl -H "Authorization: Bearer $(bluectl access-token --client-id $MY_CLIENT_I
 
 You can also use `bluectl` to provide access tokens to our current, non-Blue APIs [here](https://docs.mobingi.com/v/api-reference/). For example:
 ```sh
-$ curl -H "Authorization: Bearer $(bluectl access-token)" https://api.alphaus.cloud/m/ripple/user | jq
+$ curl -H "Authorization: Bearer $(bluectl access-token)" \
+  https://api.alphaus.cloud/m/ripple/user | jq
 {
   ...
 }
