@@ -1,6 +1,7 @@
 # IAM API
 
-Reference: [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam)
+!!! info "API Reference"
+    [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam)
 
 ## Group Root Users [WIP]
 

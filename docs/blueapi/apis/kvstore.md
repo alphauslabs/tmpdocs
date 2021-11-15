@@ -1,6 +1,7 @@
 # KvStore API
 
-Reference: [https://alphauslabs.github.io/blueapidocs/#/KvStore](https://alphauslabs.github.io/blueapidocs/#/KvStore)
+!!! info "API Reference"
+    [https://alphauslabs.github.io/blueapidocs/#/KvStore](https://alphauslabs.github.io/blueapidocs/#/KvStore)
 
 All Alphaus clients have free access to the free-tier version of our KvStore, a highly-available, distributed key/value store that is easily accessible using `curl`, or [`bluectl`](https://github.com/alphauslabs/bluectl), or using any of the [gRPC-supported programming languages](https://grpc.io/docs/languages/). All data are encrypted in transit and at rest so you can use this as a general purpose key/value database even in your production workloads.
 
