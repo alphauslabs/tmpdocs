@@ -1,4 +1,5 @@
 site_name: Alphaus Documentation
+copyright: Copyright &copy; 2021 Alphaus Cloud. All rights reserved.
 
 theme:
   name: material
