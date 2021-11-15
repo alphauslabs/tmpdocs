@@ -13,3 +13,11 @@ RBAC roles and permissions are isolated based on namespaces. What this means is 
 Root users are always super admins, or have unrestricted access across namespaces. Typically, root users should create subusers and assign specific roles to them.
 
 ## Namespaces
+Below is the list of supported namespaces under Alphaus RBAC:
+* `ripple` - for Ripple;
+* `wave` - for Wave(Pro);
+* `users` - for user management; and
+* `rbac` - for RBAC management
+
+## Permissions
+For the latest permissions, check out [here](https://github.com/mobingi/rbac-permissions).
