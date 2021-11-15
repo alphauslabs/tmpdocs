@@ -12,7 +12,7 @@ theme:
 nav:
 - 'General':
   - 'index.md'
-  - 'Identity & Access Management': 'iam.md'
+  - 'Identity & access management': 'iam.md'
   - 'Knowledgebase': 'https://help.alphaus.cloud/'
   - 'Previous docs': 'https://docs.alphaus.cloud/'
   - 'System status': 'https://status.alphaus.cloud/'
