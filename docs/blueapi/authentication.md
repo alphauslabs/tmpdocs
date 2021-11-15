@@ -92,7 +92,7 @@ $ curl -H "Authorization: Bearer $(bluectl access-token)" \
 ```
 
 ## Access token endpoints
-The following are the endpoints used to acquire product-specific access tokens. You will then use these tokens in your calls to the API using the `Authorization: Bearer {token}` HTTP header. Access tokens are not compatible between the two. Ripple access tokens can only be used for Ripple endpoints; Wave(Pro) access tokens are only valid on Wave(Pro) endpoints.
+The following are the endpoints used to acquire product-specific access tokens. You will then use these tokens in your calls to the API using the `Authorization: Bearer {token}` HTTP header. Access tokens are not compatible between products. Ripple access tokens can only be used for Ripple endpoints; Wave(Pro) access tokens are only valid on Wave(Pro) endpoints.
 
 ```sh
 # Ripple
