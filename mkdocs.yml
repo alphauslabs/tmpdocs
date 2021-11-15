@@ -12,6 +12,7 @@ theme:
 nav:
 - 'General':
   - 'index.md'
+  - 'Previous docs': 'https://docs.alphaus.cloud/'
   - 'System status': 'https://status.alphaus.cloud/'
 - 'Blue API':
   - 'blueapi/overview.md'
