@@ -15,10 +15,12 @@ Root users are always super admins, or have unrestricted access across namespace
 ## Namespaces
 Below is the list of supported namespaces under Alphaus RBAC:
 
-- `ripple` - for Ripple;
-- `wave` - for Wave(Pro);
-- `users` - for user management; and
-- `rbac` - for RBAC management
+| **Product/service** | **Namespace** |
+|---|---|
+| Ripple | `ripple` |
+| Wave(Pro) | `wave` |
+| User management | `users` |
+| RBAC management | `rbac` |
 
 ## Permissions
 For the latest permissions, check out [here](https://github.com/mobingi/rbac-permissions).
