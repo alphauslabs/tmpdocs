@@ -22,3 +22,5 @@ Below is the list of supported namespaces under Alphaus RBAC:
 
 ## Permissions
 For the latest permissions, check out [here](https://github.com/mobingi/rbac-permissions).
+
+The permissions are hierarchical. Any user with permissions in the higher hierarchy will have permissions in the lower hierarchy as well. Some permissions can have resources filter. Empty filters mean all resources are allowed. Resources filter also follow the same hierarchical structure and only the `Allow` effect is supported at the moment.
