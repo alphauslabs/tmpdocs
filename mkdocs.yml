@@ -12,6 +12,7 @@ theme:
 nav:
 - 'General':
   - 'index.md'
+  - 'Knowledgebase': 'https://help.alphaus.cloud/'
   - 'Previous docs': 'https://docs.alphaus.cloud/'
   - 'System status': 'https://status.alphaus.cloud/'
 - 'Blue API':
