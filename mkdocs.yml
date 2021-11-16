@@ -26,6 +26,12 @@ nav:
     - 'blueapi/apis/cost.md'
   - 'blueapi/client-sdks.md'
 
+extra:
+  alternate:
+  - name: 日本語
+    link: /jp/
+    lang: ja
+
 markdown_extensions:
 - admonition
 - pymdownx.details
