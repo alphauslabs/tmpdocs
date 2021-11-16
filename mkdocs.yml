@@ -29,7 +29,7 @@ nav:
 extra:
   alternate:
   - name: 日本語
-    link: /jp/
+    link: /docs/jp/
     lang: ja
 
 markdown_extensions:
