@@ -13,7 +13,7 @@ nav:
 - 'General':
   - 'index.md'
   - 'Identity & Access Management': 'iam.md'
-  - 'Knowledgebase 🔗': 'https://help.alphaus.cloud/en/'
+  - 'Knowledgebase 🡥': 'https://help.alphaus.cloud/en/'
   - 'Previous documentation': 'https://docs.alphaus.cloud/'
   - 'System status': 'https://status.alphaus.cloud/'
 - 'Blue API':
