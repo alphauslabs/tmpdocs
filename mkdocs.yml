@@ -13,6 +13,8 @@ nav:
 - 'General':
   - 'index.md'
   - 'Identity & Access Management': 'iam.md'
+  - 'Ripple 🡥': 'https://docs.alphaus.cloud/v/ripple-en/'
+  - 'Wave 🡥': 'https://docs.alphaus.cloud/v/wave-eng/'
   - 'Knowledgebase 🡥': 'https://help.alphaus.cloud/en/'
   - 'Previous documentation 🡥': 'https://docs.alphaus.cloud/'
   - 'System status 🡥': 'https://status.alphaus.cloud/'
