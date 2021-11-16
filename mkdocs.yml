@@ -28,8 +28,11 @@ nav:
 
 extra:
   alternate:
+  - name: English
+    link: /docs/
+    lang: en
   - name: 日本語
-    link: /docs/jp/
+    link: /docs-ja/
     lang: ja
 
 markdown_extensions:
