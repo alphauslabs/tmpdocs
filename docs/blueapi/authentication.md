@@ -17,13 +17,7 @@ Set the environment variables below if you are using [`bluectl`](https://alphaus
     ALPHAUS_AUTH_URL=https://login.alphaus.cloud/access_token
     ```
 
-You can use `bluectl` to validate. To install:
-```sh
-# Should work with Linux, MacOS, and Windows through WSL/2:
-$ brew install alphauslabs/tap/bluectl
-```
-
- Then run the following command:
+You can validate your setup using [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/). Run the following command:
 ```sh
 $ bluectl whoami
 ```
