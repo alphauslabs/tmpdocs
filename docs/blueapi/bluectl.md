@@ -3,7 +3,7 @@
 [`bluectl`](https://github.com/alphauslabs/bluectl) is the official command line interface (CLI) for Alphaus services.
 
 ## Installation
-You can install `bluectl` using [Homebrew](https://brew.sh/). If you have Homebrew installed, run the command below:
+You can install `bluectl` using [Homebrew](https://brew.sh/). If you have Homebrew installed, run the command below in a terminal:
 
 ```sh
 $ brew install alphauslabs/tap/bluectl
