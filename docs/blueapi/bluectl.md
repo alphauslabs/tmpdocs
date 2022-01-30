@@ -11,9 +11,9 @@ $ brew install alphauslabs/tap/bluectl
 ## Usage
 `bluectl` uses API client credentials for authentication. You can generate your API credentials either from Ripple under "Tools > API Access Tokens", or Wave(Pro) under "Settings > API Access Tokens".
 
-To validate your credentials with `bluectl`, run the command below (replace the `{your-client-*}` part with your actual client id and client secret values):
+To validate your credentials with `bluectl`, run the command below (replace the `{client-*}` part with your actual client id and client secret values):
 ```sh
-$ bluectl whoami --client-id {your-client-id} --client-secret {your-client-secret}
+$ bluectl whoami --client-id {client-id} --client-secret {client-secret}
 ```
 
 If successful, it will output some information about the authenticated user.
