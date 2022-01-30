@@ -18,9 +18,9 @@ $ bluectl whoami --client-id {client-id} --client-secret {client-secret}
 
 If successful, it will output some information about the authenticated user.
 
-Instead of providing your credentials to `bluectl` everytime you run a command, you can store your credentials as environment variables. Check out the "Environment setup" section [here](https://alphauslabs.github.io/docs/blueapi/authentication/#environment-setup).
+You can also store your credentials as environment variables instead of typing them everytime you run a command. Check out the "Environment setup" section [here](https://alphauslabs.github.io/docs/blueapi/authentication/#environment-setup).
 
-You should be able to run any `bluectl` commands without the `--client-id` and `--client-secret` flags.
+You should now be able to run any `bluectl` commands without the `--client-id` and `--client-secret` flags.
 ```sh
 $ bluectl whoami
 ```
