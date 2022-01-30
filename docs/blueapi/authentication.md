@@ -26,7 +26,7 @@ If successful, it will output some information about the authenticated user.
 
 At the moment, setting both Ripple and Wave(Pro) client credentials is not supported. If both are set, authentication will default to Ripple.
 
-If you're using either `bluectl` or any of our supported client libraries, the authentication flow is as follows. First, it will look for the following environment variables:
+If you're using either [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) or any of our supported client libraries, the authentication flow is as follows. First, it will look for the following environment variables:
 ```sh
 ALPHAUS_CLIENT_ID
 ALPHAUS_CLIENT_SECRET
@@ -50,7 +50,7 @@ ALPHAUS_WAVE_CLIENT_SECRET
 ```
 
 ## Using bluectl
-If you prefer to call the Blue API HTTP endpoints directly, you can use `bluectl` to generate the access token. Useful for scripting.
+If you prefer to call the Blue API HTTP endpoints directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. Useful for APIs that are not yet supported in [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/).
 ```sh
 # Get access token for production:
 $ bluectl access-token
@@ -78,7 +78,7 @@ $ curl -H "Authorization: Bearer $(bluectl access-token \
 }
 ```
 
-You can also use `bluectl` to provide access tokens to our current, non-Blue APIs [here](https://docs.mobingi.com/v/api-reference/). For example:
+You can also use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to provide access tokens to our current, non-Blue APIs [here](https://docs.mobingi.com/v/api-reference/). For example:
 ```sh
 $ curl -H "Authorization: Bearer $(bluectl access-token)" \
   https://api.alphaus.cloud/m/ripple/user | jq
