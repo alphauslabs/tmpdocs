@@ -3,7 +3,7 @@
 !!! info "API Reference"
     [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam)
 
-Check out this [page](https://alphauslabs.github.io/docs/iam/) to have an overview of how IAM works in Blue. The IAM API group provides the API to manage IAM-related components and resources of Blue.
+The IAM API group provides the API for managing IAM-related resources and components in Blue. Check out this [page](https://alphauslabs.github.io/docs/iam/) to have an overview of how IAM works in Blue.
 
 ## Group Root Users [WIP]
 
