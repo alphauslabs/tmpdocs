@@ -20,7 +20,16 @@ If successful, it will output some information about the authenticated user.
 
 You can also store your credentials as environment variables instead of typing them everytime you run a command. Check out the "Environment setup" section [here](https://alphauslabs.github.io/docs/blueapi/authentication/#environment-setup).
 
-You should now be able to run any `bluectl` commands without the `--client-id` and `--client-secret` flags.
+With environment variables set, you should now be able to run any `bluectl` commands without the `--client-id` and `--client-secret` flags.
 ```sh
 $ bluectl whoami
+```
+
+Finally, explore other available commands by running:
+```sh
+# Check out the main commands:
+$ bluectl -h
+
+# More information on a specific subcommand:
+$ bluectl {subcommand} -h
 ```
