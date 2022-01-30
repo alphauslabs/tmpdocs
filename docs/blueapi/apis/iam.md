@@ -3,6 +3,8 @@
 !!! info "API Reference"
     [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam)
 
+Check out this [page](https://alphauslabs.github.io/docs/iam/) to have an overview of how IAM works in Blue. The IAM API group provides the API to manage IAM-related components and resources of Blue.
+
 ## Group Root Users [WIP]
 
 You can create a root user account for a given billing group or access group with a given set of Wave or Aqua features. Currently, endpoints for creating, retrieving and deleting a group root user are supported as well as retrieving all the group root users associated with the organization. In addition, all the feature flags for a given group root user can be retrieved and updated.
