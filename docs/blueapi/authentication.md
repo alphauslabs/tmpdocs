@@ -50,7 +50,7 @@ ALPHAUS_WAVE_CLIENT_SECRET
 ```
 
 ## Using bluectl
-If you prefer to call the [Blue API HTTP endpoints](https://alphauslabs.github.io/blueapidocs/) directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. This is useful for APIs that are not yet supported in [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/).
+If you prefer to call the [Blue API HTTP endpoints](https://alphauslabs.github.io/blueapidocs/) directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. This is useful for APIs that are not yet supported in `bluectl`.
 ```sh
 # Get access token for production:
 $ bluectl access-token
