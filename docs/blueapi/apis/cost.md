@@ -3,7 +3,7 @@
 !!! info "API Reference"
     [https://alphauslabs.github.io/blueapidocs/#/Cost](https://alphauslabs.github.io/blueapidocs/#/Cost)
 
-The Cost API group allows you to query your vendor-related usage costs and adjustment costs. This is the same data that Ripple/Wave(Pro) uses to create invoices, graphs, and reports, aggregated at daily level.
+The Cost API group provides the API for interacting with cost- and usage-related resources and operations in Blue.
 
 ## Cloud vendor: AWS
 
