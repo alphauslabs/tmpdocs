@@ -50,7 +50,7 @@ ALPHAUS_WAVE_CLIENT_SECRET
 ```
 
 ## Calling JSON/REST API directly
-If you prefer to call the [Blue API JSON/REST API](https://alphauslabs.github.io/blueapidocs/) directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. This is useful for APIs that are not yet supported in `bluectl`.
+If you prefer to call our [JSON/REST API](https://alphauslabs.github.io/blueapidocs/) directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. This is useful for APIs that are not yet supported in `bluectl`.
 ```sh
 # Get access token for production:
 $ bluectl access-token
