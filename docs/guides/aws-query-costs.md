@@ -3,25 +3,47 @@
 !!! note
     This guide is only applicable to Ripple users.
 
-If you have registered your AWS payer account using CloudFormation as described [here](https://alphauslabs.github.io/docs/guides/aws-register-payer/), Alphaus will have a read-only API access to the payer's cost details such as RIs, SPs, etc. However, if you have some payer accounts that were registered to Ripple manually (before the CloudFormation support was released), Alphaus only has read access to the S3 bucket containing the CUR files. Although API access is optional, we recommend you to setup API access to allow us to have more accuracy in the calculation results. Without API access, our calculation engine, especially for trueunblended, uses CUR data for your RIs and SPs. This is only a best-effort basis as RI and SP information in the CUR is sometimes incomplete. API access will allow us to have a more accurate information about your payer's RIs, SPs, and other cost-related resources.
+To use the AWS-specific APIs, you need to first register your AWS management (or billing, or payer) account to Ripple. We will be releasing an API for this registration process in the near future so stay tuned. In the meantime, you can contact us [here](https://alphaus.cloud/en/inquiry/).
 
-Make sure to install [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) first. Also make sure that you have the needed permissions to deploy [CloudFormation](https://aws.amazon.com/cloudformation/) templates on the payer account. The template used in this guide will create an IAM Role with read-only API access to the payer's cost details. You can check out the actual template [here](https://alphaus-cloudformation-templates.s3.ap-northeast-1.amazonaws.com/alphausdefaultcostaccess-v1.yml).
+Once registered, and the correct permissions are setup, our calculation engines will start downloading your [CUR](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/) files from your S3 bucket everytime your CUR files are updated by AWS. These checks are done periodically, several times a day. After downloading, calculations will be done based on your billing group settings, whether it will be AWS unblended or Alphaus trueunblended values.
 
-Open a terminal and run the following command (`012345678901` is a sample payer account ID):
+Typically, you will download both usage-based costs and fee-based costs from this API to get the whole spending data. To demontrate, let's use the [bluectl](https://github.com/alphauslabs/bluectl) tool. Here are some example usage scenarios.
 
+Download current month's usage costs and save as CSV file:
 ```sh
-$ bluectl xacct create 012345678901 apionly
-Open the link below in your browser and deploy:
-https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/...
-Confirm successful deployment? [Y/n]: 
+# Here, 'all' could mean MSP-level or billing group level.
+$ bluectl awscost get --type all --out /tmp/out.csv
 ```
 
-Click on the URL link, or it copy to your browser. It will open the CloudFormation console with the parameters filled up. Leave the defaults, check the "acknowledge" checkbox, and click "Create stack".
+Download current month's adjustment costs and save as CSV file:
+```sh
+# Here, 'all' could mean MSP-level or billing group level.
+$ bluectl awscost get-adjustments --type all --out /tmp/out.csv
+```
 
-Once the deployment is done and successful, return to the terminal above and press Enter (`Y` is the default option). The deployment validation will begin. If there are no issues, validation details are displayed and the process is completed.
+You can also provide the `--start yyyymmdd` and `--end yyyymmdd` flags for date ranges.
 
-You can run the command below to check API access information about your payer accounts.
+Download current month's usage costs for a specific account and save as CSV file:
+```sh
+$ bluectl awscost get --id 1234567890 --type account --out /tmp/out.csv
+```
+
+Download current month's adjustment costs for a specific billing group and save as CSV file:
+```sh
+# Here, 'bill001' is your billing group id.
+$ bluectl awscost get-adjustments \
+  --id bill001 \
+  --type billinggroup \
+  --out /tmp/out.csv
+```
+
+You can also provide the `--include-tags` and/or `--include-costcategories` flag(s) to include the tags and/or cost category information in the streaming data. At the moment, only the usage-based data supports tags and cost categories.
+
+Although these APIs are designed to be streamed due to potentially large amounts of data, you can still use the JSON/REST API like so:
 
 ```sh
-$ bluectl xacct list
+# Output is a newline-delimited rows of JSON data.
+$ curl -X POST -H "Authorization: Bearer $(bluectl access-token)" \
+  https://api.alphaus.cloud/m/blue/cost/v1/aws/costs:read \
+  -d '{"accountId":"1234567890"}'
 ```
