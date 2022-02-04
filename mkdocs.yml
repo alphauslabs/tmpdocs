@@ -35,6 +35,7 @@ nav:
 - 'Guides':
   - 'guides/index.md'
   - 'guides/aws-register-payer.md'
+  - 'guides/aws-enable-api-access.md'
 
 extra:
   alternate:
