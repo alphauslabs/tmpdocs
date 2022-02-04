@@ -36,6 +36,7 @@ nav:
   - 'guides/index.md'
   - 'Registering AWS payer accounts': 'guides/aws-register-payer.md'
   - 'Enabling AWS payer API access': 'guides/aws-enable-api-access.md'
+  - 'guides/aws-query-costs.md'
 
 extra:
   alternate:
