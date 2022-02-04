@@ -34,6 +34,7 @@ nav:
   - 'blueapi/client-sdks.md'
 - 'Guides':
   - 'guides/index.md'
+  - 'guides/aws-register-payer.md'
 
 extra:
   alternate:
