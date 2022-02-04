@@ -1,2 +1,6 @@
 # Registering AWS payer accounts using bluectl
-TBD
+
+!!! note
+    This guide is only applicable to Ripple users.
+
+Make sure to install `bluectl` first.
