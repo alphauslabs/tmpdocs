@@ -20,8 +20,16 @@ Once the deployment is done and successful, return to the terminal above and pre
 
 ## Different region for S3 bucket
 
-By default, the CloudFormation stack will be deployed to `us-east-1` region. This is because, at the time of this writing, AWS only supports CUR export definition on that region. If you prefer to have your S3 bucket located on a different region however, you can do the following steps:
+By default, the CloudFormation stack will be deployed to `us-east-1` region. This is because, at the time of this writing, AWS only supports CUR export definition on that region. If you prefer to have your S3 bucket located on a different region however, you can do the following steps.
+
+First, create an S3 bucket using CloudFormation. The template used for this is [here](https://alphaus-cloudformation-templates.s3.ap-northeast-1.amazonaws.com/alphauscurexportbucket-v1.yml).
 
 ```sh
-TBD
+$ bluectl xacct create 012345678901 s3only
+```
+
+Once the deployment is done, deploy the main CloudFormation template, select the "USE_EXISTING" parameter, and update the S3 bucket name (`CurS3BucketName`) and region (`CurS3BucketRegion`).
+
+```sh
+$ bluectl xacct create 012345678901
 ```
