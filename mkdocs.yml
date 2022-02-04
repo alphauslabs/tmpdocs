@@ -34,8 +34,8 @@ nav:
   - 'blueapi/client-sdks.md'
 - 'Guides':
   - 'guides/index.md'
-  - 'guides/aws-register-payer.md'
-  - 'guides/aws-enable-api-access.md'
+  - 'Registering AWS payer accounts': 'guides/aws-register-payer.md'
+  - 'Enabling AWS payer API access': 'guides/aws-enable-api-access.md'
 
 extra:
   alternate:
