@@ -32,6 +32,8 @@ nav:
     - 'blueapi/apis/operations.md'
     - 'blueapi/apis/preferences.md'
   - 'blueapi/client-sdks.md'
+- 'Guides':
+  - 'guides/index.md'
 
 extra:
   alternate:
