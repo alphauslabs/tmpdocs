@@ -28,7 +28,7 @@ First, create an S3 bucket using CloudFormation using the command below. Make su
 $ bluectl xacct create 012345678901 s3only
 ```
 
-Once the deployment is done, deploy the main CloudFormation template using the command below, select the "USE_EXISTING" parameter, and update the S3 bucket name (`CurS3BucketName`) and region (`CurS3BucketRegion`) with the values used in the first deployment.
+Once the bucket is created, deploy the main CloudFormation template using the command below. In the CloudFormation console, select the "USE_EXISTING" parameter, and update the S3 bucket name (`CurS3BucketName`) and region (`CurS3BucketRegion`) with the values used in the first deployment.
 
 ```sh
 $ bluectl xacct create 012345678901
