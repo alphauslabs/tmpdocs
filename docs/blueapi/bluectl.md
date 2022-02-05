@@ -25,6 +25,26 @@ With environment variables set, you should now be able to run any `bluectl` comm
 $ bluectl whoami
 ```
 
+`bluectl` also supports authentication using a configuration file located in `$HOME/.config/alphaus/config.toml`.
+
+```toml
+[default]
+client-id = 'sample-id'
+client-secret = 'sample-secret'
+
+[beta]
+client-id = 'sample-id'
+client-secret = 'sample-secret'
+auth-url = 'https://loginnext.alphaus.cloud/ripple/access_token'
+```
+
+You can select a profile using the `--profile` flag. For example:
+```sh
+$ bluectl whoami --profile beta
+```
+
+If the configuration file exists and the `[default]` profile is set, `bluectl` will use that credentials.
+
 Finally, explore other available commands by running:
 ```sh
 # Check out the main commands:
