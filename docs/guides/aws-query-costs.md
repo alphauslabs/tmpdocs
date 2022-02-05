@@ -49,3 +49,19 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
     # Use query.json file as your --raw-input.
     $ bluectl awscost get --raw-input "$(cat /tmp/query.json)"
     ```
+
+## Grouping by month
+```sh
+# Query monthly costs from December, 2021 to January 2022.
+$ cat /tmp/query.json
+{
+  "accountId":"012345678901",
+  "startTime":"20211201",
+  "endTime":"20220131",
+  "awsOptions":{
+    "groupByMonth":true
+  }
+}
+
+$ bluectl awscost get --raw-input "$(cat /tmp/query.json)"
+```
