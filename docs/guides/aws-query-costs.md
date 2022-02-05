@@ -22,7 +22,8 @@ $ bluectl awscost get --raw-input '{"accountId":"012345678901"}'
 ## Using date ranges in your query
 ```sh
 # Query costs for the month of December, 2021.
-$ bluectl awscost get --raw-input '{"accountId":"012345678901","startTime":"20211201","endTime":"20211231"}'
+$ bluectl awscost get --raw-input \
+  '{"accountId":"012345678901","startTime":"20211201","endTime":"20211231"}'
 ```
 
 Download current month's adjustment costs and save as CSV file:
