@@ -4,7 +4,7 @@
 
 !!! info "--raw-input"
     [Blue API](https://alphauslabs.github.io/blueapidocs/) and [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) are still in beta. For `bluectl` to be able to support most Blue API parameter combinations, it provides a `--raw-input` flag which accepts the same JSON input required in Blue API for most of its commands. Refer to the examples using the `--raw-input` flag below.
-    
+
     As Blue API becomes more stable, we will provide more easy-to-use parameters to `bluectl` so you don't have to use the `--raw-input` flag. Stay tuned.
 
 ## Query a billing group's daily costs for the current month
@@ -32,18 +32,11 @@ You can use the `--out {location}` flag to export your queries to a CSV file. Fo
 $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 ```
 
-Download current month's adjustment costs and save as CSV file:
-```sh
-# Here, 'all' could mean MSP-level or billing group level.
-$ bluectl awscost get-adjustments --type all --out /tmp/out.csv
-```
+!!! tip "Tip #1"
+    Check out the JSON request format [here](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_ReadCosts) to know more about all the supported parameters of the `bluectl awscost get` subcommand.
 
-You can also provide the `--start yyyymmdd` and `--end yyyymmdd` flags for date ranges.
-
-Download current month's usage costs for a specific account and save as CSV file:
-```sh
-$ bluectl awscost get --id 1234567890 --type account --out /tmp/out.csv
-```
+!!! tip "Tip #2"
+    TBD
 
 Download current month's adjustment costs for a specific billing group and save as CSV file:
 ```sh
