@@ -5,7 +5,7 @@
 !!! info "--raw-input"
     [Blue API](https://alphauslabs.github.io/blueapidocs/) and [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) are still in beta. For `bluectl` to be able to support most Blue API parameter combinations, it provides a `--raw-input` flag which accepts the same JSON input required in Blue API for most of its commands. Refer to the examples using the `--raw-input` flag below.
 
-    As Blue API becomes more stable, we will provide more easy-to-use parameters to `bluectl` so you don't have to use the `--raw-input` flag. Stay tuned.
+    As Blue API becomes more stable, we will provide more easy-to-use parameters to `bluectl` so you don't have to use the `--raw-input` flag in the future. Stay tuned.
 
 ## Query a billing group's daily costs for the current month
 ```sh
@@ -33,10 +33,22 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 ```
 
 !!! tip "Tip #1"
-    Check out the JSON request format [here](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_ReadCosts) to know more about all the supported parameters of the `bluectl awscost get` subcommand.
+    Check out the JSON request format [here](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_ReadCosts) to know more about the `bluectl awscost get --raw-input '{...}' command's supported parameters.
 
 !!! tip "Tip #2"
-    TBD
+    If your `--raw-input` is getting longer and is becoming difficult to read, you can write it in a file, and reference that file in your command. For example,
+    ```sh
+    # This is your query file.
+    $ cat /tmp/query.json
+    {
+      "accountId":"012345678901",
+      "startTime":"20211201",
+      "endTime":"20211231"
+    }
+    
+    # Use query.json file as your --raw-input.
+    $ bluectl awscost get --raw-input "$(cat /tmp/query.json)"
+    ```
 
 Download current month's adjustment costs for a specific billing group and save as CSV file:
 ```sh
