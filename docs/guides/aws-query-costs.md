@@ -26,6 +26,12 @@ $ bluectl awscost get --raw-input \
   '{"accountId":"012345678901","startTime":"20211201","endTime":"20211231"}'
 ```
 
+## Exporting your queries to CSV
+You can use the `--out {location}` flag to export your queries to a CSV file. For example:
+```sh
+$ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
+```
+
 Download current month's adjustment costs and save as CSV file:
 ```sh
 # Here, 'all' could mean MSP-level or billing group level.
