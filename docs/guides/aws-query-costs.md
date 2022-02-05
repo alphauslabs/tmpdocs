@@ -15,7 +15,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}'
 
 ## Query an account's daily costs for the current month
 ```sh
-# Replace '012345678901' with your billing internal id.
+# Replace '012345678901' with your account id.
 $ bluectl awscost get --raw-input '{"accountId":"012345678901"}'
 ```
 
