@@ -36,7 +36,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
     Check out the JSON request format [here](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_ReadCosts) to know more about the `bluectl awscost get --raw-input '{...}'` command's supported parameters.
 
 !!! tip "Tip #2"
-    If your `--raw-input` is getting longer and is becoming difficult to read, you can write it in a file, and reference that file in your command. For example,
+    If your `--raw-input` is getting longer and is becoming difficult to read, you can write it in a file, and then reference that file in your command. For example,
     ```sh
     # This is your query file.
     $ cat /tmp/query.json
