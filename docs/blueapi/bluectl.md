@@ -8,7 +8,7 @@ You can install `bluectl` using [Homebrew](https://brew.sh/) (MacOS, Linux, and 
 $ brew install alphauslabs/tap/bluectl
 ```
 
-## Usage
+## Authentication
 `bluectl` uses API client credentials for authentication. You can generate your API credentials either from Ripple under "Tools > API Access Tokens", or Wave(Pro) under "Settings > API Access Tokens".
 
 To validate your credentials with `bluectl`, run the command below (replace the `{client-*}` part with your actual client id and client secret values):
@@ -18,6 +18,7 @@ $ bluectl whoami --client-id {client-id} --client-secret {client-secret}
 
 If successful, it will output some information about the authenticated user.
 
+## Environment variables
 You can also store your credentials as environment variables instead of typing them everytime you run a command. Check out the "Environment setup" section [here](https://alphauslabs.github.io/docs/blueapi/authentication/#environment-setup).
 
 With environment variables set, you should now be able to run any `bluectl` commands without the `--client-id` and `--client-secret` flags.
@@ -25,6 +26,7 @@ With environment variables set, you should now be able to run any `bluectl` comm
 $ bluectl whoami
 ```
 
+## Configuration file
 `bluectl` also supports authentication using a configuration file located in `$HOME/.config/alphaus/config.toml`.
 
 ```toml
