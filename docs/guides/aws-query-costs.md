@@ -7,13 +7,13 @@
 
     As Blue API becomes more stable, we will provide more easy-to-use parameters to `bluectl` so you don't have to use the `--raw-input` flag in the future. Stay tuned.
 
-## Query a billing group's daily costs for the current month
+## Querying a billing group's daily costs for the current month
 ```sh
 # Replace 'abcdef' with your billing internal id.
 $ bluectl awscost get --raw-input '{"groupId":"abcdef"}'
 ```
 
-## Query an account's daily costs for the current month
+## Querying an account's daily costs for the current month
 ```sh
 # Replace '012345678901' with your account id.
 $ bluectl awscost get --raw-input '{"accountId":"012345678901"}'
