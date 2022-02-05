@@ -1,6 +1,6 @@
 # Querying costs using bluectl
 
-Typically, you will download both usage-based costs and fee-based costs from this API to get the whole spending data. To demontrate, let's use the [bluectl](https://github.com/alphauslabs/bluectl) tool. Here are some example usage scenarios.
+Here are some examples on how to query your cost details using the [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) tool.
 
 Download current month's usage costs and save as CSV file:
 ```sh
