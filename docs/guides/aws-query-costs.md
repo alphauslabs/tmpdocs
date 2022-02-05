@@ -1,4 +1,4 @@
-# Querying costs using bluectl
+# Querying AWS costs using bluectl
 
 Here are some examples on how to query your cost details using the [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) tool.
 
