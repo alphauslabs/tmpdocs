@@ -38,7 +38,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 !!! tip "Tip: use file as --raw-input"
     If your `--raw-input` is getting longer and is becoming difficult to read, you can write it in a file, and then reference that file in your command. For example,
     ```sh
-    # This is your query file.
+    # This is your query file. Modify as needed.
     $ cat /tmp/query.json
     {
       "accountId":"012345678901",
@@ -47,7 +47,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
     }
     
     # Use query.json file as your --raw-input.
-    $ bluectl awscost get --raw-input "$(cat /tmp/query.json)"
+    $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
     ```
 
 ## Grouping by month
