@@ -45,9 +45,18 @@ You can select a profile using the `--profile` flag. For example:
 $ bluectl whoami --profile beta
 ```
 
-If the configuration file exists and the `[default]` profile is set, `bluectl` will use that credentials.
+If the configuration file exists and the `[default]` profile is set, `bluectl` will use that credentials. In this case, the `--profile default` flag can be omitted. If both environment variables and the `[default]` profile are present, `bluectl` will use the `[default]` profile.
 
-Finally, explore other available commands by running:
+```sh
+# This usage...
+$ bluectl whoami --profile default
+
+# is the same as...
+$ bluectl whoami
+```
+
+## Usage
+Finally, you can explore some of `bluectl`'s available supported commands by running:
 ```sh
 # Check out the main commands:
 $ bluectl -h
