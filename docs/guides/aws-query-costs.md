@@ -63,5 +63,5 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)"
+$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
