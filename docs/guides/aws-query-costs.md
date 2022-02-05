@@ -52,7 +52,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 
 ## Grouping by month
 ```sh
-# Query monthly costs from December, 2021 to January 2022.
+# Query monthly service costs from December, 2021 to January 2022.
 $ cat /tmp/query.json
 {
   "accountId":"012345678901",
