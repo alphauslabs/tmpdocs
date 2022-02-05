@@ -49,23 +49,3 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
     # Use query.json file as your --raw-input.
     $ bluectl awscost get --raw-input "$(cat /tmp/query.json)"
     ```
-
-Download current month's adjustment costs for a specific billing group and save as CSV file:
-```sh
-# Here, 'bill001' is your billing group id.
-$ bluectl awscost get-adjustments \
-  --id bill001 \
-  --type billinggroup \
-  --out /tmp/out.csv
-```
-
-You can also provide the `--include-tags` and/or `--include-costcategories` flag(s) to include the tags and/or cost category information in the streaming data. At the moment, only the usage-based data supports tags and cost categories.
-
-Although these APIs are designed to be streamed due to potentially large amounts of data, you can still use the JSON/REST API like so:
-
-```sh
-# Output is a newline-delimited rows of JSON data.
-$ curl -X POST -H "Authorization: Bearer $(bluectl access-token)" \
-  https://api.alphaus.cloud/m/blue/cost/v1/aws/costs:read \
-  -d '{"accountId":"1234567890"}'
-```
