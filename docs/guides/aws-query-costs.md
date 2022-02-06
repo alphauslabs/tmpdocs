@@ -99,7 +99,7 @@ $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 ## Filtering your queries
-Blue API provides a flexible way for you to further filter your queries in combination with your cost attributes. This allows you to query more specific information such as specific services, or specific regions, or a combination of the two. Blue API filters support regular expressions using Google's [RE2](https://github.com/google/re2/wiki/Syntax).
+Blue API provides a flexible way for you to further filter your queries in combination with your cost attributes. This allows you to query more specific information such as specific services, or specific regions, or a combination of the two.
 
 ```sh
 $ cat /tmp/query.json
@@ -126,3 +126,10 @@ $ cat /tmp/query.json
 
 $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
+
+The example above can be interpreted as:
+
+* `productCode` is equal to "AmazonEC2" **AND** `region` is equal to "ap-northeast-1"; **OR**
+* `productCode` is equal to "AmazonRDS"
+
+Blue API filters support regular expressions using Google's [RE2](https://github.com/google/re2/wiki/Syntax).
