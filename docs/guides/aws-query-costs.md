@@ -135,4 +135,26 @@ The example above can be interpreted as:
 !!! info ""
     The items inside the `andFilters` key use the AND operator, while the `andFilters` themselves use the OR operator.
 
-Blue API filters support regular expressions using Google's [RE2](https://github.com/google/re2/wiki/Syntax).
+Blue API filters also support regular expressions using Google's [RE2](https://github.com/google/re2/wiki/Syntax) by prefixing your filter values with either `re:` (match) or `!re:` (reverse match).
+
+```sh
+# Query all EC2 or RDS costs in all regions starting with "ap-".
+$ cat /tmp/query.json
+{
+  "accountId":"012345678901",
+  "startTime":"20220101",
+  "endTime":"20220131",
+  "awsOptions":{
+    "filters":[
+      {
+        "andFilters":{
+          "productCode":"re:AmazonEC2|AmazonRDS",
+          "region":"re:^ap-.*"
+        }
+      }
+    ]
+  }
+}
+
+$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+```
