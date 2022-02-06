@@ -132,4 +132,7 @@ The example above can be interpreted as:
 * `productCode` is equal to "AmazonEC2" **AND** `region` is equal to "ap-northeast-1"; **OR**
 * `productCode` is equal to "AmazonRDS"
 
+!!! info ""
+    The items inside the `andFilters` key use the AND operator, while the `andFilters` themselves use the OR operator.
+
 Blue API filters support regular expressions using Google's [RE2](https://github.com/google/re2/wiki/Syntax).
