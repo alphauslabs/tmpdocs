@@ -2,7 +2,7 @@
 Blue uses API client credentials for authentication. You can generate your API credentials either from Ripple under "Tools > API Access Tokens", or Wave(Pro) under "Settings > API Access Tokens".
 
 ## Environment setup
-Set the environment variables below if you are using [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) or any of our supported client libraries.
+Set the environment variables below if you are using [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) or any of our [supported client libraries](https://alphauslabs.github.io/docs/blueapi/client-sdks/).
 
 === "Ripple"
     ```sh
