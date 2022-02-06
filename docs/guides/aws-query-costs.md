@@ -158,3 +158,27 @@ $ cat /tmp/query.json
 
 $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
+
+## Filtering by tags
+Tag filtering is similar to filtering by attributes in terms of the logic order and regular expressions support. The only difference is that your `andFilters` map will contain the tag key/values.
+
+```sh
+# Query all costs that are tagged with 'key=user:Name' and 'value=some-name'.
+$ cat /tmp/query.json
+{
+  "accountId":"012345678901",
+  "startTime":"20220101",
+  "endTime":"20220131",
+  "awsOptions":{
+    "tagFilters":[
+      {
+        "andFilters":{
+          "user:Name":"some-name"
+        }
+      }
+    ]
+  }
+}
+
+$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+```
