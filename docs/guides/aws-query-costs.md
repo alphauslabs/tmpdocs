@@ -65,3 +65,17 @@ $ cat /tmp/query.json
 
 $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
+
+## Grouping by cost attributes
+You can group your costs by cost attributes (or columns). Blue API supports the following attributes for grouping:
+
+* `productCode` - AWS services, such as [AmazonEC2](https://aws.amazon.com/ec2/), [AmazonRDS](https://aws.amazon.com/rds/), etc.;
+* `serviceCode` - AWS services codes;
+* `region` - AWS regions, such as `us-east-1`;
+* `zone` - AWS zones, such as `us-east-1a`;
+* `usageType`
+* `instanceType`
+* `operation`
+* `invoiceId`
+* `description`
+* `resourceId`
