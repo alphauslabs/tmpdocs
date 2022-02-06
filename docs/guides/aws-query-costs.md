@@ -129,8 +129,8 @@ $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 
 The example above can be interpreted as:
 
-* `productCode` is equal to "AmazonEC2" **AND** `region` is equal to "ap-northeast-1"; **OR**
-* `productCode` is equal to "AmazonRDS"
+* (`productCode` is equal to "AmazonEC2" **AND** `region` is equal to "ap-northeast-1") **OR**
+* (`productCode` is equal to "AmazonRDS")
 
 !!! info ""
     The items inside the `andFilters` key use the AND operator, while the `andFilters` themselves use the OR operator.
