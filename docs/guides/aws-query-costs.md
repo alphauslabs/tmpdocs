@@ -70,7 +70,7 @@ $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 You can group your costs by cost attributes (or columns). Blue API supports the following attributes for grouping: `productCode`, `serviceCode`, `region`, `zone`, `usageType`, `instanceType`, `operation`, `invoiceId`, `description`, and `resourceId`. You can group by any combination of these attributes.
 
 ```sh
-# Query January 2022 costs grouped by service and region.
+# Query January 2022 daily costs grouped by service and region.
 $ cat /tmp/query.json
 {
   "accountId":"012345678901",
@@ -78,6 +78,20 @@ $ cat /tmp/query.json
   "endTime":"20220131",
   "awsOptions":{
     "groupByColumns":"productCode,region"
+  }
+}
+
+$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+
+# Query January 2022 costs grouped by service and region, then grouped by month.
+$ cat /tmp/query.json
+{
+  "accountId":"012345678901",
+  "startTime":"20220101",
+  "endTime":"20220131",
+  "awsOptions":{
+    "groupByColumns":"productCode,region",
+    "groupByMonth":true
   }
 }
 
