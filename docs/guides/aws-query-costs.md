@@ -82,7 +82,9 @@ $ cat /tmp/query.json
 }
 
 $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+```
 
+```sh
 # Query January 2022 costs grouped by service and region, then grouped by month.
 $ cat /tmp/query.json
 {
