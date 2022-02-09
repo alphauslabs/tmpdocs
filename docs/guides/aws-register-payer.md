@@ -7,7 +7,7 @@ Make sure to install [`bluectl`](https://alphauslabs.github.io/docs/blueapi/blue
 
 Open a terminal and run the following command (`012345678901` is a sample payer account ID):
 
-```sh
+``` sh
 $ bluectl xacct create 012345678901
 Open the link below in your browser and deploy:
 https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/...
@@ -24,12 +24,12 @@ By default, the CloudFormation stack will be deployed to `us-east-1` region. Thi
 
 First, create an S3 bucket using the command below. When in the CloudFormation console, make sure that you are in your desired region when deploying the stack. You can check out the actual template [here](https://alphaus-cloudformation-templates.s3.ap-northeast-1.amazonaws.com/alphauscurexportbucket-v1.yml).
 
-```sh
+``` sh
 $ bluectl xacct create 012345678901 s3only
 ```
 
 Once the bucket is created, deploy the main CloudFormation template using the command below. In the CloudFormation console, select the "USE_EXISTING" parameter, and update the S3 bucket name (`CurS3BucketName`) and region (`CurS3BucketRegion`) with the values used in the first deployment.
 
-```sh
+``` sh
 $ bluectl xacct create 012345678901
 ```

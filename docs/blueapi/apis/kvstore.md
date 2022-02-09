@@ -16,7 +16,7 @@ The free version is limited to a regional store closest to you where data is rep
 ## Examples
 
 Let's use `bluectl` to demonstrate how to use KvStore. To write a single key/value:
-```sh
+``` sh
 # key=hello, value=world
 $ bluectl kv write hello world
 
@@ -25,14 +25,14 @@ $ bluectl kv write space "this value has spaces"
 ```
 
 To read the key/value:
-```sh
+``` sh
 # Read key=hello, '--bare' for clean output
 $ bluectl kv read hello --bare
 world
 ```
 
 You can also write file contents as value:
-```sh
+``` sh
 # Here's a sample file with JSON contents
 $ cat /tmp/test.json
 {
@@ -49,7 +49,7 @@ $ bluectl kv read json --bare | jq -r .message
 ```
 
 You can also scan multiple keys:
-```sh
+``` sh
 # Read all keys
 $ bluectl kv scan --outfmt=json
 {"key":"hello","value":"world"}

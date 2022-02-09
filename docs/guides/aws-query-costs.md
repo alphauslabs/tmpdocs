@@ -8,19 +8,19 @@
     As Blue API becomes more stable, we will provide more easy-to-use parameters to `bluectl` so you don't have to use the `--raw-input` flag in the future. Stay tuned.
 
 ## Querying a billing group's daily costs for the current month
-```sh
+``` sh
 # Replace 'abcdef' with your billing internal id.
 $ bluectl awscost get --raw-input '{"groupId":"abcdef"}'
 ```
 
 ## Querying an account's daily costs for the current month
-```sh
+``` sh
 # Replace '012345678901' with your account id.
 $ bluectl awscost get --raw-input '{"accountId":"012345678901"}'
 ```
 
 ## Using date ranges in your query
-```sh
+``` sh
 # Query costs for the month of December, 2021.
 $ bluectl awscost get --raw-input \
   '{"accountId":"012345678901","startTime":"20211201","endTime":"20211231"}'
@@ -28,7 +28,7 @@ $ bluectl awscost get --raw-input \
 
 ## Exporting your queries to CSV
 You can use the `--out {location}` flag to export your queries to a CSV file. For example:
-```sh
+``` sh
 $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 ```
 
@@ -37,7 +37,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 
 !!! tip "Tip: use file as --raw-input"
     If your `--raw-input` is getting longer and is becoming difficult to read, you can write it in a file, and then reference that file in your command. For example,
-    ```sh
+    ``` sh
     # This is your query file. Modify as needed.
     $ cat /tmp/query.json
     {
@@ -51,7 +51,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
     ```
 
 ## Grouping by month
-```sh
+``` sh
 # Query monthly service costs from December, 2021 to January 2022.
 $ cat /tmp/query.json
 {
@@ -69,7 +69,7 @@ $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ## Grouping by cost attributes
 You can group your costs by cost attributes (or columns). Blue API supports the following attributes for grouping: `productCode`, `serviceCode`, `region`, `zone`, `usageType`, `instanceType`, `operation`, `invoiceId`, `description`, and `resourceId`. You can group by any combination of these attributes.
 
-```sh
+``` sh
 # Query January 2022 daily costs grouped by service and region.
 $ cat /tmp/query.json
 {
@@ -84,7 +84,7 @@ $ cat /tmp/query.json
 $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
-```sh
+``` sh
 # Query January 2022 costs grouped by service and region, then grouped by month.
 $ cat /tmp/query.json
 {
@@ -103,7 +103,7 @@ $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ## Filtering your queries
 Blue API provides a flexible way for you to further filter your queries in combination with your cost attributes. This allows you to query more specific information such as specific services, or specific regions, or a combination of the two.
 
-```sh
+``` sh
 $ cat /tmp/query.json
 {
   "accountId":"012345678901",
@@ -139,7 +139,7 @@ The example above can be interpreted as:
 
 Blue API filters also support regular expressions using Google's [RE2](https://github.com/google/re2/wiki/Syntax) by prefixing your filter values with either `re:` (match) or `!re:` (reverse match).
 
-```sh
+``` sh
 # Query all EC2 or RDS costs in all regions starting with "ap-".
 $ cat /tmp/query.json
 {
@@ -164,7 +164,7 @@ $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ## Filtering by tags
 Tag filtering is similar to filtering by attributes in terms of the logic order and regular expressions support. The only difference is that your `andFilters` map will contain the tag key/values.
 
-```sh
+``` sh
 # Query all costs that are tagged with 'key=user:Name' and 'value=some-name'.
 $ cat /tmp/query.json
 {

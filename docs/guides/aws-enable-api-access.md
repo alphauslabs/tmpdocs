@@ -9,7 +9,7 @@ Make sure to install [`bluectl`](https://alphauslabs.github.io/docs/blueapi/blue
 
 Open a terminal and run the following command (`012345678901` is a sample payer account ID):
 
-```sh
+``` sh
 $ bluectl xacct create 012345678901 apionly
 Open the link below in your browser and deploy:
 https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/...
@@ -22,6 +22,6 @@ Once the deployment is done and successful, return to the terminal above and pre
 
 You can run the command below to check API access information about your payer accounts.
 
-```sh
+``` sh
 $ bluectl xacct list
 ```

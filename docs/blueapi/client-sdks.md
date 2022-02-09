@@ -7,7 +7,7 @@ Check out [here](https://github.com/alphauslabs/blue-sdk-go) for more informatio
 
 ## blue-sdk-python
 The Python SDK is now available via `pip`. Simply do:
-```sh
+``` sh
 $ pip install alphausblue
 ```
 and the Blue Python SDK, and all its dependencies will be installed. Examples can be found on our GitHub repo.
