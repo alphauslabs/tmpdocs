@@ -1,6 +1,6 @@
 # Querying AWS costs using bluectl
 
-[`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) is a flexible tool that you can use to query your cost data in Ripple/Wave(Pro). It uses the same [API](https://alphauslabs.github.io/blueapidocs/) that powers our Ripple/Wave(Pro) UI consoles. Since it also supports most, if not all of the possible API parameters, in some cases, you can even query data combinations that are not yet available in our UI.
+[`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) is a flexible tool that you can use to query your cost data in Ripple/Wave(Pro). Since it also supports most, if not all of the possible API parameters, in some cases, you can even query data combinations that are not yet available in our UI.
 
 !!! info "--raw-input"
     [Blue API](https://alphauslabs.github.io/blueapidocs/) and [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) are still in beta. For `bluectl` to be able to support most Blue API parameter combinations, it provides a `--raw-input` flag which accepts the same JSON input required in Blue API for most of its commands. Refer to the examples using the `--raw-input` flag below.
