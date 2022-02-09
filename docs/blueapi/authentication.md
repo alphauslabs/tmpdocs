@@ -5,13 +5,13 @@ Blue uses API client credentials for authentication. You can generate your API c
 Set the environment variables below if you are using [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) or any of our [supported client libraries](https://alphauslabs.github.io/docs/blueapi/client-sdks/).
 
 === "Ripple"
-    ```sh
+    ``` sh
     ALPHAUS_CLIENT_ID={ripple-client-id}
     ALPHAUS_CLIENT_SECRET={ripple-client-secret}
     ```
 
 === "Wave(Pro)"
-    ```sh
+    ``` sh
     ALPHAUS_CLIENT_ID={wave-client-id}
     ALPHAUS_CLIENT_SECRET={wave-client-secret}
     ALPHAUS_AUTH_URL=https://login.alphaus.cloud/access_token
