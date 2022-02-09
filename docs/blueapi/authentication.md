@@ -18,7 +18,7 @@ Set the environment variables below if you are using [`bluectl`](https://alphaus
     ```
 
 You can validate your setup using [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/). Run the following command:
-```sh
+``` sh
 $ bluectl whoami
 ```
 
@@ -27,31 +27,31 @@ If successful, it will output some information about the authenticated user.
 At the moment, setting both Ripple and Wave(Pro) client credentials is not supported. If both are set, authentication will default to Ripple.
 
 If you're using either [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) or any of our supported client libraries, the authentication flow is as follows. First, it will look for the following environment variables:
-```sh
+``` sh
 ALPHAUS_CLIENT_ID
 ALPHAUS_CLIENT_SECRET
 ```
 
 The `ALPHAUS_AUTH_URL` environment variable is optional for Ripple. For Wave(Pro) users, this can be set to:
-```sh
+``` sh
 ALPHAUS_AUTH_URL=https://login.alphaus.cloud/access_token
 ```
 
 In most cases, the environment variables above should be sufficient. If those are not set, it will then look for:
-```sh
+``` sh
 ALPHAUS_RIPPLE_CLIENT_ID
 ALPHAUS_RIPPLE_CLIENT_SECRET
 ```
 
 If those are not set, it will finally look for:
-```sh
+``` sh
 ALPHAUS_WAVE_CLIENT_ID
 ALPHAUS_WAVE_CLIENT_SECRET
 ```
 
 ## Calling JSON/REST API directly
 If you prefer to call our [JSON/REST API](https://alphauslabs.github.io/blueapidocs/) directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. This is useful for APIs that are not yet supported in `bluectl`.
-```sh
+``` sh
 # Get access token for production:
 $ bluectl access-token
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd...
@@ -79,7 +79,7 @@ $ curl -H "Authorization: Bearer $(bluectl access-token \
 ```
 
 You can also use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to provide access tokens to our current, non-Blue APIs [here](https://docs.mobingi.com/v/api-reference/). For example:
-```sh
+``` sh
 $ curl -H "Authorization: Bearer $(bluectl access-token)" \
   https://api.alphaus.cloud/m/ripple/user | jq
 {
@@ -122,7 +122,7 @@ Content-Type: multipart/form-data
 
 **Response**
 
-```json
+``` json
 {
   "id_token": "eyJ0eXAiOiJKV1Q...",
   "token_type": "Bearer",
@@ -134,7 +134,7 @@ Content-Type: multipart/form-data
 
 **Example**
 
-```sh
+``` sh
 $ curl -X POST \
   -F client_id={client-id} \
   -F client_secret={client-secret} \
