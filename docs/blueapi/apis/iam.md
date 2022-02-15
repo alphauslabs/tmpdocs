@@ -49,5 +49,6 @@ In order to enable or disable a feature in Aqua or Wave for a given user, the ap
 | aq_right_sizing | Instance Right-Sizing | Access | Aqua |
 | aq_scheduling | Scheduling | Access | Aqua |
 | report_filters | Report Filters | Access | Wave Pro |
+| aqua_link | Aqua | Access | Wave Pro |
 
 When setting a feature flag, a value of true will enable the feature and a value of false will disable the feature.
