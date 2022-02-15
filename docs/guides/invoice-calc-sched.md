@@ -20,7 +20,7 @@ $ bluectl cost aws calculation schedule list
 ```
 
 !!! info "--notification-channel"
-    If you want to use an [existing notification channel](https://app.alphaus.cloud/ripple/notification-setting), use the `--notification-channel` flag the channel id. You can get the channel id using the following command:
+    If you want to use an [existing notification channel](https://app.alphaus.cloud/ripple/notification-setting), use the `--notification-channel=id` flag. You can get your channel ids using the following command:
 
     ``` sh
     $ bluectl notification channels list
