@@ -53,12 +53,12 @@ ALPHAUS_WAVE_CLIENT_SECRET
 If you prefer to call our [JSON/REST API](https://alphauslabs.github.io/blueapidocs/) directly, you can use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to generate the access token. This is useful for APIs that are not yet supported in `bluectl`.
 ``` sh
 # Get access token for production:
-$ bluectl access-token
+$ bluectl token
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhd...
 
 # You can use the command above to provide access tokens to your
 # other commands. For example:
-$ curl -H "Authorization: Bearer $(bluectl access-token)" \
+$ curl -H "Authorization: Bearer $(bluectl token)" \
   https://api.alphaus.cloud/m/blue/iam/v1/whoami | jq
 {
   "id":"test",
@@ -67,7 +67,7 @@ $ curl -H "Authorization: Bearer $(bluectl access-token)" \
 }
 
 # If you want to access our NEXT (BETA) environment, you can do:
-$ curl -H "Authorization: Bearer $(bluectl access-token \
+$ curl -H "Authorization: Bearer $(bluectl token \
   --client-id $MY_CLIENT_ID_NEXT \
   --client-secret $MY_CLIENT_SECRET_NEXT --beta)" \
   https://apinext.alphaus.cloud/m/blue/iam/v1/whoami | jq
@@ -80,7 +80,7 @@ $ curl -H "Authorization: Bearer $(bluectl access-token \
 
 You can also use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to provide access tokens to our current, non-Blue APIs [here](https://docs.mobingi.com/v/api-reference/). For example:
 ``` sh
-$ curl -H "Authorization: Bearer $(bluectl access-token)" \
+$ curl -H "Authorization: Bearer $(bluectl token)" \
   https://api.alphaus.cloud/m/ripple/user | jq
 {
   ...
