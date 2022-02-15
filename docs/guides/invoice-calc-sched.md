@@ -26,7 +26,7 @@ $ bluectl cost aws calculation schedule list
     $ bluectl notification channels list
     ```
 
-Finally, you can delete your schedule by this command:
+Finally, run the following command to delete your schedule:
 
 ``` sh
 $ bluectl cost aws calculation schedule rm -
