@@ -10,30 +10,30 @@
 ## Querying a billing group's daily costs for the current month
 ``` sh
 # Replace 'abcdef' with your billing internal id.
-$ bluectl awscost get --raw-input '{"groupId":"abcdef"}'
+$ bluectl cost aws get --raw-input '{"groupId":"abcdef"}'
 ```
 
 ## Querying an account's daily costs for the current month
 ``` sh
 # Replace '012345678901' with your account id.
-$ bluectl awscost get --raw-input '{"accountId":"012345678901"}'
+$ bluectl cost aws get --raw-input '{"accountId":"012345678901"}'
 ```
 
 ## Using date ranges in your query
 ``` sh
 # Query costs for the month of December, 2021.
-$ bluectl awscost get --raw-input \
+$ bluectl cost aws get --raw-input \
   '{"accountId":"012345678901","startTime":"20211201","endTime":"20211231"}'
 ```
 
 ## Exporting your queries to CSV
 You can use the `--out {location}` flag to export your queries to a CSV file. For example:
 ``` sh
-$ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
+$ bluectl cost aws get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
 ```
 
 !!! info "Reference"
-    Check out the JSON request format [here](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_ReadCosts) to know more about the `bluectl awscost get --raw-input '{...}'` command's supported parameters.
+    Check out the JSON request format [here](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_ReadCosts) to know more about the `bluectl cost aws get --raw-input '{...}'` command's supported parameters.
 
 !!! tip "Tip: use file as --raw-input"
     If your `--raw-input` is getting longer and is becoming difficult to read, you can write it in a file, and then reference that file in your command. For example,
@@ -47,7 +47,7 @@ $ bluectl awscost get --raw-input '{"groupId":"abcdef"}' --out /tmp/out.csv
     }
     
     # Use query.json file as your --raw-input.
-    $ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+    $ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
     ```
 
 ## Grouping by month
@@ -63,7 +63,7 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+$ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 ## Grouping by cost attributes
@@ -81,7 +81,7 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+$ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 ``` sh
@@ -97,7 +97,7 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+$ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 ## Filtering your queries
@@ -126,7 +126,7 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+$ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 The example above can be interpreted as:
@@ -158,7 +158,7 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+$ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 ## Filtering by tags
@@ -182,5 +182,5 @@ $ cat /tmp/query.json
   }
 }
 
-$ bluectl awscost get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
+$ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
