@@ -7,7 +7,7 @@ In this guide, we will try and create an invoicing calculation schedule for Ripp
 
 Make sure to install [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) first.
 
-Note that creating a calculation schedule automatically enables your notification channels as well. If you don't specify a notification channel during schedule creation, a default email-type notification channel will be created using your primary email address. At the moment, only email-type notification channels are supported.
+Note that creating a calculation schedule automatically enables your notification channels as well. If you don't specify a notification channel during schedule creation, an email-type channel will be created using your primary email address. At the moment, only email-type channels are supported.
 
 ``` sh
 $ bluectl cost aws calculation schedule create "0 0 3 * *"
