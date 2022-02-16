@@ -6,17 +6,17 @@
 Default behavior.
 
 <figure markdown>
-  ![Default](./assets/trueunblended-00.png){ width="300" }
+  ![Default](./assets/trueunblended-00.png)
 </figure>
 
 TrueUnblended point #1
 
 <figure markdown>
-  ![Point #1](./assets/trueunblended-01.png){ width="300" }
+  ![Point #1](./assets/trueunblended-01.png)
 </figure>
 
 TrueUnblended point #2
 
 <figure markdown>
-  ![Point #2](./assets/trueunblended-02.png){ width="300" }
+  ![Point #2](./assets/trueunblended-02.png)
 </figure>
