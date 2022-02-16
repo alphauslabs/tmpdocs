@@ -16,7 +16,7 @@ Confirm successful deployment? [Y/n]:
 
 Click on the URL link, or it copy to your browser. It will open the CloudFormation console with the parameters filled up. Check the "acknowledge" checkbox, and click "Create stack".
 
-Once the deployment is done and successful, return to the terminal above and press Enter (`Y` is the default option). The deployment validation will begin. If there are no issues, registration details are displayed and the process is completed.
+Once the deployment is done and successful, return to the terminal above and press ++enter++ (`Y` is the default option). The deployment validation will begin. If there are no issues, registration details are displayed and the process is completed.
 
 ## Different region for S3 bucket
 
