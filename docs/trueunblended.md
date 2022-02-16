@@ -1,3 +1,3 @@
-# About TrueUnblended^TM^ for AWS
+# About our TrueUnblended calculations for AWS
 
 TBD
