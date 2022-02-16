@@ -1,4 +1,4 @@
-# Products overview
+# Our products
 
 ## Ripple
 TBD
