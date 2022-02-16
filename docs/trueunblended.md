@@ -6,6 +6,17 @@
 Default behavior.
 
 <figure markdown>
-  ![Point #1](./assets/trueunblended-00.png){ width="300" }
-  <figcaption>RI sharing default behavior</figcaption>
+  ![Default](./assets/trueunblended-00.png){ width="300" }
+</figure>
+
+TrueUnblended point #1
+
+<figure markdown>
+  ![Point #1](./assets/trueunblended-01.png){ width="300" }
+</figure>
+
+TrueUnblended point #2
+
+<figure markdown>
+  ![Point #2](./assets/trueunblended-02.png){ width="300" }
 </figure>
