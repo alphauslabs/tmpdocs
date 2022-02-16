@@ -7,6 +7,7 @@
 [Go to Ripple console](https://app.alphaus.cloud/ripple/){ .md-button .md-button--primary }
 
 ## WavePro
-TBD
+
+[WavePro](https://alphaus.cloud/en/wave/) is Ripple's companion cost visualization console for cloud resellers' clients.
 
 [Go to WavePro console](https://app.alphaus.cloud/wavepro/){ .md-button .md-button--primary }
