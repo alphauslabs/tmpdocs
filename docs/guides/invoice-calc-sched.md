@@ -20,7 +20,7 @@ Run the following command to see your current schedule:
 ``` sh
 $ bluectl cost aws calculation schedule list
 ID        SCHEDULE   NEXT_RUN              NOTIFICATION_CHANNEL
-Csqsj4v2  0 0 3 * *  2022-03-03T00:00:00Z  c216394c-8f51-4baa-b0a8-4abef9303fca
+Csqsj4v2  0 0 3 * *  2022-03-03T00:00:00Z  7143c90d-6f84-4051...
 ```
 
 !!! info "--notification-channel"
