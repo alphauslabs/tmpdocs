@@ -12,6 +12,7 @@ theme:
 nav:
 - 'General':
   - 'index.md'
+  - 'products.md'
   - 'IAM overview': 'iam.md'
   - 'Ripple 🡥': 'https://docs.alphaus.cloud/v/ripple-en/'
   - 'Wave 🡥': 'https://docs.alphaus.cloud/v/wave-eng/'
@@ -61,3 +62,4 @@ markdown_extensions:
 - pymdownx.emoji:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
+- attr_list
