@@ -9,13 +9,13 @@ In [AWS consolidated billing](https://docs.aws.amazon.com/awsaccountbilling/late
   ![Default](./assets/trueunblended-00.png)
 </figure>
 
-However, from a client's perspective, there are cases, depending on how the [billing group](https://alphauslabs.github.io/docs/concepts/#billing-group) is configured, where knowing the real costs is required. Real costs here simply means the true costs accrued by a member account or a billing group with only its own RI/SP discounts applied. Therefore, external discounts need to be reverted and recalculated. This is one of the recalculations covered by TrueUnblended.
+However, from a client's perspective, there are cases, depending on how the [billing group](https://alphauslabs.github.io/docs/concepts/#billing-group) is configured, where knowing the real costs is required. Real costs here simply means the true costs accrued by a member account or a billing group with only its own RI/SP discounts applied. Therefore, external discounts, such as payer-level discounts, and discounts from other member accounts, need to be reverted and recalculated. This is one of the recalculations covered by TrueUnblended.
 
 <figure markdown>
   ![Point #1](./assets/trueunblended-01.png)
 </figure>
 
-TrueUnblended point #2
+Another area where TrueUnblended does corrective recalculations is with [zonal RIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-scope.html). Zonal RI discounts are applied first before regional RI discounts. As a member account, you might have usages that were already covered by external zonal RI discounts (i.e. from another member account) before your regional RI discounts were being applied. Instead of these usages showing up in your bill as usages using the ondemand rates, TrueUnblended will make sure that your regional RI discounts are applied to these usages as well using AWS RI coverage rules.
 
 <figure markdown>
   ![Point #2](./assets/trueunblended-02.png)
