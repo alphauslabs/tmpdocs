@@ -9,7 +9,7 @@ In [AWS consolidated billing](https://docs.aws.amazon.com/awsaccountbilling/late
   ![Default](./assets/trueunblended-00.png)
 </figure>
 
-However, from a client's perspective, 
+However, from a client's perspective, there are cases, depending on how the [billing group](#) is configured,
 
 <figure markdown>
   ![Point #1](./assets/trueunblended-01.png)
