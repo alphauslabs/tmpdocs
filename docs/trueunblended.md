@@ -3,13 +3,15 @@
 !!! warning
     TrueUnblended only applies to your [AWS](https://aws.amazon.com/) cost calculations.
 
+TrueUnblended 
+
 In [AWS consolidated billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html), unless configured otherwise, all the usages of all member accounts of an organization, including the payer, are combined in order to share volume discounts, and RI/SP discounts. This is beneficial from a cloud reseller and an enterprise CCOE's point of view as they can share RI/SP discounts purchased at the payer level across the organization.
 
 <figure markdown>
   ![Default](./assets/trueunblended-00.png)
 </figure>
 
-However, from a client's perspective, there are cases, depending on how the [billing group](https://alphauslabs.github.io/docs/concepts/#billing-group) is configured, where knowing the real costs is required. Real costs here simply means the true costs accrued by a member account or a billing group with only its own RI/SP discounts applied. Therefore, external discounts need to be reverted.
+However, from a client's perspective, there are cases, depending on how the [billing group](https://alphauslabs.github.io/docs/concepts/#billing-group) is configured, where knowing the real costs is required. Real costs here simply means the true costs accrued by a member account or a billing group with only its own RI/SP discounts applied. Therefore, external discounts need to be reverted and recalculated.
 
 <figure markdown>
   ![Point #1](./assets/trueunblended-01.png)
