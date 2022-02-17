@@ -6,8 +6,8 @@ TrueUnblended is the term we use at Alphaus to refer to some of the corrective r
 
 ## Billing group
 
-TBD
+Billing group is one of the main grouping mechanisms available in Ripple. With billing groups, you can group cloud accounts; linked/member accounts in AWS, subscription IDs in Azure, and project IDs in GCP. You can also create tag-based billing groups. As a cloud reseller, you calculate invoices at the billing group level. Your clients' WavePro access is also rooted at the billing group level, although WavePro also supports access at the [access group](#access-group) level. Most Ripple features center around the billing group.
 
 ## Access group
 
-TBD
+Access group is a collection of billing groups.
