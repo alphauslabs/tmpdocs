@@ -3,7 +3,7 @@
 !!! warning
     TrueUnblended only applies to your [AWS](https://aws.amazon.com/) cost calculations.
 
-Default behavior.
+In [AWS consolidated billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html), unless configured otherwise, all the usages of all member accounts of an organization, including the payer, are combined in order to share volume discounts, and RI and SP discounts. This is all well and good from the cloud reseller's point of view but from the reseller client's point of view, this needs some corrections.
 
 <figure markdown>
   ![Default](./assets/trueunblended-00.png)
