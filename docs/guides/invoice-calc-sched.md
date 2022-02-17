@@ -9,7 +9,7 @@ Make sure to install [`bluectl`](https://alphauslabs.github.io/docs/blueapi/blue
 
 Note that creating a calculation schedule automatically enables your notification channels as well. If you don't specify a notification channel during schedule creation, an email-type channel will be created using your primary email address. At the moment, only email-type channels are supported.
 
-Schedules are specified using the Unix [cron](https://man7.org/linux/man-pages/man5/crontab.5.html) format. For example, every 7th day of the month at 9:00am: `0 9 7 * *`. To create the schedule (every 3rd of the month), run the following command:
+Schedules are specified using the Unix [cron](https://man7.org/linux/man-pages/man5/crontab.5.html) format. For example, every 7th day of the month at 9:00am: `0 9 7 * *`. To create our schedule for this guide (every 3rd of the month), run the following command:
 
 ``` sh
 $ bluectl cost aws calculation schedule create "0 0 3 * *"
