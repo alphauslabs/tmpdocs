@@ -13,6 +13,7 @@ nav:
 - 'General':
   - 'index.md'
   - 'products.md'
+  - 'concepts.md'
   - 'A primer on TrueUnblended': 'trueunblended.md'
   - 'IAM overview': 'iam.md'
   - 'Ripple 🡥': 'https://docs.alphaus.cloud/v/ripple-en/'
