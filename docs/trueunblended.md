@@ -15,14 +15,16 @@ However, from a client's perspective, there are cases, depending on how the [bil
   ![Point #1](./assets/trueunblended-01.png)
 </figure>
 
-Another area where TrueUnblended does corrective recalculations is with [zonal RIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-scope.html). Zonal RI discounts are applied first before regional RI discounts. As a member account, you might have usages that were already covered by external zonal RI discounts (i.e. from another member account) before your regional RI discounts were being applied. Instead of these usages showing up in your bill as usages using the ondemand rates, TrueUnblended will make sure that your regional RI discounts are applied to these usages as well using AWS RI coverage rules.
+Another area where TrueUnblended does corrective recalculations is with [zonal RIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reserved-instances-scope.html). Zonal RI discounts are applied first before regional RI discounts. As a member account, you might have usages that were already covered by external zonal RI discounts (i.e. from another member account) before your regional RI discounts were being applied. Instead of these usages showing up in your bill as usages using the ondemand rates, TrueUnblended will make sure that your regional RI discounts are applied to these usages as well using [AWS RI application rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/apply_ri.html).
 
 <figure markdown>
   ![Point #2](./assets/trueunblended-02.png)
 </figure>
 
-TrueUnblended point #3
+Another area where TrueUnblended does corrective recalculations is with [SavingsPlans](https://aws.amazon.com/savingsplans/)[^1]. RI discounts are applied first before SP discounts. As a member account, you might have usages that were already covered by external RI discounts (i.e. from another member account) before your SP discounts were being applied. Instead of these usages showing up in your bill as usages using the ondemand rates, TrueUnblended will make sure that your SP discounts are applied to these usages as well using [AWS SP application rules](https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-applying.html).
 
 <figure markdown>
   ![Point #3](./assets/trueunblended-03.png)
 </figure>
+
+[^1]: Support is expected to be released by Q2, 2022.
