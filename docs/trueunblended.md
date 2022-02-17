@@ -20,3 +20,9 @@ TrueUnblended point #2
 <figure markdown>
   ![Point #2](./assets/trueunblended-02.png)
 </figure>
+
+TrueUnblended point #3
+
+<figure markdown>
+  ![Point #3](./assets/trueunblended-03.png)
+</figure>
