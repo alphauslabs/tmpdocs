@@ -9,7 +9,7 @@ In [AWS consolidated billing](https://docs.aws.amazon.com/awsaccountbilling/late
   ![Default](./assets/trueunblended-00.png)
 </figure>
 
-However, from a client's perspective, there are cases, depending on how the [billing group](https://alphauslabs.github.io/docs/concepts/#billing-group) is configured, where knowing the real costs is required. Real costs here simply means the true costs accrued by a member account or a billing group with only its own RI/SP discounts applied. Therefore, external discounts, such as payer-level discounts, and discounts from other member accounts, need to be reverted and recalculated. This is one of the recalculations covered by TrueUnblended.
+However, from a client's perspective, there are cases, depending on how the [billing group](https://alphauslabs.github.io/docs/concepts/#billing-group) is configured, where knowing the real costs is required. Real costs here simply means the true costs accrued by a member account or a billing group with only its own RI/SP discounts applied. Therefore, external discounts, such as payer-level discounts, and discounts from other member accounts, need to be reverted and recalculated. This is one of the corrective recalculations covered by TrueUnblended.
 
 <figure markdown>
   ![Point #1](./assets/trueunblended-01.png)
