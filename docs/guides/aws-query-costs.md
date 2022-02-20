@@ -85,7 +85,7 @@ $ bluectl cost aws get --raw-input "$(cat /tmp/query.json)" --out /tmp/out.csv
 ```
 
 ``` sh
-# Query January 2022 costs grouped by service and region, then grouped by month.
+# Query January 2022 costs grouped by service and region, then group by month.
 $ cat /tmp/query.json
 {
   "accountId":"012345678901",
