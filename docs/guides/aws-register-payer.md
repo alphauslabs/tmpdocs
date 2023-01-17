@@ -10,7 +10,7 @@ Open a terminal and run the following command (`012345678901` is a sample payer 
 ``` sh
 $ bluectl xacct create 012345678901
 Open the link below in your browser and deploy:
-https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/...
+https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/..
 Confirm successful deployment? [Y/n]: 
 ```
 
