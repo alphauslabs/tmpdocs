@@ -30,7 +30,7 @@ $ cat /tmp/qualifier.json
         "and":{
           "productCode":"awskms",
           "region":"re:^ap.*-1$",
-          "operation":"DescribeKeys"
+          "operation":"DescribeKey"
         }
       }
     ],
@@ -77,7 +77,7 @@ $ cat /tmp/qualifier.json
         "and":{
           "productCode":"awskms",
           "region":"re:^ap.*-1$",
-          "operation":"DescribeKeys"
+          "operation":"DescribeKey"
         }
       }
     ],
