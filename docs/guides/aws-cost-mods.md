@@ -93,5 +93,20 @@ $ cat /tmp/qualifier.json
 ```
 
 ## Modifying both usage and cost
+The following examples refer only to the `formula` key in our `qualifier.json` file above.
 
-TBD
+This formula means that if the usage is less than 50, set the cost to 0, otherwise, return the current cost.
+
+``` sh
+usage < 50.0 ? 0 : cost
+```
+
+This formula uses the following cost ranges:
+
+* If cost is within 0 to $10, give 1% discount
+* If cost is more than $10 but less than $50, give 2% discount
+* If cost is more than $50, give 3% discount
+
+``` sh
+cost <= 10.0 ? cost + (cost * 0.01) : (cost > 10.0 && cost <= 50.0 ? cost + (cost * 0.02) : cost + (cost * 0.03))
+```
