@@ -16,7 +16,7 @@ You might want to query the daily cost details first to know what kind of qualif
     
     If you must include these lineitems, you can only manipulate the `cost` part, not the `usage`. In this case, the `cost` variable refers to the final trueunblended cost.
 
-## Modifying the usage
+## Referencing usage
 In this example, will use a different rate of $0.005. Let's modify the description as well by enclosing it with an asterisk `*` so we will know later on what items where modified.
 
 ``` sh
@@ -64,7 +64,7 @@ $ bluectl cost aws usage get \
 
 Open the CSV file, filter using our qualifiers, and confirm the resulting cost and the description columns.
 
-## Modifying the cost
+## Referencing cost
 Using the same set of commands above, in this example, we will modify the cost itself by adding a markup of 2%.
 
 ``` sh
@@ -92,7 +92,7 @@ $ cat /tmp/qualifier.json
 }
 ```
 
-## Modifying both usage and cost
+## Referencing both usage and cost
 The following examples refer only to the `formula` key in our `qualifier.json` file above.
 
 This formula means that if the usage is less than 50, set the cost to 0, otherwise, return the current cost.
