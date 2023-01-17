@@ -26,10 +26,12 @@ $ cat /tmp/qualifier.json
   "awsOptions":{
     "groupId":"xWOGCzNy6GlK",
     "qualifiers":[
-      "and":{
-        "productCode":"awskms",
-        "region":"re:^ap.*-1$",
-        "operation":"DescribeKeys"
+      {
+        "and":{
+          "productCode":"awskms",
+          "region":"re:^ap.*-1$",
+          "operation":"DescribeKeys"
+        }
       }
     ],
     "modifier":{
