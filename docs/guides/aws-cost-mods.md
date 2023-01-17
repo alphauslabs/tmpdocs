@@ -110,8 +110,8 @@ This formula uses the following cost ranges:
 (Should be one line)
 ```
 cost < 10.0 || usage < 5.0
-  ? cost + (cost * 0.01)
+  ? cost - (cost * 0.01)
   : (cost >= 10.0 && cost < 50.0
-       ? cost + (cost * 0.02)
-       : cost + (cost * 0.03))
+       ? cost - (cost * 0.02)
+       : cost - (cost * 0.03))
 ```
