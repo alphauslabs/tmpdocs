@@ -49,7 +49,7 @@ $ bluectl cost aws calculator mods create \
   --raw-input "$(cat /tmp/qualifier.json)"
 
 # Query our current modifiers:
-$ bluectl cost aws calculator mods list
+$ bluectl cost aws calculator mods list --outfmt json --bare | jq
 ```
 
 Unfortunately, we either have to wait for the calculator's next scheduled run or we request a billing group calculation to see the effects of these modifiers. We will provide an API to force-calculate specific targets without affecting invoice values in the future so stay tuned for that.
