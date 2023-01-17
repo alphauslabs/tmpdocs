@@ -1,6 +1,6 @@
 # Adding cost modifiers to the AWS cost calculator using bluectl
 
-!!! warning
+!!! note
     This guide is only applicable to Ripple users.
 
 Ripple allows the modification of both `usage` and `cost` values in its AWS cost calculations through [cost modifiers](https://alphauslabs.github.io/blueapidocs/#/Cost/Cost_CreateCalculatorCostModifier). Since the modifier formula supports simple arithmetic, logical, and comparison operators, it is actually quite flexible.

@@ -1,6 +1,6 @@
 # Scheduling your invoice calculations using bluectl
 
-!!! warning
+!!! note
     This guide is only applicable to Ripple users.
 
 In this guide, we will try and create an invoicing calculation schedule for Ripple every 3rd day of each month. At the moment, only one schedule is allowed per Ripple account.

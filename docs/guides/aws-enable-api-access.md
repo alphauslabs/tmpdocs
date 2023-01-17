@@ -1,6 +1,6 @@
 # Enabling AWS payer API access using bluectl
 
-!!! warning
+!!! note
     This guide is only applicable to Ripple users.
 
 If you have registered your AWS payer account using CloudFormation as described [here](https://alphauslabs.github.io/docs/guides/aws-register-payer/), Alphaus will have a read-only API access to the payer's cost details such as RIs, SPs, etc. However, if you have some payer accounts that were registered to Ripple manually (before the CloudFormation support was released), Alphaus only has read access to the S3 bucket containing the CUR files. Although API access is optional, we recommend you to setup API access to allow us to have more accuracy in the calculation results. Without API access, our calculation engine, especially for trueunblended, uses CUR data for your RIs and SPs. This is only a best-effort basis as RI and SP information in the CUR are sometimes incomplete. API access will allow us to have a more accurate information about your payer's RIs, SPs, and other cost-related resources.
