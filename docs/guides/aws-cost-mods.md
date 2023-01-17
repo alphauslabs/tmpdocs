@@ -103,13 +103,13 @@ usage < 50.0 ? 0 : cost
 
 This formula uses the following cost ranges:
 
-* If cost is less than $10, give 1% discount,
-* If cost is more than $10 but less than $50, give 2% discount,
+* If cost is less than $10 or usage is less than 5, give 1% discount,
+* If cost is $10 or more but less than $50, give 2% discount,
 * If cost is more than $50, give 3% discount.
 
 (Should be one line)
 ```
-cost <= 10.0
+cost <= 10.0 || usage < 5.0
   ? cost + (cost * 0.01)
   : (cost > 10.0 && cost <= 50.0
        ? cost + (cost * 0.02)
