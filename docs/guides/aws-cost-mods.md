@@ -52,7 +52,7 @@ $ bluectl cost aws calculator mods create \
 $ bluectl cost aws calculator mods list
 ```
 
-Unfortunately, either we have to wait for the calculator's next scheduled run or request a billing group calculation to see the effects of these modifiers. We will provide an API to force-calculate specific targets without affecting invoice values in the future so stay tuned for that.
+Unfortunately, we either have to wait for the calculator's next scheduled run or we request a billing group calculation to see the effects of these modifiers. We will provide an API to force-calculate specific targets without affecting invoice values in the future so stay tuned for that.
 
 Once the calculation is completed, we can query the daily cost to check our results.
 
