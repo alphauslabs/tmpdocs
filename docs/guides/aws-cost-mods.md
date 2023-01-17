@@ -52,6 +52,18 @@ $ bluectl cost aws calculator mods create \
 $ bluectl cost aws calculator mods list
 ```
 
+Unfortunately, either we have to wait for the calculator's next scheduled run or request a billing group calculation to see the effects of these modifiers. We will provide an API to force-calculate specific targets without affecting invoice values in the future so stay tuned for that.
+
+Once the calculation is completed, we can query the daily cost to check our results.
+
+``` sh
+$ bluectl cost aws usage get \
+  --raw-input '{"groupId":"xWOGCzNy6GlK"}' \
+  --out /tmp/out.csv
+```
+
+Open the CSV file, filter using our qualifiers, and confirm the resulting cost and the description columns.
+
 ## Modifying the cost
 
 TBD
