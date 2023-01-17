@@ -43,11 +43,11 @@ $ cat /tmp/qualifier.json
 }
 
 # Create the modifier:
-$ bluectl cost aws calculator costmods create \
+$ bluectl cost aws calculator mods create \
   --raw-input "$(cat /tmp/qualifier.json)"
 
 # Query our current modifiers:
-$ bluectl cost aws calculator costmods list
+$ bluectl cost aws calculator mods list
 ```
 
 ## Modifying the cost
