@@ -41,6 +41,7 @@ nav:
   - 'Enabling AWS payer API access': 'guides/aws-enable-api-access.md'
   - 'guides/aws-query-costs.md'
   - 'Scheduling invoice calculations': 'guides/invoice-calc-sched.md'
+  - 'guides/aws-cost-mods.md'
 
 extra:
   alternate:
