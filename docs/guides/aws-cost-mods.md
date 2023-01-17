@@ -9,4 +9,21 @@ In this guide, we will try and create cost modifiers to our AWS calculations. At
 
 Make sure to install [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) first.
 
-TBC.
+You might want to query the daily cost details first to know what kind of qualifiers (or filters) to use to further filter down your modifiers' targets. You can check out this [guide](https://alphauslabs.github.io/docs/guides/aws-query-costs/) for more information. For this guide though, we will use `productCode:awskms` and `operation:DescribeKey` under Tokyo region for our qualifiers.
+
+!!! warning
+    Note that Ripple's trueunblended calculation uses a different logic than just referencing the lineitem's usage and cost. Be careful when applying modifiers to lineitems that are affected by trueunblended such as parts of AmazonEC2, AmazonRDS, AmazonElastiCache, AmazonES, and AmazonRedShift that are utilizing their respective RIs and/or SPs.
+    
+    If you must include these lineitems, you can only manipulate the `cost` part, not the `usage`. In this case, the `cost` variable refers to the final trueunblended cost.
+
+## Modifying the usage
+
+TBD
+
+## Modifying the cost
+
+TBD
+
+## Modifying both usage and cost
+
+TBD
