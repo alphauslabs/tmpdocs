@@ -1,4 +1,4 @@
-# Adding cost modifiers to the AWS cost calculator using bluectl
+# Adding cost modifiers to the AWS calculator using bluectl
 
 !!! note
     This guide is only applicable to Ripple users.
