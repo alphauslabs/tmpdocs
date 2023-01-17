@@ -17,30 +17,37 @@ You might want to query the daily cost details first to know what kind of qualif
     If you must include these lineitems, you can only manipulate the `cost` part, not the `usage`. In this case, the `cost` variable refers to the final trueunblended cost.
 
 ## Modifying the usage
+For this example, will use a different rate of $0.005. Let's modify the description as well by enclosing it with an asterisk `*` so we will know later on what items where modified.
+
 ``` sh
 # Let's use a file as our input:
 $ cat /tmp/qualifier.json
 {
-  "awsOptions": {
-    "groupId": "xWOGCzNy6GlK",
-    "qualifiers": [
-      "and": {
-        "productCode": "awskms",
-        "region": "re:^ap.*-1$",
-        "operation": "DescribeKeys"
+  "awsOptions":{
+    "groupId":"xWOGCzNy6GlK",
+    "qualifiers":[
+      "and":{
+        "productCode":"awskms",
+        "region":"re:^ap.*-1$",
+        "operation":"DescribeKeys"
       }
     ],
-    "modifier": {
-      "formula": "",
-      "descriptionModifier": {
-        "prefix": "*",
-        "suffix": "*"
+    "modifier":{
+      "formula":"usage * 0.005",
+      "descriptionModifier":{
+        "prefix":"*",
+        "suffix":"*"
       }
     }
   }
 }
 
-$ bluectl cost aws calculator costmods create --raw-input $(cat /tmp/qualifier.json)
+# Create the modifier:
+$ bluectl cost aws calculator costmods create \
+  --raw-input "$(cat /tmp/qualifier.json)"
+
+# Query our current modifiers:
+$ bluectl cost aws calculator costmods list
 ```
 
 ## Modifying the cost
