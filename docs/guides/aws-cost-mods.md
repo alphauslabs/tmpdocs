@@ -17,7 +17,7 @@ You might want to query the daily cost details first to know what kind of qualif
     If you must include these lineitems, you can only manipulate the `cost` part, not the `usage`. In this case, the `cost` variable refers to the final trueunblended cost.
 
 ## Modifying the usage
-For this example, will use a different rate of $0.005. Let's modify the description as well by enclosing it with an asterisk `*` so we will know later on what items where modified.
+In this example, will use a different rate of $0.005. Let's modify the description as well by enclosing it with an asterisk `*` so we will know later on what items where modified.
 
 ``` sh
 # Let's use a file as our input:
@@ -65,8 +65,32 @@ $ bluectl cost aws usage get \
 Open the CSV file, filter using our qualifiers, and confirm the resulting cost and the description columns.
 
 ## Modifying the cost
+Using the same set of commands above, in this example, we will modify the cost itself by adding a markup of 2%.
 
-TBD
+``` sh
+$ cat /tmp/qualifier.json
+{
+  "awsOptions":{
+    "groupId":"xWOGCzNy6GlK",
+    "qualifiers":[
+      {
+        "and":{
+          "productCode":"awskms",
+          "region":"re:^ap.*-1$",
+          "operation":"DescribeKeys"
+        }
+      }
+    ],
+    "modifier":{
+      "formula":"cost + (cost * 0.02)",
+      "descriptionModifier":{
+        "prefix":"*",
+        "suffix":"*"
+      }
+    }
+  }
+}
+```
 
 ## Modifying both usage and cost
 
