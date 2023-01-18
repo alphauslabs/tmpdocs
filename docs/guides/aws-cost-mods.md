@@ -15,7 +15,7 @@ You might want to query the daily cost details first to know what kind of qualif
     Ripple's trueunblended calculation uses a different logic than just referencing the lineitem's usage and cost. Be careful when applying modifiers to lineitems that are affected by trueunblended such as parts of AmazonEC2, AmazonRDS, AmazonElastiCache, AmazonES, and AmazonRedShift that are utilizing their respective RIs and/or SPs.
 
 ## Referencing usage
-In this example, will use a different rate of $0.005. Let's modify the description as well by enclosing it with an asterisk `*` so we will know later on what items where modified.
+In this example, we will use a different rate of $0.005. Let's modify the description as well by enclosing it with an asterisk `*` so we will know later on what items where modified.
 
 ``` sh
 # Let's use a file as our input:
