@@ -16,7 +16,7 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/..
 Confirm successful deployment? [Y/n]: 
 ```
 
-Click on the URL link, or it copy to your browser. It will open the CloudFormation console with the parameters filled up. Leave the defaults, check the "acknowledge" checkbox, and click "Create stack".
+Click on the URL link, or copy it to your browser. It will open the CloudFormation console with the parameters filled up. Leave the defaults, check the "acknowledge" checkbox, and click "Create stack".
 
 Once the deployment is done and successful, return to the terminal above and press ++enter++ (`Y` is the default option). The deployment validation will begin. If there are no issues, validation details are displayed and the process is completed.
 
