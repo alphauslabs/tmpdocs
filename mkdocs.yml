@@ -27,7 +27,6 @@ nav:
   - 'CLI: bluectl': 'blueapi/bluectl.md'
   - 'APIs':
     - 'blueapi/apis/org.md'
-    - 'blueapi/apis/kvstore.md'
     - 'blueapi/apis/iam.md'
     - 'blueapi/apis/admin.md'
     - 'blueapi/apis/cost.md'
