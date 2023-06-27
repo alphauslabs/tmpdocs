@@ -1,5 +1,11 @@
 # Our products
 
+## Octo (beta)
+
+[Octo](https://lp.alphaus.cloud/) is our comprehensive cloud cost management solution for enterprises. It allows you to visualize, allocate, understand, and optimize your cloud costs.
+
+[Join our waitlist](https://lp.alphaus.cloud/){ .md-button .md-button--primary }
+
 ## Ripple
 
 [Ripple](https://alphaus.cloud/en/ripple/) is our invoicing solution for cloud resellers and MSPs (Managed Service Providers). It supports the three mainstream cloud vendors, namely, [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/), and [GCP](https://cloud.google.com/).
