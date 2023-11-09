@@ -22,6 +22,8 @@ nav:
   - 'Knowledgebase ↗': 'https://help.alphaus.cloud/en/'
   - 'Previous documentation ↗': 'https://docs.alphaus.cloud/'
   - 'System status ↗': 'https://status.alphaus.cloud/'
+- 'Octo':
+  - 'octo/index.md'
 - 'Blue API':
   - 'blueapi/overview.md'
   - 'blueapi/authentication.md'
