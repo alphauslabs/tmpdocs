@@ -22,6 +22,10 @@ nav:
   - 'Knowledgebase ↗': 'https://help.alphaus.cloud/en/'
   - 'Previous documentation ↗': 'https://docs.alphaus.cloud/'
   - 'System status ↗': 'https://status.alphaus.cloud/'
+- 'Ripple':
+  - 'ripple/index.md'
+- 'WavePro':
+  - 'wavepro/index.md'
 - 'Octo':
   - 'octo/index.md'
 - 'Blue API':
