@@ -28,6 +28,7 @@ nav:
       - "wavepro/index.md"
   - "Octo":
       - "octo/index.md"
+      - "octo/curs3payer.md"
       - "octo/samlsso.md"
   - "Blue API":
       - "blueapi/overview.md"
