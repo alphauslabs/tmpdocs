@@ -200,8 +200,6 @@ SubUserId: `{The id of the current users octo account}`
 
 Note: Make sure your app is set to On for everyone to make it visible to everyone. If not, go to the app you created and go to the User access tab and click to edit and set it to On for everyone.
 
-On you Google Workspace dashboard, you or anyone assigned to the app should see the application you just added.
-
 You can also test the app as an admin by clicking the Test SAML login button.
 
-For users they can found the app in the Google Apps beside their profile.
+For non-admin users they can found the app in the Google Apps beside their profile.
