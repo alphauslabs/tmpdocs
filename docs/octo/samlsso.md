@@ -6,6 +6,14 @@ Octo supports SAML SSO (Single-Sign-On) for user authentication. This allows use
 
 Compared to the conventional password authentication access, this function enables centralized management for the admins and enhances security.
 
+Terms used:
+
+- SAML: Security Assertion Markup Language
+
+- IdP: Identity Provider (e.g. Okta, Google Workspace)
+
+- SP: Service Provider (e.g. Octo)
+
 Curently Octo only supports the following SAML IdPs:
 
 - Okta
@@ -17,9 +25,13 @@ Pre-requisites:
 
 (Admin only) To know what is your sub user id, go to [Octo](https://app.alphaus.cloud/octo) -> More -> Member -> click your account and in the right you should see the User ID.
 
+<!-- To add where to find Org ID-->
+
 - Org Id
 
 ## Okta SAML SSO
+
+Note: You must be a super admin to add SAML apps.
 
 On your Okta Admin page:
 
@@ -39,7 +51,7 @@ On your Okta Admin page:
 
     Enable the Use this Recipient URL, and Destination URL.
 
-    #### Attibutes Statements
+    ### Attibutes Statements
 
     Enter the following values:
 
@@ -53,7 +65,7 @@ On your Okta Admin page:
 
     leave remaining values to default, then Click Next.
 
-    #### Help Okta Support understand how you configured this application
+    ### Help Okta Support understand how you configured this application
 
     Click whatever it may apply and then Finish.
 
@@ -91,7 +103,7 @@ Update the values of these attributes:
 
 ![Okta Saml](../assets/octo/samlsso/okta04.png)
 
-RippleProfiles: `{orgId}:{roles}` it safe to assume this value for now -> `{orgId}:user/Viewer`
+RippleProfiles: `{your orgId}:{roles}` it safe to assume this value for now -> `{your orgId}:user/Viewer`
 
 RippleIdpId: `{The IdpId of the metadata.xml you regsitered in octo}`
 
@@ -115,7 +127,7 @@ Open the app, and you should be able to see this dialog. You can log in if it is
 
 Note: You must be a super admin to add SAML apps to your Google Workspace account.
 
-#### Creating Custom attributes
+### Creating Custom attributes
 
 1.  Go to [Google Workspace Admin Console](https://admin.google.com/)
 
@@ -125,7 +137,7 @@ Add something like this:
 
 ![Google Saml](../assets/octo/samlsso/gspace02.png)
 
-#### Creating Custom Saml APP
+### Creating Custom Saml APP
 
 1.  Go to [Google Workspace Admin Console](https://admin.google.com/)
 
@@ -135,17 +147,17 @@ Add something like this:
 
 4.  Click add my own custom app
 
-#### App Details
+### App Details
 
 You can name the app whatever you want, you can also put some of your custom icon, and then click continue
 
 ![Gogle Saml](../assets/octo/samlsso/gspace01.png)
 
-#### Google Identity Provider details
+### Google Identity Provider details
 
 Click Download Metadata
 
-#### Service provider details
+### Service provider details
 
 After downloading the metadata, you would need to enter this:
 
@@ -155,7 +167,7 @@ Entity ID: `https://login.alphaus.cloud/octo/saml`
 
 Leave remaning settings to default, then click continue.
 
-#### Attribute mapping
+### Attribute mapping
 
 Click add mapping, then input these:
 
@@ -171,7 +183,7 @@ Click add mapping, then input these:
 
 Go to [Octo](https://app.alphaus.cloud/octo), in the preferences found in the top right corner beside your profile avatar. Go to Identity Provider Management Tab and register your recently saved `metadata.xml` file. Take note of the IdpId you would need it in the next steps.
 
-#### Add values to custom attributes to users
+### Add values to custom attributes to users
 
 1. Go to directory -> Users -> and choose the user you want to add the custom attributes
 2. Go to the User information -> Octo Saml Attributes, edit and add the needed values
@@ -184,7 +196,7 @@ IDPD: `{The IdpId of the metadata.xml you regsitered in octo}`
 
 SubUserId: `{The id of the current users octo account}`
 
-#### Check and verify login
+### Check and verify login
 
 Note: Make sure your app is set to On for everyone to make it visible to everyone. If not, go to the app you created and go to the User access tab and click to edit and set it to On for everyone.
 
