@@ -192,7 +192,7 @@ IsCover: `true`
 
 Profiles: `{orgId}:{roles}` it safe to assume this value for now -> `{orgId}:user/Viewer`
 
-IDPD: `{The IdpId of the metadata.xml you regsitered in octo}`
+IDPID: `{The IdpId of the metadata.xml you regsitered in octo}`
 
 SubUserId: `{The id of the current users octo account}`
 
