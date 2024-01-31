@@ -31,6 +31,7 @@ nav:
       - "octo/curs3payer.md"
       - "octo/samlsso.md"
       - "octo/costallocation.md"
+      - "octo/costgroup.md"
   - "Blue API":
       - "blueapi/overview.md"
       - "blueapi/authentication.md"
