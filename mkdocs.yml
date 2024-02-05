@@ -28,6 +28,7 @@ nav:
       - "wavepro/index.md"
   - "Octo":
       - "octo/index.md"
+      - "octo/account-registration.md"
       - "octo/curs3payer.md"
       - "octo/samlsso.md"
       - "octo/costallocation.md"
