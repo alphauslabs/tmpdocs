@@ -9,7 +9,7 @@ Account registration enables the user to register the source of data in Octo. As
 After successful account registration, it will take up to a day for Octo to retrieve the data from your CSP account for them to be displayed in Octo.
 
 
-=== "AWS"  
+=== "AWS"
     ![AWS Account Registration](https://lh3.googleusercontent.com/drive-viewer/AEYmBYT1LhwmtZZBayUETNbqFOowbNMytIljtocEpHFZGeBqZf1mElpOV9Xwl4zMbKZxdTRudRMcS7vKlkLJUNmSjiTTUBl8yg=s2560)
     
     The following are the steps for AWS account registration:
@@ -30,7 +30,7 @@ After successful account registration, it will take up to a day for Octo to retr
         - For linked accounts, you have to specify the payer account. There is no need to do this on payer accounts.
 
 
-==="Microsoft Azure"  
+=== "Microsoft Azure"  
     <p>&nbsp;</p>
     ![Azure Account Registration](https://lh3.googleusercontent.com/fife/AGXqzDlaEPU40RTOAIm3zoDyfyEKNlwTPxhDSkJMlKJRZlM-q8I57ni710BHfxvpwrZ6-o3poT-16sLTdV9TMXXpv5V4E-VxoP4T5NiCECAlUFVRropPVM52t-IkogUR73I3SuIBLAjZhKogL-DzwaU_i95fZI-lyZpKS_SJRSzgZg8nqEtegOziLvE33mSuYw6mxgDX08XypfLUbrRHKbxSzgTAWekqkjcNPT8d9B915Hrg6CchgS-vF1ZH7w9wQ1gC0FbMIYFdRXW29s7uY_ysEveP7K4hEXCF5ph35TijuIN8QtCSWzQARn9bck4gbbhvLEFQwR_vdm409kTZz9da-Fl7go967jvNZqVR_FLZUw63YRDJKH84Atn7Oaw4o2ngcP0lZOg2_-AfucbtOQmptuvDKqwjIjURlzTEAL-UQZTtNvZqOMo3cv_-16HAB2Ht86nObjuZr1JndY0Rhip0UfC-9L9EDxNhxSNdEXK0e0O58RJaV5HpQIG7CNKEQv1kJ1w5TYbqclUA7JEzqI5GU7JrvaGUWISg-IA36EeLpsvPQ7_1BiG3aDPt5yPN7D-M1hQCgY617KGlJ07mRlsvdWaYXmGEkBcHbpWwjDT3tI0BsEYecY_AE-NhciwLAq5dcWphqQSZqrS-QsFQPIXWiHCBI8-NJWiOYfezdQJ_1HpIQ-puTT-pvtrQu5x2q0VqQjZ7-kdfSmaKhnriI_BFqbzlyEh30m7I1-b95wOf3S75LY3Z8yg0bzy37FURN8qLWksKuKPBJnokGcqhFWiro6ag3vnmSLugmxFqlZv7KRe16yZ-ATaOocF3X-A7-XDlPgdtv8g5c7s6YZ8uWQHGbLui9dnWKV1uoC90i7CpBVnQ3y0i2SG205MYJI330Tp7Hb3TJsZ0GjFR_RACq76VA7a6xEzcRnN2Od7b5qD42oUUqrcB1xx-x8utKBlXeRd25ERYZ3A4Qyhq1PvtmGlM2HsqHzd8Nby-CG4sCet6197T0QJeKFYq0H1kOQaVX-KKeDnnUpgNgwXyrYXk_mKP-SzaP47EHkXxDqkFl-pB4XfESE2vHZbkdUqcWiue9pJJgLG7t6-ptm0zgOElLnDdvJj4YzFnPQ1joqodJEeb6a8GdAWX-71mqPyQ3JfVIs1XFB8ELiShCRoTgD9cAFhIayJWsRrSulN6tuYWc7sXuTvqac4qt7-h6mLa2acN8zNr2z0v9wBKuAobNeLDevLXb4t9WYYFiBX5AX6kyNYDu6oNGkDfOqHK9jGwxCHP0-hnNIXriCk_9joB1GLZ7NqsX4Fbw8IwhW7ZPNMLopBfPw_8-1epP5UyEE9so58eBhX5raeuekUcbRQsXJxcBaq7QOlMisOKVs5e4MqqQBvsO7YwpSah3NxZDuIfvEC3mkJmI-Xj8qukA6rLZW_Op66IchYXAC86fhXJbPtrEFFKCKEjZ-61U8urMEiXPTS02pvN5oJxBTtoBQJYd9ilf59bLMCgbDCfHGO6XaeS6A2zjVFSHPhBiben3QhotkaOOVrmrBORDSjSSRyMzVQ=w1870-h959)
     <p>&nbsp;</p>
