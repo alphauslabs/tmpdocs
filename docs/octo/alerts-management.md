@@ -5,13 +5,12 @@ As of this writing, Octo has three types of alerts: **cost**, **anomaly detectio
 ## Navigate to the Channel Management Tab
 
 - Locate the gear or cog icon on the top right corner of the app header, just beside your profile picture. You will see a curation of tabs
-- Under the the `NOTIFICATION` section, click Alerts Management
-
+- Under the the `NOTIFICATION` section, click `Alerts Management`
 ## Creating an Alert
 
 ### Cost Alert
 
-Cost alerts aide in monitoring your cost groups' daily spend. You can monitor multiple cost groups and send alerts to multiple channels per alert. There are two types of threshold available: **fixed cost** and **percentage compared to previous day**. For the fixed cost, you supply the amount you want to be the limit for the cost group/s' daily spend and Octo will send an alert to the designated channel one your spend exceeds this limit. As for the percentage compared to the previous day's spend, the number you input will be used to measure if the day's spend exceeds the specific percentage compared to the previous day's spend.
+Cost alerts aide in monitoring your cost groups' daily spend. You can monitor multiple cost groups and send alerts to multiple channels per alert. There are two types of threshold available: **fixed cost** and **percentage compared to previous day**. For the fixed cost, you supply the amount you want to be the limit for the cost group/s' daily spend and Octo will send an alert to the designated channel once your spend exceeds this limit. As for the percentage compared to the previous day's spend, the number you input will be used to measure if the day's spend exceeds the specific percentage of the previous day's spend.
 
 - Navigate to the `COST` tab
 - Click `CREATE NEW ALERT` and a popup dialogue box should appear
