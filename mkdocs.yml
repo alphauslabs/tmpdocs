@@ -33,6 +33,8 @@ nav:
       - "octo/samlsso.md"
       - "octo/costallocation.md"
       - "octo/costgroup.md"
+      - "octo/channel-management.md"
+      - "octo/alerts-management.md"
   - "Blue API":
       - "blueapi/overview.md"
       - "blueapi/authentication.md"
