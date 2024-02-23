@@ -21,7 +21,7 @@ From here, you will see three cards which separate your channels per type. Click
 
 ### MS Teams
 
-- First, go to your MS Teams' channel and create a webhook. You can refer how to do so ![here](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet#create-an-incoming-webhook).
+- First, go to your MS Teams' channel and create a webhook. You can refer how to do so [here](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=newteams%2Cdotnet#create-an-incoming-webhook).
 - Input a channel name to your Slack channel and click `NEXT`.
 - Supply your MS Teams' channel's webhook and click `SAVE`.
 
