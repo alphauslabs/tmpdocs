@@ -34,7 +34,18 @@ Anomaly detection alerts are used to monitor a cost group if there is an anomaly
 - Select which channels you would like the alerts to be sent to
 - Click `CREATE ALERT` 
 
-<!-- ### Discount Expiration Alert -->
+### Discount Expiration Alert
+
+The Discount Expiration Alert feature allows you to monitor the expiration dates of your purchased discounts, such as Reserved Instances and Savings Plans in AWS.
+Currently, this feature supports **AWS** only. To create a new alert, follow the steps below.
+
+- Navigate to the `DISCOUNT EXPIRATION` tab
+- Click `CREATE NEW ALERT` and a popup dialog box should appear
+- Supply the alert name
+- Choose one cost group. This tracks the discount plans associated with this cost group. Then, click `NEXT`
+- Select frequencies. You can choose as many as needed.
+- Select which channels you would like the alerts to be sent to
+- Click `CREATE ALERT`
 
 ## Editing an Alert
 
