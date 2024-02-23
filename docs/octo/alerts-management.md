@@ -24,7 +24,7 @@ Cost alerts aide in monitoring your cost groups' daily spend. You can monitor mu
 <!-- ### Anomaly Detection Alert -->
 ### Anomaly Detection Alert
 
-Anomaly detection alerts are used to monitor a cost group if there is an anomaly and alert you if there is a significant deviation from the usual spending based from your historical data. You can monitor single cost groups and send alerts to multiple channels per alert. 
+Anomaly detection alerts are used to monitor a cost group if there is an anomaly and alert you if there is a significant deviation from the usual spending based from your historical data. You can monitor single cost group and send alerts to multiple channels. 
 
 - Navigate to the `ANOMALY DETECTION` tab
 - Click `CREATE NEW ALERT` and a popup dialogue box should appear
