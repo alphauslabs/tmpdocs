@@ -22,6 +22,17 @@ Cost alerts aide in monitoring your cost groups' daily spend. You can monitor mu
 - Click `CREATE ALERT`
 
 <!-- ### Anomaly Detection Alert -->
+### Anomaly Detection Alert
+
+Anomaly detection alerts are used to monitor a cost group if there is an anomaly and alert you if there is a significant deviation from the usual spending based from your historical data. You can monitor single cost groups and send alerts to multiple channels per alert. 
+
+- Navigate to the `ANOMALY DETECTION` tab
+- Click `CREATE NEW ALERT` and a popup dialogue box should appear
+- Supply the alert name
+- Choose one cost group and click `NEXT`
+- Choose the frequency of the alert (weekly,monthly)
+- Select which channels you would like the alerts to be sent to
+- Click `CREATE ALERT` 
 
 <!-- ### Discount Expiration Alert -->
 
@@ -37,3 +48,8 @@ Cost alerts aide in monitoring your cost groups' daily spend. You can monitor mu
 - Navigate to the tab of the desired alert type
 - Locate the specific alert you want to delete and click the trash icon on the far right side
 - Confirm the deletion
+
+## Enable/Disable an Alert (Anomaly Detection and Discount Expiration Alerts)
+
+- Navigate to the actions column of the specific alert
+- Click the toggle switch to enable or disable the alert
