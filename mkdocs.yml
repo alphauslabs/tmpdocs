@@ -15,13 +15,13 @@ nav:
       - "index.md"
       - "products.md"
       - "concepts.md"
-      - "A primer on TrueUnblended": "trueunblended.md"
       - "IAM overview": "iam.md"
       - "Ripple knowledgebase ↗": "https://help.alphaus.cloud/en/"
       - "Wave(Pro) ↗": "https://docs.alphaus.cloud/v/wave-eng/"
       - "System status ↗": "https://status.alphaus.cloud/"
   - "Ripple":
       - "ripple/index.md"
+      - "A primer on TrueUnblended": "ripple/trueunblended.md"
   - "Octo":
       - "octo/index.md"
       - "octo/account-registration.md"
