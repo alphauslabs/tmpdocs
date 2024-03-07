@@ -17,10 +17,8 @@ nav:
       - "concepts.md"
       - "A primer on TrueUnblended": "trueunblended.md"
       - "IAM overview": "iam.md"
-      - "Ripple (old) ↗": "https://docs.alphaus.cloud/v/ripple-en/"
-      - "Wave (old) ↗": "https://docs.alphaus.cloud/v/wave-eng/"
-      - "Knowledgebase ↗": "https://help.alphaus.cloud/en/"
-      - "Previous documentation ↗": "https://docs.alphaus.cloud/"
+      - "Ripple knowledgebase ↗": "https://help.alphaus.cloud/en/"
+      - "Wave(Pro) ↗": "https://docs.alphaus.cloud/v/wave-eng/"
       - "System status ↗": "https://status.alphaus.cloud/"
   - "Ripple":
       - "ripple/index.md"
