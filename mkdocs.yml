@@ -24,8 +24,6 @@ nav:
       - "System status ↗": "https://status.alphaus.cloud/"
   - "Ripple":
       - "ripple/index.md"
-  - "WavePro":
-      - "wavepro/index.md"
   - "Octo":
       - "octo/index.md"
       - "octo/account-registration.md"
