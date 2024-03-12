@@ -1,7 +1,7 @@
 # Account Registration
 Octo's cost and usage data rely on the registered cloud service provider's account. In the account page, CSP's accounts are registered, listed, updated and deleted.
 
-![Account Registration](https://lh3.googleusercontent.com/drive-viewer/AEYmBYTLM5YNrA_zbqxqIVvZ1tjs4wZB-MERQiUAI7sKPqxWAuHBChlD3YnxMAbbQMlEBZAM8JPvZaYmQqU6ja1UNMIjYDlcpg=s1600)
+![Account Registration](https://lh3.googleusercontent.com/d/1E5-S2QGRbpABwhwEA3N4kKClCTgTbmLY)
 
 ## Registering an account
 Account registration enables the user to register the source of data in Octo. As of now, Octo supports AWS, Azure and GCP vendors. This is only accessible to admin users.
@@ -10,7 +10,7 @@ After successful account registration, it will take up to a day for Octo to retr
 
 
 === "AWS"
-    ![AWS Account Registration](https://lh3.googleusercontent.com/drive-viewer/AEYmBYT1LhwmtZZBayUETNbqFOowbNMytIljtocEpHFZGeBqZf1mElpOV9Xwl4zMbKZxdTRudRMcS7vKlkLJUNmSjiTTUBl8yg=s2560)
+    ![AWS Account Registration](https://lh3.googleusercontent.com/d/1pbFT1rv3CJlnv5JrsasICDyCYsXytiK8)
     
     The following are the steps for AWS account registration:
     
@@ -18,11 +18,27 @@ After successful account registration, it will take up to a day for Octo to retr
         - This is the start of the account registration. Please input the 12-digit AWS account number. For the account name, this is optional. You can set any name for easy management of the accounts.
     
     2. Setup API access.
-        - Setting up the API access, let's Octo pull some data from your AWS account through API access. 
+        - Setting up the API access, lets Octo pull some data from your AWS account through API access. 
 
         a. Click the "Open AWS launch page" button. The AWS launch page will open in a new tab. Enter the required information and launch. This will open a cloudformation template for deployment into your AWS account. Required details for the deployment are already pre-filled.
 
-        b. After launching, please return to the account registration page and press the "Confirm" button. Once everything is successful, status of the API access is set to `Completed`.
+        ![CFN Deployment](https://lh3.googleusercontent.com/d/19BHPIpJOr7gX6DsVI2NTyJa4P1H3i-jr)
+        
+        b. Make sure to select the correct account to be used for deployment. By default, CloudFormation template is deployed on us-east-1 region.
+
+        c. Please check default values when creating stack.
+        
+        - Stack name (You can retain the value or input your desired stack name.)
+        
+        - ExternalId (Do not change.)
+        
+        - Principal (Do not change.)
+        
+        d. Tick the checkbox to agree the `I acknowledge that AWS CloudFormation might create IAM resources with custom names.` message.
+
+        e. After checking the stack details, click `Create stack` button.
+
+        f. Once deployment is already successful, please return to the account registration page and press the "Confirm" button. Once everything is successful, status of the API access is set to `Completed`.
     
     3. [Setup CUR and S3 Bucket](https://labs.alphaus.cloud/docs/octo/curs3payer/) (for payer accounts only).
     
@@ -112,7 +128,7 @@ After successful account registration, it will take up to a day for Octo to retr
 
     `Dataset Region` - The dataset's region or location, which can be found within the Dataset Info section.
 ## Account List
-![Account List](https://lh3.googleusercontent.com/drive-viewer/AEYmBYT1IPm3XU8t6urabmxI792E76HsWDIo-lM8mXELdxwAsAtKrRGRKiBNFIz2fvqYbFRV4BKg-iLccEGBB4_S5VFyBR6Ilg=s1600)
+![Account List](https://lh3.googleusercontent.com/d/1VWcrjemIcqgksbZ5V1tKn4o2rtR-5g1V)
 All registered accounts are displayed on the account page with the status of the account registration.
 
 `API` - API access is established. Applicable to Payer and Linked accounts.
@@ -129,7 +145,7 @@ If there are changes on the setup of your CSP account, Octo provides a setting t
 
 ### Edit Account Name
 Account names can be changed any time. These are used to easily manage the accounts. 
-![Edit Account Details](https://lh3.googleusercontent.com/drive-viewer/AEYmBYS6b3Vvxi-u6M4Dv5cnLL_9pYU9VGz-NnDrDoOvnZG3gTsxEYHl1nAUDxvZHbrXz4Y4-5yuSW-qaLQCTzzl_7NvfqFLVw=s1600)
+![Edit Account Details](https://lh3.googleusercontent.com/d/1w76agTIeQpGqjtZwvP37zKCifd7uuazK)
 
 ### Edit Setting
 Edit setting enables the user to update the account settings. 
