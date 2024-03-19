@@ -11,3 +11,5 @@ Billing group is one of the main grouping mechanisms available in Ripple. With b
 ## Access group
 
 Access group is a collection of billing groups.
+
+---
