@@ -4,7 +4,7 @@
 
 [Octo](https://octo.alphaus.cloud/) is our comprehensive cloud cost management solution for enterprises. It allows you to visualize, allocate, understand, and optimize your cloud costs.
 
-[Join our waitlist](https://octo.alphaus.cloud/){ .md-button .md-button--primary }
+[Go to Octo console](https://app.alphaus.cloud/octo/){ .md-button .md-button--primary }
 
 ## Ripple
 
