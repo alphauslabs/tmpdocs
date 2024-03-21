@@ -78,7 +78,7 @@ $ curl -H "Authorization: Bearer $(bluectl token \
 }
 ```
 
-You can also use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to provide access tokens to our current, non-Blue APIs [here](https://docs.alphaus.cloud/v/api-reference/). For example:
+You can also use [`bluectl`](https://alphauslabs.github.io/docs/blueapi/bluectl/) to provide access tokens to our current, non-Blue APIs [here](../apiref/authentication.md). For example:
 ``` sh
 $ curl -H "Authorization: Bearer $(bluectl token)" \
   https://api.alphaus.cloud/m/ripple/user | jq

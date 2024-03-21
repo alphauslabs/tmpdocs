@@ -116,12 +116,13 @@ HTTP 200
 
 **Pythonでのサンプル**
 
-```
+``` python
 import requests
 import json
 
 def get_token():
-    # Note: you can see details https://docs.alphaus.cloud/v/api-reference/authentication
+    # Note: you can see details on:
+    #   https://labs.alphaus.cloud/docs/apiref/authentication/
     # Assign generated values for client_id and client_secret
     params={
         "grant_type": "client_credentials",
