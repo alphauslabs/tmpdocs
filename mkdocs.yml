@@ -82,6 +82,11 @@ extra:
     - name: 日本語
       link: /docs-ja/
       lang: ja
+  social:
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/company/alphaus/
+  - icon: fontawesome/brands/github
+    link: https://github.com/alphauslabs
 
 markdown_extensions:
   - admonition
