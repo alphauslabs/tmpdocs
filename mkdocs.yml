@@ -46,6 +46,7 @@ nav:
   - "Octo":
       - "octo/index.md"
       - "octo/account-registration.md"
+      - "octo/multiple-account-setup.md"
       - "octo/curs3payer.md"
       - "octo/samlsso.md"
       - "octo/costallocation.md"
