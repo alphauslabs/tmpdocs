@@ -47,6 +47,7 @@ nav:
       - "octo/index.md"
       - "octo/account-registration.md"
       - "octo/multiple-account-setup.md"
+      - "octo/account-registration-gcpbigquery.md"
       - "octo/curs3payer.md"
       - "octo/samlsso.md"
       - "octo/costallocation.md"
