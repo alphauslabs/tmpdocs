@@ -127,11 +127,11 @@ After successful account registration, it will take up to a day for Octo to retr
 
 === "Google Cloud"   
 
-    To register you billing account in Octo, you must follow these steps.
+    To register your billing account in Octo, you must follow these steps.
     
     1. **Basic details**
 
-        a. Input you preferred name for your billing account (Optional).
+        a. Input your preferred name for your billing account (Optional).
 
     2. **Export billing data to BigQuery**
 
