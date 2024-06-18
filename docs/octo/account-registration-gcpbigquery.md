@@ -1,4 +1,4 @@
-# Setup Bigquery to register GCP billing account in Octo   
+# Setup BigQuery to register GCP billing account in Octo   
 
 
 ## Export Billing Data to BigQuery
