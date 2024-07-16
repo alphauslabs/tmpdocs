@@ -54,6 +54,7 @@ nav:
       - "octo/costgroup.md"
       - "octo/channel-management.md"
       - "octo/alerts-management.md"
+      - "octo/recommendation.md"
   - "Blue API":
       - "blueapi/overview.md"
       - "blueapi/authentication.md"
