@@ -1,0 +1,9 @@
+# About Recommendation Feature
+Recommendation is a cost optimization feature offered by Octo that helps users effectively manage expenses. Designed for multi-vendor environments, including AWS, GCP, and Azure, it currently supports AWS, with plans to extend to other platforms in the future. This feature also consolidates recommendations from AWS Cost Explorer, Cost Optimization Hub, and Trusted Advisor, providing comprehensive insights into cost-saving opportunities. It empowers users to make informed decisions and optimize their cloud expenditures efficiently.
+
+## Sources
+Currently, we rely on two primary sources for these recommendation data: AWS and Octo-generated recommendations. AWS-generated recommendations originate from various AWS features or services such as Cost Explorer, Cost Optimization Hub, and Trusted Advisor. In contrast, Octo generates additional recommendations that encompass insights not covered by these AWS sources, providing users with a more comprehensive view of potential optimizations for their cloud environment. This dual-source approach ensures that Octo users have access to a wide range of actionable insights to enhance their cost management strategies.
+
+## Apply Recommended Action
+!!! warning "This is not included in the current version."
+In addition to providing users with recommendations for optimizing their cloud costs, Octo enables users to execute or apply these recommendations directly within its interface, eliminating the need to access their AWS console. This streamlined approach empowers users to take immediate action on cost-saving suggestions, enhancing efficiency and simplifying the management of AWS resources. By integrating actionable insights and execution capabilities, Octo ensures a seamless experience for users, facilitating quicker responses to optimize their cloud expenditure.
