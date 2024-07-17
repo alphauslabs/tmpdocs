@@ -7,8 +7,8 @@ theme:
   favicon: assets/alphaus.png
   features:
     - navigation.tabs
-    - navigation.sections
-  # - navigation.expand
+    # - navigation.sections
+    - navigation.expand
 
 nav:
   - "General":
@@ -54,7 +54,10 @@ nav:
       - "octo/costgroup.md"
       - "octo/channel-management.md"
       - "octo/alerts-management.md"
-      - "octo/recommendation.md"
+      - "Recommendation":
+        - "octo/recommendations/about.md"
+        - "octo/recommendations/costoptimizationhub.md"
+        - "octo/recommendations/trustedadvisor.md"
   - "Blue API":
       - "blueapi/overview.md"
       - "blueapi/authentication.md"
