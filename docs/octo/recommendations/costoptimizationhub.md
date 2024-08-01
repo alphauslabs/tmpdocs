@@ -77,11 +77,11 @@ Below are the recommendations offered by cost optimization hub.
         <b>Category</b><br>
         Upgrade<br><br>
         <b>Description</b><br>
-        Adjust the size of the RDS DB instance to better match workload requirements. This recommendation involves analyzing the past usage patterns, CPU utilization and I/O operations to determine if the instance is over-provisioned or under-provisioned.<br><br>
+        Upgrading the generation of RDS DB instances involves transitioning from older to newer instance types within Amazon's Relational Database Service (RDS). Newer generation instances typically offer improved performance, increased storage efficiency, and enhanced network capabilities at a lower cost. This process optimizes the database environment, leading to better resource utilization and reliability.<br><br>
         <b>Potential Savings</b><br>
-        Rightsizing RDS DB instance can lead to savings ranging from 20% to 50% of the current RDS costs, depending on how significantly over-provisioned the current instance is.<br><br>
+        By upgrading to the latest generation of RDS DB instances, organizations can achieve cost savings ranging from 10% to 30%, depending on the specific instance types and workload requirements. The improved performance and efficiency of newer instances also contribute to indirect savings by reducing the need for additional resources and minimizing downtime..<br><br>
         <b>Recommended Action</b><br>
-        •   Rightsize RDS DB Instance<br><br>
+        •   Upgrade RDS DB Instance to newer generation<br><br>
         <b>How will Octo implement the recommended action?</b><br>
         Not implemented yet.<br><br>
         <b>Is rollback possible?</b><br>
