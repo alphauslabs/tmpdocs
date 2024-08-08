@@ -97,7 +97,7 @@ For the "Customer" unit type, our organization has a unique process to calculate
    - Calculate each customer's percentage based on the size of their CUR relative to the total size of all customers' CURs.
 
 3. **Generate Tags**:
-   - Generate tags in the format `customer1:0.3\|customer2:0.2\|customer3:0.1\|customer4:0.4\|` based on these percentages.
+   - Generate tags in the format `customer1:0.3|customer2:0.2|customer3:0.1|customer4:0.4|` based on these percentages.
 
 4. **Store in `cover_tag_management`**:
    - Store the generated tags in the `cover_tag_management` table using the same structure and process as other unit types.
