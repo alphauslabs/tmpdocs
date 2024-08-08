@@ -59,6 +59,7 @@ nav:
         - "octo/recommendations/costexplorer.md"
         - "octo/recommendations/costoptimizationhub.md"
         - "octo/recommendations/trustedadvisor.md"
+      - "octo/unitcost.md"
   - "Blue API":
       - "blueapi/overview.md"
       - "blueapi/authentication.md"
