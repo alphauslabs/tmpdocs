@@ -31,6 +31,28 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         Yes. Use the snapshot created to restore the volume using AWS Console/AWS CLI
     </p>
 ## AmazonEC2
+??? info "Amazon EC2 Instances Stopped"
+    ### Amazon EC2 Instances Stopped
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Instance<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Delete<br><br>
+        <b>Description</b><br>
+        Checks if there are Amazon EC2 instances that have been stopped for more than 30 days.<br><br>
+        <b>Criteria</b><br>
+        •  There are Amazon EC2 instances stopped for more than the allowed number of days. <br><br>
+        <b>Potential Savings</b><br>
+        It can lead to savings by eliminating storage costs for associated EBS volumes and avoiding unnecessary charges if the instance is covered by a Reserved Instance or Savings Plan. <br><br>
+        <b>Recommended Action</b><br>
+        Terminate EC2 instance<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Octo uses [TerminateInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateInstances.html){target="_blank"} API to terminate the EC2 instance.<br><br>
+        <b>Is rollback possible?</b><br>
+        No
+    </p>
 ??? info "Low Utilization Amazon EC2 Instances"
     ### Low Utilization Amazon EC2 Instances
     <p>
