@@ -152,13 +152,64 @@ Below are the recommendations offered by cost optimization hub.
     </p>
 ??? info "Rightsize EC2 Auto Scaling Group"
     ### Rightsize EC2 Auto Scaling Group
-    !!! failure "Not available yet."
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Auto Scaling Group<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Rightsize<br><br>
+        <b>Description</b><br>
+        The Rightsize EC2 Auto Scaling Group recommendation advises adjusting the instance types and sizes within an Auto Scaling Group to better match the application's resource requirements. By analyzing current usage patterns and performance metrics, this recommendation suggests more appropriate instance types that could lead to better performance or lower costs.<br><br>
+        <b>Potential Savings</b><br>
+        Implementing this recommendation can lead to significant cost savings by ensuring that resources are optimized for the application's needs. Users can expect reductions in monthly EC2 costs ranging from 20% to 50%, depending on the degree of over-provisioning.<br><br>
+        <b>Recommended Action</b><br>
+        •   Rightsize EC2 Auto Scaling Group<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not implemented yet.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not implemented yet.
+    </p>
 ??? info "Upgrade EC2 Auto Scaling Group"
     ### Upgrade EC2 Auto Scaling Group
-    !!! failure "Not available yet."
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Auto Scaling Group<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Upgrade<br><br>
+        <b>Description</b><br>
+        The Upgrade EC2 Auto Scaling Group recommendation suggests moving to newer generation EC2 instances within the Auto Scaling Group. Newer instance types often offer better performance, enhanced features, and cost-efficiency compared to older generations.<br><br>
+        <b>Potential Savings</b><br>
+        Upgrading to more recent instance types can lead to improved performance and cost savings. Users may see reductions in monthly EC2 costs of up to 30%, alongside gains in computational power and efficiency.<br><br>
+        <b>Recommended Action</b><br>
+        •  Upgrade EC2 Auto Scaling Group<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not implemented yet.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not implemented yet.
+    </p>
 ??? info "Migrate EC2 Auto Scaling Group to Graviton"
     ### Migrate EC2 Auto Scaling Group to Graviton
-    !!! failure "Not available yet."
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Auto Scaling Group<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Migrate<br><br>
+        <b>Description</b><br>
+        The Migrate EC2 Auto Scaling Group to Graviton recommendation encourages transitioning from traditional x86-based EC2 instances to ARM-based Graviton instances. Graviton instances are designed to deliver significant cost savings and performance improvements for certain workloads.<br><br>
+        <b>Potential Savings</b><br>
+        Migrating to Graviton instances can result in cost reductions of up to 40% compared to traditional x86 instances, while also providing enhanced performance for specific applications optimized for ARM architecture.<br><br>
+        <b>Recommended Action</b><br>
+        •  Migrate EC2 Auto Scaling Group to Graviton<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not implemented yet.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not implemented yet.
+    </p>
 ??? info "Upgrade EC2 Instance"
     ### Upgrade EC2 Instance
     <p>
