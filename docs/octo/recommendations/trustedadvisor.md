@@ -134,8 +134,7 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         <b>Category</b><br>
         Delete<br><br>
         <b>Description</b><br>
-        Checks your Amazon Redshift configuration for clusters that appear to be underutilized.
-        If an Amazon Redshift cluster has not had a connection for a prolonged period of time, or is using a low amount of CPU, you can use lower-cost options such as downsizing the cluster, or shutting down the cluster and taking a final snapshot. Final snapshots are retained even after you delete your cluster.<br><br>
+        Checks the throughput configuration of your endpoints. This check alerts you when endpoints are not actively used for real-time inference requests. An endpoint that isn’t used for more than 15 consecutive days is considered underutilized. All endpoints accrue charges based on both the throughput set, and the length of time that the endpoint is active.<br><br>
         <b>Criteria</b><br>
         •	The endpoint is active, but hasn’t been used for real-time inference requests in the past 15 days.
         <br><br>
