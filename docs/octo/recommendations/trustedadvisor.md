@@ -100,6 +100,52 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         <b>Is rollback possible?</b><br>
         No
     </p>
+??? info "Amazon EC2 Reserved Instance Lease Expiration"
+    ### Amazon EC2 Reserved Instance Lease Expiration
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Reserved Instances<br><br>
+        <b>Optimization Type</b><br>
+        Rate<br><br>
+        <b>Category</b><br>
+        Reserved Instance<br><br>
+        <b>Description</b><br>
+        Checks for Amazon EC2 Reserved Instances that are scheduled to expire within the next 30 days, or have expired in the preceding 30 days.
+        Reserved Instances don't renew automatically. You can continue using an Amazon EC2 instance covered by the reservation without interruption, but you will be charged On-Demand rates. New Reserved Instances can have the same parameters as the expired ones, or you can purchase Reserved Instances with different parameters.<br><br>
+        <b>Criteria</b><br>
+        •	The Reserved Instance lease expires in less than 30 days.<br>
+        •   The Reserved Instance lease expired in the preceding 30 days.<br><br>
+        <b>Recommended Action</b><br>
+        Consider purchasing a new Reserved Instance to replace the one that is nearing the end of its term.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable
+        <br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+## AmazonComprehend
+??? info "Amazon Comprehend Underutilized Endpoints"
+    ### Amazon Comprehend Underutilized Endpoints
+    <p>
+        <b>AWS Resource Type</b><br>
+        Comprehend Endpoints<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Delete<br><br>
+        <b>Description</b><br>
+        Checks your Amazon Redshift configuration for clusters that appear to be underutilized.
+        If an Amazon Redshift cluster has not had a connection for a prolonged period of time, or is using a low amount of CPU, you can use lower-cost options such as downsizing the cluster, or shutting down the cluster and taking a final snapshot. Final snapshots are retained even after you delete your cluster.<br><br>
+        <b>Criteria</b><br>
+        •	The endpoint is active, but hasn’t been used for real-time inference requests in the past 15 days.
+        <br><br>
+        <b>Recommended Action</b><br>
+        If the endpoint has a scaling policy defined and hasn’t been used in the past 30 days, consider deleting the endpoint and using asynchronous inference. <br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not implemented yet.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not implemented yet.
+    </p>
 ## AWSELB
 ??? info "Idle Load Balancers"
     ### Idle Load Balancers
@@ -191,4 +237,49 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         Not applicable<br><br>
         <b>Is rollback possible?</b><br>
         Not applicable
+    </p>
+??? info "AWS Lambda Functions with Excessive Timeouts"
+    ### AWS Lambda Functions with Excessive Timeouts
+    <p>
+        <b>AWS Resource Type</b><br>
+        Lambda Function<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks for Lambda functions with high timeout rates that might result in high cost.
+        Lambda charges based on run time and number of requests for your function. Function timeouts result in errors that may cause retries. Retrying functions will incur additionally request and run time charges.<br><br>
+        <b>Criteria</b><br>
+        •	Functions where > 10% of invocations end in an error due to a timeout on any given day within the last 7 days.<br><br>
+        <b>Recommended Action</b><br>
+        Inspect function logging and X-ray traces to determine the contributor to the high function duration. Implement logging in your code at relevant parts, such as before or after API calls or database connections. By default, AWS SDK clients timeouts may be longer than the configured function duration. Adjust API and SDK connection clients to retry or fail within the function timeout. If the expected duration is longer than the configured timeout, you can increase the timeout setting for the function. <br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+## AmazonRedshift
+??? info "Underutilized Amazon Redshift Clusters"
+    ### Underutilized Amazon Redshift Clusters
+    <p>
+        <b>AWS Resource Type</b><br>
+        Redshift Cluster<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Delete<br><br>
+        <b>Description</b><br>
+        Checks your Amazon Redshift configuration for clusters that appear to be underutilized.
+        If an Amazon Redshift cluster has not had a connection for a prolonged period of time, or is using a low amount of CPU, you can use lower-cost options such as downsizing the cluster, or shutting down the cluster and taking a final snapshot. Final snapshots are retained even after you delete your cluster.<br><br>
+        <b>Criteria</b><br>
+        •	A running cluster has not had a connection in the last 7 days.<br>
+        •   A running cluster had less than 5% cluster-wide average CPU utilization for 99% of the last 7 days.
+        <br><br>
+        <b>Recommended Action</b><br>
+        Consider shutting down the cluster and taking a final snapshot. <br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not implemented yet.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not implemented yet.
     </p>
