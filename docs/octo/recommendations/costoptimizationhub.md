@@ -1,9 +1,13 @@
 # Cost Optimization Hub
 
 <p>
-Cost Optimization Hub is a feature within AWS Billing and Cost Management that assists users in identifying and prioritizing ways to reduce their AWS expenses. It consolidates recommendations from various AWS services, such as Compute Optimizer, into a single dashboard. Octo retrieves all the data from the Cost Optimization Hub using an AWS API and displays it within Octo to eliminate the need for users to access their AWS console.<br><br>
-Below are the recommendations offered by cost optimization hub.
-</p>
+Cost Optimization Hub is a feature within AWS Billing and Cost Management that assists users in identifying and prioritizing ways to reduce their AWS expenses. It consolidates recommendations from various AWS services, such as Compute Optimizer, into a single dashboard. Octo retrieves all the data from the Cost Optimization Hub using an AWS API and displays it within Octo to eliminate the need for users to access their AWS console </p>
+
+!!! note 
+    To receive recommendations from cost optimization hub, this feature needs to be enabled first. Octo will automatically enable it once API access is set up. After activation, AWS typically takes 1 to 3 days to generate recommendations. If you have previously enabled the Cost Optimization Hub, recommendations should already be available.
+
+Below are the recommendations offered by cost optimization hub
+
 ## AmazonRDS
 ??? info "Stop Amazon RDS Idle DB Instances"
     ### Stop Amazon RDS Idle DB Instances
