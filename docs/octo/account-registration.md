@@ -86,11 +86,10 @@ After successful account registration, it will take up to a day for Octo to retr
 
     3. Check this [terraform module](https://registry.terraform.io/modules/alphauslabs/octo/aws/latest), from there you can read it's README section for more detailed information about the module and the required inputs.
 
-    4. Run **terraform init** to initialize the module, **terraform plan** to check what resorces will be created, and **terraform apply** to create those resources.  
+    4. Run **terraform init**, this initializes a working directory containing Terraform configuration files, **terraform plan** to check what resources will be created, and **terraform apply** to create those resources. You can also check [here](https://developer.hashicorp.com/terraform/cli) for more information about the Terraform CLI.
+    5. After running those commands above, check if the deployments are successful, if so, click **Check and confirm** to verify. You can also check in your AWS account console to see if the resources are properly created.
 
-    5. After running those commands above, check if the deployments are successful, if so, click **Check and confirm** to verify. You can also check your AWS account to see if the resources are properly created.
-
-    6. On Octo, you can see the status of the deployments for API Access, CUR and S3 bucket (Payer account only), and multiple account API access - optional (Payer account only).
+    6. On Octo, you can see the status of the deployments for API Access, CUR and S3 bucket (For payer account only), and multiple account API access - optional (For payer account only).
 
     7. If API Access is success, you can click **Confirm and Finish**.
 
