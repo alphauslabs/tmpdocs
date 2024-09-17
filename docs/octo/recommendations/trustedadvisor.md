@@ -1,8 +1,10 @@
 # Trusted Advisor
+
 <p>
 AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time guidance to assist users in provisioning their resources according to AWS best practices. It provides recommendations across categories like cost optimization, performance, security, and fault tolerance. Octo leverages its API to fetch and display recommendations specifically from the cost optimization category.</p>
 
 !!! note "Trusted Advisor Recommendations are accessible exclusively to users subscribed to the ==Business==, ==Enterprise On-Ramp==, or ==Enterprise Support plans==."
+
 <p>Below is the list of recommendations under cost optimization category that are supported by octo.
 </p>
 ## AmazonEBS
@@ -215,6 +217,50 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         <b>Is rollback possible?</b><br>
         Yes. Delete `Amazon S3 Incomplete Multipart Upload Abort Configuration` lifecycle configuration.
     </p>
+??? info "Amazon S3 Bucket Lifecycle Policy Configured"
+    ### Amazon S3 Bucket Lifecycle Policy Configured
+    <p>
+        <b>AWS Resource Type</b><br>
+        S3 Bucket<br><br>
+        <b>Optimization Type</b><br>
+        Others<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks if an Amazon S3 bucket has a lifecycle policy configured. An Amazon S3 lifecycle policy ensures that Amazon S3 objects inside the bucket are stored cost-effectively throughout their lifecycle. This is important for meeting regulatory requirements for data retention and storage. The policy configuration is a set of rules that define actions applied by the Amazon S3 service to a group of objects. A lifecycle policy allows you to automate transitioning objects to lower-cost storage classes or deleting them as they age. For example, you can transition an object to Amazon S3 Standard-IA storage 30 days after creation, or to Amazon S3 Glacier after 1 year.<br><br>
+        <b>Criteria</b><br>
+        • Amazon S3 bucket has no lifecycle policy configured.
+        <br><br>
+        <b>Recommended Action</b><br>
+        Make sure that you have a lifecycle policy configured in your Amazon S3 bucket.<br>
+        If your organization does not have a retention policy in place, consider using Amazon S3 Intelligent-Tiering to optimize cost.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable.
+    </p>
+??? info "Amazon S3 version-enabled buckets without lifecycle policies configured"
+    ### Amazon S3 version-enabled buckets without lifecycle policies configured
+    <p>
+        <b>AWS Resource Type</b><br>
+        S3 Bucket<br><br>
+        <b>Optimization Type</b><br>
+        Others<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks if Amazon S3 version-enabled buckets have a lifecycle policy configured.<br><br>
+        <b>Criteria</b><br>
+        • An Amazon S3 version-enabled bucket with doesn't have a lifecycle policy configured.
+        <br><br>
+        <b>Recommended Action</b><br>
+        Configure lifecycle policies for your Amazon S3 buckets to manage your objects so that they are stored cost effectively throughout their lifecycle. <br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable.
+    </p>
+
 ## AWSLambda
 ??? info "AWS Lambda Functions with High Error Rates"
     ### AWS Lambda Functions with High Error Rates
@@ -281,4 +327,47 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         Not implemented yet.<br><br>
         <b>Is rollback possible?</b><br>
         Not implemented yet.
+    </p>
+## Others
+??? info "AWS Account Not Part of AWS Organizations"
+    ### AWS Account Not Part of AWS Organizations
+    <p>
+        <b>AWS Resource Type</b><br>
+        AWS Accounts<br><br>
+        <b>Optimization Type</b><br>
+        Others<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks if an AWS account is part of AWS Organizations under the appropriate management account.<br><br>
+        AWS Organizations is an account management service for consolidating multiple AWS accounts into a centrally-managed organization. This enables you to centrally structure accounts for billing consolidation and implement ownership and security policies as your workloads scale on AWS.<br><br>
+        You can specify the management account id using the MasterAccountId parameter of the AWS Config rules.<br><br>
+        <b>Criteria</b><br>
+        • This AWS account is not part of AWS Organizations.
+        <br><br>
+        <b>Recommended Action</b><br>
+        Add this AWS account as part of AWS Organizations. <br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable.
+    </p>
+??? info annotate "AWS Well-Architected high risk issues for cost optimization"
+    ### AWS Well-Architected high risk issues for cost optimization
+    <p>
+        <b>Optimization Type</b><br>
+        Others<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks for high risk issues (HRIs) for your workloads in the cost optimization pillar. This check is based on your AWS-Well Architected reviews. Your check results depend on whether you completed the workload evaluation with AWS Well-Architected.<br><br>
+        <b>Criteria</b><br>
+        • At least one active high risk issue was identified in the cost optimization pillar for AWS Well-Architected.
+        <br><br>
+        <b>Recommended Action</b><br>
+        AWS Well-Architected detected high risk issues during your workload evaluation. These issues present opportunities to reduce risk and save money. Sign in to the [AWS Well-Architected](https://console.aws.amazon.com/wellarchitected){target=_blank} tool to review your answers and take action to resolve your active issues. <br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable.<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable.
     </p>
