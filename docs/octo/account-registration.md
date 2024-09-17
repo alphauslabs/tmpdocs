@@ -68,6 +68,9 @@ After successful account registration, it will take up to a day for Octo to retr
         d. If success, you can click Confirm and finish.
 
     **Via Terraform**
+    
+    Note: You must have terraform installed in your local machine to proceed. You can follow this [guide](https://www.terraform.io/downloads.html).
+    (Optional) If you prefer to use AWS CLI for authenticating your AWS account, you can follow this [guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
     1. **Select Registration Methodd.** Click Via other options, choose terraform.
     
@@ -81,13 +84,17 @@ After successful account registration, it will take up to a day for Octo to retr
 
         d. If there is no error, then click Next.
 
-    3. Check this [terraform module](https://registry.terraform.io/modules/alphauslabs/octo/aws/latest) and read the README section.
+    3. Check this [terraform module](https://registry.terraform.io/modules/alphauslabs/octo/aws/latest), from there you can read it's README section for more detailed information about the module and the required inputs.
 
-    4. If the deployments are successful, click Check and confirm to verify.
+    4. Run **terraform init** to initialize the module, **terraform plan** to check what resorces will be created, and **terraform apply** to create those resources.  
 
-    5. You will see the status of the deployments for API Access, CUR and S3 bucket (Payer account only), and multiple account API access - optional (Payer account only).
+    5. After running those commands above, check if the deployments are successful, if so, click **Check and confirm** to verify. You can also check your AWS account to see if the resources are properly created.
 
-    6. If API Access is success, you can click Confirm and Finish.
+    6. On Octo, you can see the status of the deployments for API Access, CUR and S3 bucket (Payer account only), and multiple account API access - optional (Payer account only).
+
+    7. If API Access is success, you can click **Confirm and Finish**.
+
+    For Payer accounts, if it's registered without using stackset, you can still enable it by doing the steps above, just make sure you set the **use_stackset** to true in the terraform module, it will update the resources and automatically register all your linked account to Octo, there is no need to delete your payer account and register again.
 
 
 
