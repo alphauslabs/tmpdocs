@@ -125,6 +125,73 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         <b>Is rollback possible?</b><br>
         Not applicable
     </p>
+??? info "Amazon EC2 instances consolidation for Microsoft SQL Server"
+    ### Amazon EC2 instances consolidation for Microsoft SQL Server
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Instance<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Rightsize<br><br>
+        <b>Description</b><br>
+        Checks your Amazon Elastic Compute Cloud (Amazon EC2) instances that are running SQL Server in the past 24 hours. This check alerts you if your instance has less than the minimum number of SQL Server licenses. From the Microsoft SQL Server Licensing Guide, you are paying 4 vCPU licenses even if an instance has only 1 or 2 vCPUs. You can consolidate smaller SQL Server instances to help lower costs.<br><br>
+        <b>Criteria</b><br>
+        •	An instance with SQL Server has less than 4 vCPUs.<br><br>
+        <b>Recommended Action</b><br>
+        Consider consolidating smaller SQL Server workloads into instances with at least 4 vCPUs.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable
+        <br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+??? info "Amazon EC2 instances over-provisioned for Microsoft SQL Server"
+    ### Amazon EC2 instances over-provisioned for Microsoft SQL Server
+    <p>
+        <b>AWS Resource Type</b><br>
+        EC2 Instance<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Rightsize<br><br>
+        <b>Description</b><br>
+        Checks your Amazon Elastic Compute Cloud (Amazon EC2) instances that are running SQL Server in the past 24 hours. An SQL Server database has a compute capacity limit for each instance. An instance with SQL Server Standard edition can use up to 48 vCPUs. An instance with SQL Server Web can use up to 32 vCPUs. This check alerts you if an instance exceeds this vCPU limit.<br><br>
+        If your instance is over-provisioned, you pay full price without realizing an improvement in performance. You can manage the number and size of your instances to help lower costs.<br><br>
+        <b>Criteria</b><br>
+        •	An instance with SQL Server Standard edition has more than 48 vCPUs.<br>
+        •   An instance with SQL Server Web edition has more than 32 vCPUs.<br><br>
+        <b>Recommended Action</b><br>
+        For SQL Server Standard edition, consider changing to an instance in the same instance family with 48 vCPUs. For SQL Server Web edition, consider changing to an instance in the same instance family with 32 vCPUs. If it is memory intensive, consider changing to memory optimized R5 instances<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable
+        <br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+??? info "Inactive NAT Gateways"
+    ### Inactive NAT Gateways
+    <p>
+        <b>AWS Resource Type</b><br>
+        NAT Gateway<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Delete<br><br>
+        <b>Description</b><br>
+        Checks your NAT Gateways for inactive gateways. A NAT Gateway is considered to be inactive if no data (0 bytes) was processed in the last 30 days. NAT Gateways have hourly charges and data processed charges.<br><br>
+        <b>Criteria</b><br>
+        •	The NAT Gateway processed 0 bytes in the last 30 days<br><br>
+        <b>Recommended Action</b><br>
+        Consider deleting any NAT Gateways that weren’t used in the last 30 days and that aren’t required for external network access outside the VPC.<br><br>
+        If a Transit Gateway is used for inter-VPC communication, then consider deploying a centralized NAT Gateway for egress to internet architecture. This can reduce the hourly cost from inactive NAT Gateways.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable
+        <br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+
 ## AmazonComprehend
 ??? info "Amazon Comprehend Underutilized Endpoints"
     ### Amazon Comprehend Underutilized Endpoints
@@ -146,6 +213,28 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         Not implemented yet.<br><br>
         <b>Is rollback possible?</b><br>
         Not implemented yet.
+    </p>
+
+## AmazonECR
+??? info "Amazon ECR Repository Without Lifecycle Policy Configured"
+    ### Amazon ECR Repository Without Lifecycle Policy Configured
+    <p>
+        <b>AWS Resource Type</b><br>
+        ECR Repository<br><br>
+        <b>Optimization Type</b><br>
+        Others<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks if a private Amazon ECR repository has at least one lifecycle policy configured. Lifecycle policies allow you to define a set of rules to automatically clean up old or unused container images. This gives you control over the lifecycle management of the images, allows Amazon ECR repositories to be better organized, and helps to lower overall storage costs.<br><br>
+        <b>Criteria</b><br>
+        •	An Amazon ECR private repository doesn’t have any lifecycle policies configured.<br><br>
+        <b>Recommended Action</b><br>
+        Consider creating at least one lifecycle policy for your private Amazon ECR repository.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
     </p>
 ## AWSELB
 ??? info "Idle Load Balancers"
@@ -172,6 +261,78 @@ AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time 
         Octo uses [DeleteLoadBalancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteLoadBalancer.html){target="_blank"} API to delete the load balancer.<br><br>
         <b>Is rollback possible?</b><br>
         No
+    </p>
+## AmazonNetworkFirewall
+??? info "Inactive AWS Network Firewall"
+    ### Inactive AWS Network Firewall
+    <p>
+        <b>AWS Resource Type</b><br>
+        Network Firewall<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Delete<br><br>
+        <b>Description</b><br>
+        Checks your AWS Network Firewall endpoints and alerts you when the Network Firewall appears to be inactive.<br><br>
+        A Network Firewall is considered to be inactive if all its endpoints have no data processed the last 30 days. Network Firewall endpoints incur hourly charges. This check alerts you to Network Firewall with no data processed in the last 30 days. It’s a best practice to either remove unused Network Firewalls or update your architecture.<br><br>
+        <b>Criteria</b><br>
+        •	The Network Firewall processed 0 bytes in the last 30 days.<br><br>
+        <b>Recommended Action</b><br>
+        If the Network Firewall wasn’t used in the last 30 days, then consider deleting the Network Firewall.<br><br>
+        If a Transit Gateway is used for inter-VPC communication, then consider deploying your Network Firewalls in a centralized network inspection architectures. This can reduce the hourly charges on inactive Network Firewalls.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+??? info "Network Firewall endpoint AZ Independence"
+    ### Network Firewall endpoint AZ Independence
+    <p>
+        <b>AWS Resource Type</b><br>
+        Network Firewall<br><br>
+        <b>Optimization Type</b><br>
+        Usage<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Check the AZ of your subnet and route traffic through a Network Firewall endpoint in the same AZ.<br><br>
+        If there is no Network Firewall endpoint in the AZ, then create a new Network Firewall and route your subnet traffic through it.<br><br>
+        If the same route table is associated across multiple subnets in different AZs, then keep this route table associated to the subnets that reside in the same AZ as the Network Firewall endpoint. For subnets in other AZs, associate a separate route table with a route to a Network Firewall endpoint in that AZ.<br><br>
+        It’s a best practice to choose a maintenance window for architecture changes in your Amazon VPC.<br><br>
+        <b>Criteria</b><br>
+        •	Traffic from a subnet in one AZ is being routed through a Network Firewall endpoint in a different AZ.<br><br>
+        <b>Recommended Action</b><br>
+        If the Network Firewall wasn’t used in the last 30 days, then consider deleting the Network Firewall.<br><br>
+        If a Transit Gateway is used for inter-VPC communication, then consider deploying your Network Firewalls in a centralized network inspection architectures. This can reduce the hourly charges on inactive Network Firewalls.<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
+    </p>
+## AmazonRoute53
+??? info "Amazon Route 53 Latency Resource Record Sets"
+    ### Amazon Route 53 Latency Resource Record Sets
+    <p>
+        <b>AWS Resource Type</b><br>
+        Route53 Latency Record Set<br><br>
+        <b>Optimization Type</b><br>
+        Others<br><br>
+        <b>Category</b><br>
+        Others<br><br>
+        <b>Description</b><br>
+        Checks for Amazon Route 53 latency record sets that are configured inefficiently.<br><br>
+        To allow Amazon Route 53 to route queries to the AWS Region with the lowest network latency, you should create latency resource record sets for a particular domain name (such as example.com) in different Regions. If you create only one latency resource record set for a domain name, all queries are routed to one Region, and you pay extra for latency-based routing without getting the benefits.<br><br>
+        Hosted zones created by AWS services won’t appear in your check results.<br><br>
+        <b>Criteria</b><br>
+        •	Only one latency resource record set is configured for a particular domain name..<br><br>
+        <b>Recommended Action</b><br>
+        If you have resources in multiple regions, be sure to define a latency resource record set for each region. See [Latency-Based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency){target=_blank}.<br><br>
+        If you have resources in only one AWS Region, consider creating resources in more than one AWS Region and define latency resource record sets for each; see [Latency-Based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency){target=_blank}.<br><br>
+        If you don't want to use multiple AWS Regions, you should use a simple resource record set. See [Working with Resource Record Sets](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html).<br><br>
+        <b>How will Octo implement the recommended action?</b><br>
+        Not applicable<br><br>
+        <b>Is rollback possible?</b><br>
+        Not applicable
     </p>
 ## AmazonRDS
 ??? info "Amazon RDS Idle DB Instances"
