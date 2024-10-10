@@ -1,4 +1,8 @@
 # AWS
+Octo offers a powerful cost optimization recommendation feature designed to help AWS users reduce cloud spending. Our proprietary logic and criteria analyze your AWS resources to identify optimization opportunities, such as rightsizing, migrating, and eliminating underutilized resources. Unlike standard tools, Octo provides tailored recommendations based on your unique usage patterns and business needs. The feature supports a wide range of AWS services, ensuring comprehensive cost-saving insights. With Octo, users can easily take actionable steps to maximize their cloud cost efficiency.
+
+!!! info ""
+    There are more recommendations to come, enhancing Octo’s ability to help users optimize their AWS costs effectively.
 
 ## AmazonEC2
 ??? info "Change EC2 instance type from Intel to AMD"
