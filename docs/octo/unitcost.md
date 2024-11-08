@@ -20,6 +20,11 @@ Unit Types represent the different categories or entities for which you want to 
 - **Customers**: The different customers or customer segments served.
 - **Environments**: Distinct operational environments, such as development, testing, and production.
 
+**Naming Conventions**
+- Only alphanumeric characters, spaces and special characters such as  . : + = @ _ / are allowed.
+- Consecutive special characters or spaces are not allowed.
+- Name should be unique from other units.
+
 ### Unit Items
 
 Under each Unit Type, there are specific Unit Items. These are the individual entities within the Unit Type for which costs need to be divided and tracked. For example:
@@ -28,9 +33,14 @@ Under each Unit Type, there are specific Unit Items. These are the individual en
 - **Customers**: Specific customers or groups of customers.
 - **Environments**: Different operational environments such as "Development Environment," "Testing Environment," and "Production Environment."
 
+**Naming Conventions**
+- Only alphanumeric characters, spaces and special characters such as  . : + = @ _ / are allowed.
+- Consecutive special characters or spaces are not allowed.
+- Name should be unique from other units.
+
 #### Dedicated Resources
 
-Users can select multiple resources (at the account and service level only in this version) as **Dedicated Resources**. The cost of these resources is assigned solely to the specific unit item. This enables precise cost tracking and ensures that the full cost of a dedicated resource is attributed to the unit item that uses it exclusively.
+Users can select multiple resources as **Dedicated Resources**. The cost of these resources is assigned solely to the specific unit item. This enables precise cost tracking and ensures that the full cost of a dedicated resource is attributed to the unit item that uses it exclusively.
 
 #### Shared Resources
 
