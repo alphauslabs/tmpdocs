@@ -1,5 +1,5 @@
 # Cost Explorer
-AWS Cost Explorer is a powerful tool that provides comprehensive insights into your AWS spending and usage. It allows users to visualize, understand, and manage their AWS costs and usage over time through customizable reports and interactive graphs. This helps organizations optimize their cloud spending by identifying cost drivers, trends, and opportunities for savings.<br>
+AWS Cost Explorer is a powerful tool that provides comprehensive insights into their AWS spending and usage. It allows users to visualize, understand, and manage their AWS costs and usage over time through customizable reports and interactive graphs. This helps organizations optimize their cloud spending by identifying cost drivers, trends, and opportunities for savings.<br>
 
 AWS offers several cost optimization recommendations through tools like AWS Cost Explorer:
 
@@ -24,7 +24,7 @@ AWS offers several cost optimization recommendations through tools like AWS Cost
 | THREE-YEAR          | Longer commitment period with greater savings.                               |
 
 
-<b>Rightsize EC2 Instance Recommendations</b>: These recommendations analyze the EC2 instance usage and suggest resizing or modifying instance types to better match your workload requirements. By rightsizing instances, users can eliminate unnecessary costs and improve performance efficiency.<br>
+<b>Rightsize EC2 Instance Recommendations</b>: These recommendations analyze the EC2 instance usage and suggest resizing or modifying instance types to better match their workload requirements. By rightsizing instances, users can eliminate unnecessary costs and improve performance efficiency.<br>
 
 <b>Terminate EC2 Instance Recommendations</b>: AWS Cost Explorer also provides recommendations to terminate underutilized or unnecessary EC2 instances. This helps in reducing costs by eliminating instances that are not actively contributing to workload requirements or are no longer needed.
 
