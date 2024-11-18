@@ -55,13 +55,15 @@ nav:
       - "octo/channel-management.md"
       - "octo/alerts-management.md"
       - "Recommendation":
-        - "octo/recommendations/about.md"
-        - "AWS Generated Recommendations":
-          - "octo/recommendations/costexplorer.md"
-          - "octo/recommendations/costoptimizationhub.md"
-          - "octo/recommendations/trustedadvisor.md"
-        - "OCTO Generated Recommendations":
-          - "octo/recommendations/octo/aws.md"
+          - "octo/recommendations/about.md"
+          - "AWS Generated Recommendations":
+              - "octo/recommendations/costexplorer.md"
+              - "octo/recommendations/costoptimizationhub.md"
+              - "octo/recommendations/trustedadvisor.md"
+          - "GCP Generated Recommendations":
+              - "octo/recommendations/recommendationhub.md"
+          - "OCTO Generated Recommendations":
+              - "octo/recommendations/octo/aws.md"
       - "octo/unitcost.md"
   - "Blue API":
       - "blueapi/overview.md"
@@ -94,10 +96,10 @@ extra:
       link: /docs-ja/
       lang: ja
   social:
-  - icon: fontawesome/brands/linkedin
-    link: https://www.linkedin.com/company/alphaus/
-  - icon: fontawesome/brands/github
-    link: https://github.com/alphauslabs
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/alphaus/
+    - icon: fontawesome/brands/github
+      link: https://github.com/alphauslabs
 
 markdown_extensions:
   - admonition
