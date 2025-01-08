@@ -3,7 +3,3 @@ Recommendation is a cost optimization feature offered by Octo that helps users e
 
 ## Sources
 Our recommendation data comes from three main sources: AWS, GCP, and Octo-generated recommendations. AWS recommendations are derived from services like Cost Explorer, Cost Optimization Hub, and Trusted Advisor, while GCP recommendations come from the Recommendation Hub. Octo adds another layer by generating unique recommendations that cover additional insights not addressed by AWS or GCP (though GCP insights aren't available through Octo generated). This combination gives Octo users a broader spectrum of actionable insights to improve their cloud cost management strategies.
-
-## Apply Recommended Action
-!!! warning "This is not included in the current version."
-In addition to providing users with recommendations for optimizing their cloud costs, Octo enables users to execute or apply these recommendations directly within its interface, eliminating the need to access their AWS console. This streamlined approach empowers users to take immediate action on cost-saving suggestions, enhancing efficiency and simplifying the management of AWS resources. By integrating actionable insights and execution capabilities, Octo ensures a seamless experience for users, facilitating quicker responses to optimize their cloud expenditure.

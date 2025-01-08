@@ -8,7 +8,6 @@ theme:
   features:
     - navigation.tabs
     # - navigation.sections
-    - navigation.expand
 
 nav:
   - "General":
@@ -64,6 +63,7 @@ nav:
               - "octo/recommendations/recommendationhub.md"
           - "OCTO Generated Recommendations":
               - "octo/recommendations/octo/aws.md"
+          - "octo/recommendations/executerecommendation.md"
       - "octo/unitcost.md"
   - "Blue API":
       - "blueapi/overview.md"
@@ -100,6 +100,9 @@ extra:
       link: https://www.linkedin.com/company/alphaus/
     - icon: fontawesome/brands/github
       link: https://github.com/alphauslabs
+      
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
