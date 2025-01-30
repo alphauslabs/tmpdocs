@@ -1,0 +1,19 @@
+.available-recommendation {
+    color: #5E53A7;
+}
+
+.approved-recommendation {
+    color: #39962B;
+}
+
+.pending-recommendation {
+    color: #AE7A00;
+}
+
+.executing-recommendation {
+    color: #0086E7;
+}
+
+.executionerror-recommendation {
+    color: #EC4746;
+}
