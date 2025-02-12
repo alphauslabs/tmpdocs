@@ -1,0 +1,3823 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../costoptimizationhub/">
+      
+      
+        <link rel="next" href="../recommendationhub/">
+      
+      
+      <link rel="icon" href="../../../assets/alphaus.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Trusted Advisor - Alphaus Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#trusted-advisor" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Alphaus Documentation" class="md-header__button md-logo" aria-label="Alphaus Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alphaus Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trusted Advisor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/docs-ja/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  General
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ripple/" class="md-tabs__link">
+          
+  
+  Ripple
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Octo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blueapi/overview/" class="md-tabs__link">
+          
+  
+  Blue API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../guides/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://labs.alphaus.cloud/blog/" class="md-tabs__link">
+        
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Alphaus Documentation" class="md-nav__button md-logo" aria-label="Alphaus Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    Alphaus Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            General
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Our products
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IAM overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://labs.alphaus.cloud/wavedocs-ja/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave (Pro) ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://status.alphaus.cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System status ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Reference (non-Blue)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference (non-Blue)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/endpoint-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endpoint limits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/api-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API clients
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/authorization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authorization (RBAC)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ripple
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Ripple
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concepts and terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/trueunblended/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A primer on TrueUnblended
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://help.alphaus.cloud/en/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Knowledgebase ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Reference (non-Blue)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference (non-Blue)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/exchangerate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ExchangeRate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/billinggroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillingGroup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/reseller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave for Reseller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/original-cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OriginalCost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/ri-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RI management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/recalculation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recalculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/invoice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Octo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Octo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Registration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../multiple-account-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Account API Access Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration-gcpbigquery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup BigQuery to register GCP billing account in Octo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curs3payer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CUR and S3 Bucket Setup for Payer Accounts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../samlsso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAML SSO
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../costallocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Allocation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../costgroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Groups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../channel-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Channel Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alerts Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recommendation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Recommendation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Recommendation Feature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_2" id="__nav_3_11_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AWS Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            AWS Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../costexplorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Explorer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../costoptimizationhub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Optimization Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Trusted Advisor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Trusted Advisor
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazonebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEBS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEBS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#underutilized-amazon-ebs-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underutilized Amazon EBS Volumes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEC2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEC2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-instances-stopped" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 Instances Stopped
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-utilization-amazon-ec2-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Utilization Amazon EC2 Instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unassociated-elastic-ip-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unassociated Elastic IP Addresses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-reserved-instance-lease-expiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 Reserved Instance Lease Expiration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-instances-consolidation-for-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 instances consolidation for Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-instances-over-provisioned-for-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 instances over-provisioned for Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inactive-nat-gateways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inactive NAT Gateways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazoncomprehend" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonComprehend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonComprehend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-comprehend-underutilized-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Comprehend Underutilized Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonecr" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonECR
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonECR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ecr-repository-without-lifecycle-policy-configured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon ECR Repository Without Lifecycle Policy Configured
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awselb" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWSELB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSELB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idle-load-balancers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idle Load Balancers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonnetworkfirewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonNetworkFirewall
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonNetworkFirewall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inactive-aws-network-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inactive AWS Network Firewall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-firewall-endpoint-az-independence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Firewall endpoint AZ Independence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonroute53" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRoute53
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRoute53">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-route-53-latency-resource-record-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Route 53 Latency Resource Record Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonrds" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRDS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-rds-idle-db-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon RDS Idle DB Instances
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazons3" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonS3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonS3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-incomplete-multipart-upload-abort-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 Incomplete Multipart Upload Abort Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-bucket-lifecycle-policy-configured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 Bucket Lifecycle Policy Configured
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-version-enabled-buckets-without-lifecycle-policies-configured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 version-enabled buckets without lifecycle policies configured
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awslambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWSLambda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSLambda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-lambda-functions-with-high-error-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Lambda Functions with High Error Rates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-lambda-functions-with-excessive-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Lambda Functions with Excessive Timeouts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonredshift" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRedshift
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRedshift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#underutilized-amazon-redshift-clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underutilized Amazon Redshift Clusters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#others" class="md-nav__link">
+    <span class="md-ellipsis">
+      Others
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Others">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-account-not-part-of-aws-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Account Not Part of AWS Organizations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-well-architected-high-risk-issues-for-cost-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Well-Architected high risk issues for cost optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_3" id="__nav_3_11_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GCP Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            GCP Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recommendationhub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recommendation Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_4" id="__nav_3_11_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OCTO Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_4">
+            <span class="md-nav__icon md-icon"></span>
+            OCTO Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../octo/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../executerecommendation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execute Recommendation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unitcost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Cost Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blue API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blue API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/bluectl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLI: bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    APIs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            APIs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/org/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organization API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IAM API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/admin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Billing API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/preferences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preferences API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/client-sdks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client SDKs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-register-payer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registering AWS payer accounts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-enable-api-access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enabling AWS payer API access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-query-costs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Querying AWS costs using bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/invoice-calc-sched/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scheduling invoice calculations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-cost-mods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding cost modifiers to the AWS calculator using bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://labs.alphaus.cloud/blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazonebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEBS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEBS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#underutilized-amazon-ebs-volumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underutilized Amazon EBS Volumes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEC2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEC2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-instances-stopped" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 Instances Stopped
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-utilization-amazon-ec2-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low Utilization Amazon EC2 Instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unassociated-elastic-ip-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unassociated Elastic IP Addresses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-reserved-instance-lease-expiration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 Reserved Instance Lease Expiration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-instances-consolidation-for-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 instances consolidation for Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ec2-instances-over-provisioned-for-microsoft-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon EC2 instances over-provisioned for Microsoft SQL Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inactive-nat-gateways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inactive NAT Gateways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazoncomprehend" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonComprehend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonComprehend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-comprehend-underutilized-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Comprehend Underutilized Endpoints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonecr" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonECR
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonECR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-ecr-repository-without-lifecycle-policy-configured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon ECR Repository Without Lifecycle Policy Configured
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awselb" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWSELB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSELB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idle-load-balancers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idle Load Balancers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonnetworkfirewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonNetworkFirewall
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonNetworkFirewall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inactive-aws-network-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inactive AWS Network Firewall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-firewall-endpoint-az-independence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Firewall endpoint AZ Independence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonroute53" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRoute53
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRoute53">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-route-53-latency-resource-record-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Route 53 Latency Resource Record Sets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonrds" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRDS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-rds-idle-db-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon RDS Idle DB Instances
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazons3" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonS3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonS3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-incomplete-multipart-upload-abort-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 Incomplete Multipart Upload Abort Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-bucket-lifecycle-policy-configured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 Bucket Lifecycle Policy Configured
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-s3-version-enabled-buckets-without-lifecycle-policies-configured" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon S3 version-enabled buckets without lifecycle policies configured
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awslambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWSLambda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSLambda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-lambda-functions-with-high-error-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Lambda Functions with High Error Rates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-lambda-functions-with-excessive-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Lambda Functions with Excessive Timeouts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonredshift" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRedshift
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRedshift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#underutilized-amazon-redshift-clusters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Underutilized Amazon Redshift Clusters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#others" class="md-nav__link">
+    <span class="md-ellipsis">
+      Others
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Others">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws-account-not-part-of-aws-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Account Not Part of AWS Organizations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-well-architected-high-risk-issues-for-cost-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS Well-Architected high risk issues for cost optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="trusted-advisor">Trusted Advisor</h1>
+<p>
+AWS Trusted Advisor, a service from Amazon Web Services (AWS), offers real-time guidance to assist users in provisioning their resources according to AWS best practices. It provides recommendations across categories like cost optimization, performance, security, and fault tolerance. Octo leverages its API to fetch and display recommendations specifically from the cost optimization category.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Trusted Advisor Recommendations are accessible exclusively to users subscribed to the <mark>Business</mark>, <mark>Enterprise On-Ramp</mark>, or <mark>Enterprise Support plans</mark>.</p>
+</div>
+<p>Below is the list of recommendations under cost optimization category that are supported by octo.
+</p>
+<h2 id="amazonebs">AmazonEBS</h2>
+<details class="info">
+<summary>Underutilized Amazon EBS Volumes</summary>
+<h3 id="underutilized-amazon-ebs-volumes">Underutilized Amazon EBS Volumes</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EBS Volume<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks Amazon Elastic Block Store (Amazon EBS) volume configurations and warns when volumes appear to be underutilized.<br><br>
+    Charges begin when a volume is created. If a volume remains unattached or has very low write activity (excluding boot volumes) for a period of time, the volume is underutilized. We recommend that you remove underutilized volumes to reduce costs.<br><br>
+    <b>Criteria</b><br>
+    •   A volume is unattached or had less than 1 IOPS per day for the past 7 days.<br><br>
+    <b>Potential Savings</b><br>
+    Deleting detached EBS volumes results in savings, calculated by subtracting the volume's cost from the snapshot's overall cost<br><br>
+    <b>Recommended Action</b><br>
+    Create snapshot and delete the volume<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshot.html" target="_blank">CreateSnapshot</a> API to create a snapshot of the volume.
+    If the EBS volume is currently attached to an EC2 instance, Octo invokes <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachVolume.html" target="_blank">DetachVolume</a> API to detach it. Following detachment, Octo proceeds to use <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVolume.html" target="_blank">DeleteVolume</a> to delete the volume.<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes. Use the snapshot created to restore the volume using AWS Console/AWS CLI
+</p></p>
+</details>
+<h2 id="amazonec2">AmazonEC2</h2>
+<details class="info">
+<summary>Amazon EC2 Instances Stopped</summary>
+<h3 id="amazon-ec2-instances-stopped">Amazon EC2 Instances Stopped</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks if there are Amazon EC2 instances that have been stopped for more than 30 days.<br><br>
+    <b>Criteria</b><br>
+    •  There are Amazon EC2 instances stopped for more than the allowed number of days. <br><br>
+    <b>Potential Savings</b><br>
+    It can lead to savings by eliminating storage costs for associated EBS volumes and avoiding unnecessary charges if the instance is covered by a Reserved Instance or Savings Plan. <br><br>
+    <b>Recommended Action</b><br>
+    Terminate EC2 instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TerminateInstances.html" target="_blank">TerminateInstances</a> API to terminate the EC2 instance.<br><br>
+    <b>Is rollback possible?</b><br>
+    No
+</p></p>
+</details>
+<details class="info">
+<summary>Low Utilization Amazon EC2 Instances</summary>
+<h3 id="low-utilization-amazon-ec2-instances">Low Utilization Amazon EC2 Instances</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Stop<br><br>
+    <b>Description</b><br>
+    Checks the Amazon Elastic Compute Cloud (Amazon EC2) instances that were running at any time during the last 14 days. This check alerts if the daily CPU utilization was 10% or less and network I/O was 5 MB or less for at least 4 days.<br><br>
+    Running instances generate hourly usage charges. Although some scenarios can result in low utilization by design, you can often lower your costs by managing the number and size of your instances.<br><br>
+    <b>Criteria</b><br>
+    •   An instance had 10% or less daily average CPU utilization and 5 MB or less network I/O on at least 4 of the previous 14 days. <br><br>
+    <b>Potential Savings</b><br>
+    Estimated monthly savings are calculated by using the current usage rate for On-Demand Instances and the estimated number of days the instance might be underutilized. Actual savings will vary if you are using Reserved Instances or Spot Instances, or if the instance is not running for a full day. <br><br>
+    <b>Recommended Action</b><br>
+    Stop EC2 instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html" target="_blank">StopInstances</a> API to stop the EC2 instance.<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes. You can manually start the instance again through AWS console or AWS CLI.
+</p></p>
+</details>
+<details class="info">
+<summary>Unassociated Elastic IP Addresses</summary>
+<h3 id="unassociated-elastic-ip-addresses">Unassociated Elastic IP Addresses</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Elastic IP Address<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks for Elastic IP addresses (EIPs) that are not associated with a running Amazon Elastic Compute Cloud (Amazon EC2) instance.<br><br>
+    EIPs are static IP addresses designed for dynamic cloud computing. Unlike traditional static IP addresses, EIPs mask the failure of an instance or Availability Zone by remapping a public IP address to another instance in your account. A nominal charge is imposed for an EIP that is not associated with a running instance.<br><br>
+    <b>Criteria</b><br>
+    •   An allocated Elastic IP address (EIP) is not associated with a running Amazon EC2 instance.<br><br>
+    <b>Recommended Action</b><br>
+    •   Release/Delete Elastic IP Address<br>
+    •   Associate EIP to EC2 instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo only supports releasing the Elastic IP Address. You can associate EIP to instance using AWS Console/AWS CLI.<br><br>
+    For Releasing EIP:<br>
+    Octo uses <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReleaseAddress.html" target="_blank">ReleaseAddress</a> API.<br><br>
+    <b>Is rollback possible?</b><br>
+    No
+</p></p>
+</details>
+<details class="info">
+<summary>Amazon EC2 Reserved Instance Lease Expiration</summary>
+<h3 id="amazon-ec2-reserved-instance-lease-expiration">Amazon EC2 Reserved Instance Lease Expiration</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Reserved Instances<br><br>
+    <b>Optimization Type</b><br>
+    Rate<br><br>
+    <b>Category</b><br>
+    Reserved Instance<br><br>
+    <b>Description</b><br>
+    Checks for Amazon EC2 Reserved Instances that are scheduled to expire within the next 30 days, or have expired in the preceding 30 days.
+    Reserved Instances don't renew automatically. You can continue using an Amazon EC2 instance covered by the reservation without interruption, but you will be charged On-Demand rates. New Reserved Instances can have the same parameters as the expired ones, or you can purchase Reserved Instances with different parameters.<br><br>
+    <b>Criteria</b><br>
+    •   The Reserved Instance lease expires in less than 30 days.<br>
+    •   The Reserved Instance lease expired in the preceding 30 days.<br><br>
+    <b>Recommended Action</b><br>
+    Consider purchasing a new Reserved Instance to replace the one that is nearing the end of its term.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable
+    <br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<details class="info">
+<summary>Amazon EC2 instances consolidation for Microsoft SQL Server</summary>
+<h3 id="amazon-ec2-instances-consolidation-for-microsoft-sql-server">Amazon EC2 instances consolidation for Microsoft SQL Server</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    Checks your Amazon Elastic Compute Cloud (Amazon EC2) instances that are running SQL Server in the past 24 hours. This check alerts you if your instance has less than the minimum number of SQL Server licenses. From the Microsoft SQL Server Licensing Guide, you are paying 4 vCPU licenses even if an instance has only 1 or 2 vCPUs. You can consolidate smaller SQL Server instances to help lower costs.<br><br>
+    <b>Criteria</b><br>
+    •   An instance with SQL Server has less than 4 vCPUs.<br><br>
+    <b>Recommended Action</b><br>
+    Consider consolidating smaller SQL Server workloads into instances with at least 4 vCPUs.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable
+    <br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<details class="info">
+<summary>Amazon EC2 instances over-provisioned for Microsoft SQL Server</summary>
+<h3 id="amazon-ec2-instances-over-provisioned-for-microsoft-sql-server">Amazon EC2 instances over-provisioned for Microsoft SQL Server</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    Checks your Amazon Elastic Compute Cloud (Amazon EC2) instances that are running SQL Server in the past 24 hours. An SQL Server database has a compute capacity limit for each instance. An instance with SQL Server Standard edition can use up to 48 vCPUs. An instance with SQL Server Web can use up to 32 vCPUs. This check alerts you if an instance exceeds this vCPU limit.<br><br>
+    If your instance is over-provisioned, you pay full price without realizing an improvement in performance. You can manage the number and size of your instances to help lower costs.<br><br>
+    <b>Criteria</b><br>
+    •   An instance with SQL Server Standard edition has more than 48 vCPUs.<br>
+    •   An instance with SQL Server Web edition has more than 32 vCPUs.<br><br>
+    <b>Recommended Action</b><br>
+    For SQL Server Standard edition, consider changing to an instance in the same instance family with 48 vCPUs. For SQL Server Web edition, consider changing to an instance in the same instance family with 32 vCPUs. If it is memory intensive, consider changing to memory optimized R5 instances<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable
+    <br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<details class="info">
+<summary>Inactive NAT Gateways</summary>
+<h3 id="inactive-nat-gateways">Inactive NAT Gateways</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    NAT Gateway<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks your NAT Gateways for inactive gateways. A NAT Gateway is considered to be inactive if no data (0 bytes) was processed in the last 30 days. NAT Gateways have hourly charges and data processed charges.<br><br>
+    <b>Criteria</b><br>
+    •   The NAT Gateway processed 0 bytes in the last 30 days<br><br>
+    <b>Recommended Action</b><br>
+    Consider deleting any NAT Gateways that weren’t used in the last 30 days and that aren’t required for external network access outside the VPC.<br><br>
+    If a Transit Gateway is used for inter-VPC communication, then consider deploying a centralized NAT Gateway for egress to internet architecture. This can reduce the hourly cost from inactive NAT Gateways.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable
+    <br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<h2 id="amazoncomprehend">AmazonComprehend</h2>
+<details class="info">
+<summary>Amazon Comprehend Underutilized Endpoints</summary>
+<h3 id="amazon-comprehend-underutilized-endpoints">Amazon Comprehend Underutilized Endpoints</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Comprehend Endpoints<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks the throughput configuration of your endpoints. This check alerts you when endpoints are not actively used for real-time inference requests. An endpoint that isn’t used for more than 15 consecutive days is considered underutilized. All endpoints accrue charges based on both the throughput set, and the length of time that the endpoint is active.<br><br>
+    <b>Criteria</b><br>
+    •   The endpoint is active, but hasn’t been used for real-time inference requests in the past 15 days.
+    <br><br>
+    <b>Recommended Action</b><br>
+    If the endpoint has a scaling policy defined and hasn’t been used in the past 30 days, consider deleting the endpoint and using asynchronous inference. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<h2 id="amazonecr">AmazonECR</h2>
+<details class="info">
+<summary>Amazon ECR Repository Without Lifecycle Policy Configured</summary>
+<h3 id="amazon-ecr-repository-without-lifecycle-policy-configured">Amazon ECR Repository Without Lifecycle Policy Configured</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    ECR Repository<br><br>
+    <b>Optimization Type</b><br>
+    Others<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks if a private Amazon ECR repository has at least one lifecycle policy configured. Lifecycle policies allow you to define a set of rules to automatically clean up old or unused container images. This gives you control over the lifecycle management of the images, allows Amazon ECR repositories to be better organized, and helps to lower overall storage costs.<br><br>
+    <b>Criteria</b><br>
+    •   An Amazon ECR private repository doesn’t have any lifecycle policies configured.<br><br>
+    <b>Recommended Action</b><br>
+    Consider creating at least one lifecycle policy for your private Amazon ECR repository.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<h2 id="awselb">AWSELB</h2>
+<details class="info">
+<summary>Idle Load Balancers</summary>
+<h3 id="idle-load-balancers">Idle Load Balancers</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Elastic Load Balancer<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks your Elastic Load Balancing configuration for load balancers that are idle.<br><br>
+    Any load balancer that is configured accrues charges. If a load balancer has no associated back-end instances, or if network traffic is severely limited, the load balancer is not being used effectively. This check currently only checks for Classic Load Balancer type within ELB service. It does not include other ELB types (Application Load Balancer, Network Load Balancer).<br><br>
+    <b>Criterias</b><br>
+    •   A load balancer has no active back-end instances.<br>
+    •   A load balancer has no healthy back-end instances.<br>
+    •   A load balancer has had less than 100 requests per day for the last 7 days.<br><br>
+    <b>Potential Savings</b><br>
+    Keeping an idle ELB costs around $200 per year. Removing the ELB avoids incurring this expense.<br><br>
+    <b>Recommended Action</b><br>
+    If load balancer has had a low request count, consider deleting the load balancer.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteLoadBalancer.html" target="_blank">DeleteLoadBalancer</a> API to delete the load balancer.<br><br>
+    <b>Is rollback possible?</b><br>
+    No
+</p></p>
+</details>
+<h2 id="amazonnetworkfirewall">AmazonNetworkFirewall</h2>
+<details class="info">
+<summary>Inactive AWS Network Firewall</summary>
+<h3 id="inactive-aws-network-firewall">Inactive AWS Network Firewall</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Network Firewall<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks your AWS Network Firewall endpoints and alerts you when the Network Firewall appears to be inactive.<br><br>
+    A Network Firewall is considered to be inactive if all its endpoints have no data processed the last 30 days. Network Firewall endpoints incur hourly charges. This check alerts you to Network Firewall with no data processed in the last 30 days. It’s a best practice to either remove unused Network Firewalls or update your architecture.<br><br>
+    <b>Criteria</b><br>
+    •   The Network Firewall processed 0 bytes in the last 30 days.<br><br>
+    <b>Recommended Action</b><br>
+    If the Network Firewall wasn’t used in the last 30 days, then consider deleting the Network Firewall.<br><br>
+    If a Transit Gateway is used for inter-VPC communication, then consider deploying your Network Firewalls in a centralized network inspection architectures. This can reduce the hourly charges on inactive Network Firewalls.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<details class="info">
+<summary>Network Firewall endpoint AZ Independence</summary>
+<h3 id="network-firewall-endpoint-az-independence">Network Firewall endpoint AZ Independence</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Network Firewall<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Check the AZ of your subnet and route traffic through a Network Firewall endpoint in the same AZ.<br><br>
+    If there is no Network Firewall endpoint in the AZ, then create a new Network Firewall and route your subnet traffic through it.<br><br>
+    If the same route table is associated across multiple subnets in different AZs, then keep this route table associated to the subnets that reside in the same AZ as the Network Firewall endpoint. For subnets in other AZs, associate a separate route table with a route to a Network Firewall endpoint in that AZ.<br><br>
+    It’s a best practice to choose a maintenance window for architecture changes in your Amazon VPC.<br><br>
+    <b>Criteria</b><br>
+    •   Traffic from a subnet in one AZ is being routed through a Network Firewall endpoint in a different AZ.<br><br>
+    <b>Recommended Action</b><br>
+    If the Network Firewall wasn’t used in the last 30 days, then consider deleting the Network Firewall.<br><br>
+    If a Transit Gateway is used for inter-VPC communication, then consider deploying your Network Firewalls in a centralized network inspection architectures. This can reduce the hourly charges on inactive Network Firewalls.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<h2 id="amazonroute53">AmazonRoute53</h2>
+<details class="info">
+<summary>Amazon Route 53 Latency Resource Record Sets</summary>
+<h3 id="amazon-route-53-latency-resource-record-sets">Amazon Route 53 Latency Resource Record Sets</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Route53 Latency Record Set<br><br>
+    <b>Optimization Type</b><br>
+    Others<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks for Amazon Route 53 latency record sets that are configured inefficiently.<br><br>
+    To allow Amazon Route 53 to route queries to the AWS Region with the lowest network latency, you should create latency resource record sets for a particular domain name (such as example.com) in different Regions. If you create only one latency resource record set for a domain name, all queries are routed to one Region, and you pay extra for latency-based routing without getting the benefits.<br><br>
+    Hosted zones created by AWS services won’t appear in your check results.<br><br>
+    <b>Criteria</b><br>
+    •   Only one latency resource record set is configured for a particular domain name..<br><br>
+    <b>Recommended Action</b><br>
+    If you have resources in multiple regions, be sure to define a latency resource record set for each region. See <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency" target="_blank">Latency-Based Routing</a>.<br><br>
+    If you have resources in only one AWS Region, consider creating resources in more than one AWS Region and define latency resource record sets for each; see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency" target="_blank">Latency-Based Routing</a>.<br><br>
+    If you don't want to use multiple AWS Regions, you should use a simple resource record set. See <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html">Working with Resource Record Sets</a>.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<h2 id="amazonrds">AmazonRDS</h2>
+<details class="info">
+<summary>Amazon RDS Idle DB Instances</summary>
+<h3 id="amazon-rds-idle-db-instances">Amazon RDS Idle DB Instances</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks the configuration of your Amazon Relational Database Service (Amazon RDS) for any database (DB) instances that appear to be idle.<br><br>
+    <b>Criteria</b><br>
+    •   An active DB instance has not had a connection in the last 7 days.<br><br>
+    <b>Potential Savings</b><br>
+    Savings are calculated as [Cost of RDS running hours] + [Cost of storage] - [Cost of snapshot]<br><br>
+    <b>Recommended Action</b><br>
+    Delete RDS DB Instance with Final Snapshot<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DeleteDBInstance.html" target="_blank">DeleteDBInstance</a> API. A snapshot is taken first before deleting the RDS Instance.<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes. Use the snapshot taken during the deletion process to restore the instance with its original configuration through AWS Console/AWS CLI.
+</p></p>
+</details>
+<h2 id="amazons3">AmazonS3</h2>
+<details class="info">
+<summary>Amazon S3 Incomplete Multipart Upload Abort Configuration</summary>
+<h3 id="amazon-s3-incomplete-multipart-upload-abort-configuration">Amazon S3 Incomplete Multipart Upload Abort Configuration</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    S3 Object<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks that each Amazon S3 bucket is configured with a lifecycle rule to abort multipart uploads that remain incomplete after 7 days. Using a lifecycle rule to abort these incomplete uploads and delete the associated storage is recommended.<br><br>
+    <b>Criteria</b><br>
+    •   The lifecycle configuration bucket does not contain a lifecycle rule to abort all multipart uploads that remain incomplete after 7 days.<br><br>
+    <b>Recommended Action</b><br>
+    Configure Lifecycle Rule that would cleanup all incomplete multipart uploads.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html" target="_blank">PutBucketLifecycleConfiguration</a> to create lifecycle configuration named <code>Amazon S3 Incomplete Multipart Upload Abort Configuration</code><br><br>
+    <b>Is rollback possible?</b><br>
+    Yes. Delete <code>Amazon S3 Incomplete Multipart Upload Abort Configuration</code> lifecycle configuration.
+</p></p>
+</details>
+<details class="info">
+<summary>Amazon S3 Bucket Lifecycle Policy Configured</summary>
+<h3 id="amazon-s3-bucket-lifecycle-policy-configured">Amazon S3 Bucket Lifecycle Policy Configured</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    S3 Bucket<br><br>
+    <b>Optimization Type</b><br>
+    Others<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks if an Amazon S3 bucket has a lifecycle policy configured. An Amazon S3 lifecycle policy ensures that Amazon S3 objects inside the bucket are stored cost-effectively throughout their lifecycle. This is important for meeting regulatory requirements for data retention and storage. The policy configuration is a set of rules that define actions applied by the Amazon S3 service to a group of objects. A lifecycle policy allows you to automate transitioning objects to lower-cost storage classes or deleting them as they age. For example, you can transition an object to Amazon S3 Standard-IA storage 30 days after creation, or to Amazon S3 Glacier after 1 year.<br><br>
+    <b>Criteria</b><br>
+    • Amazon S3 bucket has no lifecycle policy configured.
+    <br><br>
+    <b>Recommended Action</b><br>
+    Make sure that you have a lifecycle policy configured in your Amazon S3 bucket.<br>
+    If your organization does not have a retention policy in place, consider using Amazon S3 Intelligent-Tiering to optimize cost.<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable.
+</p></p>
+</details>
+<details class="info">
+<summary>Amazon S3 version-enabled buckets without lifecycle policies configured</summary>
+<h3 id="amazon-s3-version-enabled-buckets-without-lifecycle-policies-configured">Amazon S3 version-enabled buckets without lifecycle policies configured</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    S3 Bucket<br><br>
+    <b>Optimization Type</b><br>
+    Others<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks if Amazon S3 version-enabled buckets have a lifecycle policy configured.<br><br>
+    <b>Criteria</b><br>
+    • An Amazon S3 version-enabled bucket with doesn't have a lifecycle policy configured.
+    <br><br>
+    <b>Recommended Action</b><br>
+    Configure lifecycle policies for your Amazon S3 buckets to manage your objects so that they are stored cost effectively throughout their lifecycle. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable.
+</p></p>
+</details>
+<h2 id="awslambda">AWSLambda</h2>
+<details class="info">
+<summary>AWS Lambda Functions with High Error Rates</summary>
+<h3 id="aws-lambda-functions-with-high-error-rates">AWS Lambda Functions with High Error Rates</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Lambda Function<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks for Lambda functions with high error rates that might result in higher costs.
+    Lambda charges are based on the number of requests and aggregate run time for your function. Function errors may cause retries that incur additional charges.<br><br>
+    <b>Criteria</b><br>
+    •   Functions where &gt; 10% of invocations end in error on any given day within the last 7 days.<br><br>
+    <b>Recommended Action</b><br>
+    Integrate Lambda functions with Amazon CloudWatch and AWS X-Ray to leverage logs, metrics, alarms, and X-Ray tracing for rapid issue detection and identification. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<details class="info">
+<summary>AWS Lambda Functions with Excessive Timeouts</summary>
+<h3 id="aws-lambda-functions-with-excessive-timeouts">AWS Lambda Functions with Excessive Timeouts</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Lambda Function<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks for Lambda functions with high timeout rates that might result in high cost.
+    Lambda charges based on run time and number of requests for your function. Function timeouts result in errors that may cause retries. Retrying functions will incur additionally request and run time charges.<br><br>
+    <b>Criteria</b><br>
+    •   Functions where &gt; 10% of invocations end in an error due to a timeout on any given day within the last 7 days.<br><br>
+    <b>Recommended Action</b><br>
+    Inspect function logging and X-ray traces to determine the contributor to the high function duration. Implement logging in your code at relevant parts, such as before or after API calls or database connections. By default, AWS SDK clients timeouts may be longer than the configured function duration. Adjust API and SDK connection clients to retry or fail within the function timeout. If the expected duration is longer than the configured timeout, you can increase the timeout setting for the function. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable
+</p></p>
+</details>
+<h2 id="amazonredshift">AmazonRedshift</h2>
+<details class="info">
+<summary>Underutilized Amazon Redshift Clusters</summary>
+<h3 id="underutilized-amazon-redshift-clusters">Underutilized Amazon Redshift Clusters</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Redshift Cluster<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Delete<br><br>
+    <b>Description</b><br>
+    Checks your Amazon Redshift configuration for clusters that appear to be underutilized.
+    If an Amazon Redshift cluster has not had a connection for a prolonged period of time, or is using a low amount of CPU, you can use lower-cost options such as downsizing the cluster, or shutting down the cluster and taking a final snapshot. Final snapshots are retained even after you delete your cluster.<br><br>
+    <b>Criteria</b><br>
+    •   A running cluster has not had a connection in the last 7 days.<br>
+    •   A running cluster had less than 5% cluster-wide average CPU utilization for 99% of the last 7 days.
+    <br><br>
+    <b>Recommended Action</b><br>
+    Consider shutting down the cluster and taking a final snapshot. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<h2 id="others">Others</h2>
+<details class="info">
+<summary>AWS Account Not Part of AWS Organizations</summary>
+<h3 id="aws-account-not-part-of-aws-organizations">AWS Account Not Part of AWS Organizations</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    AWS Accounts<br><br>
+    <b>Optimization Type</b><br>
+    Others<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks if an AWS account is part of AWS Organizations under the appropriate management account.<br><br>
+    AWS Organizations is an account management service for consolidating multiple AWS accounts into a centrally-managed organization. This enables you to centrally structure accounts for billing consolidation and implement ownership and security policies as your workloads scale on AWS.<br><br>
+    You can specify the management account id using the MasterAccountId parameter of the AWS Config rules.<br><br>
+    <b>Criteria</b><br>
+    • This AWS account is not part of AWS Organizations.
+    <br><br>
+    <b>Recommended Action</b><br>
+    Add this AWS account as part of AWS Organizations. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable.
+</p></p>
+</details>
+<details class="info annotate">
+<summary>AWS Well-Architected high risk issues for cost optimization</summary>
+<h3 id="aws-well-architected-high-risk-issues-for-cost-optimization">AWS Well-Architected high risk issues for cost optimization</h3>
+<p><p>
+    <b>Optimization Type</b><br>
+    Others<br><br>
+    <b>Category</b><br>
+    Others<br><br>
+    <b>Description</b><br>
+    Checks for high risk issues (HRIs) for your workloads in the cost optimization pillar. This check is based on your AWS-Well Architected reviews. Your check results depend on whether you completed the workload evaluation with AWS Well-Architected.<br><br>
+    <b>Criteria</b><br>
+    • At least one active high risk issue was identified in the cost optimization pillar for AWS Well-Architected.
+    <br><br>
+    <b>Recommended Action</b><br>
+    AWS Well-Architected detected high risk issues during your workload evaluation. These issues present opportunities to reduce risk and save money. Sign in to the <a href="https://console.aws.amazon.com/wellarchitected" target="_blank">AWS Well-Architected</a> tool to review your answers and take action to resolve your active issues. <br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not applicable.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not applicable.
+</p></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Alphaus Cloud. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/alphaus/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/alphauslabs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>

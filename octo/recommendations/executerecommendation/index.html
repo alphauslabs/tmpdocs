@@ -1,0 +1,2885 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../octo/aws/">
+      
+      
+        <link rel="next" href="../../unitcost/">
+      
+      
+      <link rel="icon" href="../../../assets/alphaus.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Execute Recommendation - Alphaus Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#execute-recommendation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Alphaus Documentation" class="md-header__button md-logo" aria-label="Alphaus Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alphaus Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Execute Recommendation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/docs-ja/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  General
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ripple/" class="md-tabs__link">
+          
+  
+  Ripple
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Octo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blueapi/overview/" class="md-tabs__link">
+          
+  
+  Blue API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../guides/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://labs.alphaus.cloud/blog/" class="md-tabs__link">
+        
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Alphaus Documentation" class="md-nav__button md-logo" aria-label="Alphaus Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    Alphaus Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            General
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Our products
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IAM overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://labs.alphaus.cloud/wavedocs-ja/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave (Pro) ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://status.alphaus.cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System status ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Reference (non-Blue)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference (non-Blue)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/endpoint-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endpoint limits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/api-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API clients
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/authorization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authorization (RBAC)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ripple
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Ripple
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concepts and terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/trueunblended/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A primer on TrueUnblended
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://help.alphaus.cloud/en/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Knowledgebase ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Reference (non-Blue)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference (non-Blue)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/exchangerate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ExchangeRate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/billinggroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillingGroup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/reseller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave for Reseller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/original-cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OriginalCost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/ri-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RI management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/recalculation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recalculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/invoice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Octo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Octo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Registration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../multiple-account-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Account API Access Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration-gcpbigquery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup BigQuery to register GCP billing account in Octo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curs3payer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CUR and S3 Bucket Setup for Payer Accounts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../samlsso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAML SSO
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../costallocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Allocation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../costgroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Groups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../channel-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Channel Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alerts Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recommendation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Recommendation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Recommendation Feature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_2" id="__nav_3_11_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AWS Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            AWS Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../costexplorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Explorer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../costoptimizationhub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Optimization Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trustedadvisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trusted Advisor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_3" id="__nav_3_11_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GCP Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            GCP Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recommendationhub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recommendation Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_4" id="__nav_3_11_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OCTO Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_4">
+            <span class="md-nav__icon md-icon"></span>
+            OCTO Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../octo/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Execute Recommendation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Execute Recommendation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-web-services-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Web Services Recommendations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Web Services Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-elements-in-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key elements in execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Statuses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-execute-recommendation-in-octo" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to execute recommendation in Octo?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to execute recommendation in Octo?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-and-approving-change-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create and Approving change templates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-execute-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Execute Recommendation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-after-the-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      What happens after the execution?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What happens after the execution?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#successful-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful Execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution error
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re-try-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Re-try execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-recommendations-that-support-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current recommendations that support execution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unitcost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Cost Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blue API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blue API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/bluectl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLI: bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    APIs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            APIs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/org/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organization API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IAM API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/admin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Billing API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/preferences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preferences API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/client-sdks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client SDKs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-register-payer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registering AWS payer accounts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-enable-api-access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enabling AWS payer API access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-query-costs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Querying AWS costs using bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/invoice-calc-sched/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scheduling invoice calculations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-cost-mods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding cost modifiers to the AWS calculator using bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://labs.alphaus.cloud/blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-web-services-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amazon Web Services Recommendations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Web Services Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-elements-in-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key elements in execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution Statuses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-execute-recommendation-in-octo" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to execute recommendation in Octo?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to execute recommendation in Octo?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-and-approving-change-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create and Approving change templates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-execute-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Execute Recommendation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-happens-after-the-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      What happens after the execution?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What happens after the execution?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#successful-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful Execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution error
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re-try-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Re-try execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-recommendations-that-support-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current recommendations that support execution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="execute-recommendation">Execute Recommendation</h1>
+<p>In addition to providing users with recommendations for optimizing their cloud costs, Octo enables users to execute or apply these recommendations directly within its interface. This streamlined approach empowers users to take immediate action on cost-saving suggestions, enhancing efficiency and simplifying the management of AWS resources. By integrating actionable insights and execution capabilities, Octo ensures a seamless experience for users, facilitating quicker responses to optimize their cloud expenditure.</p>
+<p>As of now, Octo support executing recommendations exclusively for AWS, with plans to expand this functionality to include GCP and Azure in the future.</p>
+<h2 id="amazon-web-services-recommendations">Amazon Web Services Recommendations</h2>
+<p>Octo leverages AWS Change Manager, a feature within AWS Systems Manager, to handle the execution of recommendations. AWS Change Manager provides a structured and secure way to implement changes by requiring user approval before execution. This process ensures that all actions are reviewed and authorized, reducing the risk of unintended changes and maintaining compliance with organizational policies.</p>
+<p>By integrating AWS Change Manager, Octo automates the implementation of cost-saving recommendations while incorporating a critical layer of governance. This enables organizations to act on recommendations efficiently while adhering to best practices and approval workflows.</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ol>
+<li>Ensure that the AWS account linked to the recommendation has already set up API access, as Octo requires specific permissions to perform the execution.</li>
+</ol>
+<h3 id="key-elements-in-execution">Key elements in execution</h3>
+<ol>
+<li>
+<p><b>Change template</b> - A predefined framework that specifies the steps, approval workflows, and permissions required for executing a change. Octo automatically creates a change template for each recommendation, ensuring that the execution process aligns with the specifics of the recommendation and its associated region. If a change template for the same recommendation and region already exists, Octo reuses the existing template to avoid duplication and maintain consistency across executions.</p>
+</li>
+<li>
+<p><b>Change request</b> - A specific request created based on a change template to execute a particular recommendation. Each recommendation has its own unique change request, which captures the details of the intended action, tracks the approval process, and logs the status and results of the execution. Change requests act as a traceable record for managing and auditing the implementation of recommendations.</p>
+</li>
+<li>
+<p><b>Assume role</b> - Octo programmatically assigns the <code>OctoChangeTemplateApproverRole</code> as the designated approver for the change template. This role is specifically designed for the AWS account and can only be assumed by the AWS account to approve the change template. Octo itself cannot assume this role, ensuring that the approval process remains secure and under the control of the account owner. By using this role, the AWS account gains the necessary permissions to review and approve the change template, maintaining the integrity and security of the process while adhering to AWS's role-based access control best practices.</p>
+</li>
+</ol>
+<h3 id="execution-statuses">Execution Statuses</h3>
+<p>The execution statuses provide a clear overview of the current state of a recommendation's lifecycle. These statuses help users track the progress from availability through approval, execution, and potential errors. Users are encouraged to monitor these statuses closely to ensure timely execution and to address any issues promptly, particularly when encountering execution errors.</p>
+<table>
+<thead>
+<tr>
+<th>Execution Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji available-recommendation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12m16.28-2.72a.75.75 0 0 0-.018-1.042.75.75 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.75.75 0 0 0-1.042.018.75.75 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"/></svg></span> <code>Available</code></td>
+<td>The recommendation is available for review and action. It has been identified but has not yet progressed further.</td>
+</tr>
+<tr>
+<td><span class="twemoji pending-recommendation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2z"/></svg></span> <code>Pending approval</code></td>
+<td>The change template associated with the recommendation is awaiting user approval. Execution cannot proceed until the template is approved.</td>
+</tr>
+<tr>
+<td><span class="twemoji approved-recommendation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12m16.28-2.72a.75.75 0 0 0-.018-1.042.75.75 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.75.75 0 0 0-1.042.018.75.75 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"/></svg></span> <code>Approved</code></td>
+<td>The change template has been approved by the user, and the recommendation is ready to be executed as per the defined steps.</td>
+</tr>
+<tr>
+<td><span class="twemoji executing-recommendation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg></span> <code>Executing</code></td>
+<td>The recommendation is actively being implemented. This status indicates that the execution process is in progress.</td>
+</tr>
+<tr>
+<td><span class="twemoji executionerror-recommendation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2z"/></svg></span> <code>Execution error</code></td>
+<td>An error occurred during the execution process. Users can review the error details and retry execution after addressing the issue.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-execute-recommendation-in-octo">How to execute recommendation in Octo?</h3>
+<h4 id="1-create-and-approving-change-templates">1. Create and Approving change templates</h4>
+<p>Select the recommendation to execute. For recommendations with the status <code>Available</code>, a change template will be created first. To do so, click the three vertical dots.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1VOc8ZFZr_6GsnvybIrJ1xVkqwAV0fvVg=w1920-h927-iv1" /></p>
+<p>Alternatively, user can click the recommendation to view its details. </p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1S4ZYGJfuOGInqTIRVByrodakxa7tQWJj=w1920-h927-iv1" /></p>
+<p>Then, click the <code>Approve Change Template</code> button. An Approve Change Template modal will appear.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1MRNNMhVL5QjgOR5BYrHVY0MOXv_Dteyi=w1920-h927-iv2" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Octo utilizes the Assume Role mechanism to manage the approval of change templates. During account registration, Octo creates an IAM role called OctoChangeTemplateApproverRole to facilitate the approval process. Only the associated AWS account is authorized to assume this role, ensuring that Octo itself cannot assume it. This ensures the approval process remains secure and is controlled exclusively by the AWS account.</p>
+</div>
+<p>Click the <code>Open Switch Role Link</code> to proceed. Once clicked, there will be a brief loading period as Octo creates the change template. After the loading finishes, users will be redirected to the AWS Switch Role page. Octo will automatically populate the necessary fields, allowing users to simply click the "Switch Role" button to complete the process.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/10RwKxY62gp8uvzKGGbJ16zaZ5-ZGRZTi=w1920-h927-iv1" /></p>
+<p>After clicking "Switch Role," the user will be redirected to the details page of the created change template, as shown below. This page provides detailed information about the change template, including its purpose and specifics. If the user decides to approve the template, they can do so by clicking the "Approve" button located in the upper-right corner of the page.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1OIY7aPR67-yD1h4GXntlAHo8FseJkou1=w1920-h927-iv1" /></p>
+<p>A modal again will be displayed to confirm the approval. Users can put some comments about the template. However, octo doesn't record this data so users can leave it as blank. Then click <code>Approve</code></p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1ffvtSU77-WPsms10H837PfyaFszAC-Rp=w1920-h927-iv1" /></p>
+<h4 id="2-execute-recommendation">2. Execute Recommendation</h4>
+<p>After following the instructions in the Step 1, user must go back to octo.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Octo delays updating the recommendation status to <code>approved</code> as it relies on a cron job that processes approved templates in bulk at scheduled intervals, ensuring efficient handling of multiple updates.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Here’s how Octo manages or updates recommendation statuses through Cron tasks</p>
+<p>As part of the beta testing, the following interval is used for updating statuses. Octo plans to modify this in the future.<br><br>
+1. Every 6 hours, Octo verifies if any change templates have received approval.<br>
+2. At 30-minute intervals within each 6-hour period, Octo creates Change Requests for Recommendations that have approved change templates. After the Change Request is generated, the recommendation status is updated to <code>Approved</code>"</p>
+</div>
+<p>After a while, the status of the recommendation has changed to "Approved."</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recommendations with the same combinations, such as stopping an EC2 instance in account ID 123456789012 and region ap-northeast-1, will also have their status updated to <code>approved</code>. As mentioned in the key elements, change templates can be shared across these combinations.</p>
+</div>
+<p><img alt="" src="https://lh3.google.com/u/0/d/17YqBfHn9FvZ33tcn9BEehAtQ-Bg0Dxiu=w1920-h927-iv1" /></p>
+<p>To execute, click the 3 vertical dots or open the recommendation details modal and select <code>Execute recommendation</code></p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1IeodRCimI94eJ1-z8Iwkex2rJXCa6yii=w1920-h927-iv1" /></p>
+<p>Type <code>execute</code> and click <code>Execute</code></p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1qnUnXTv7KS6YZRESMUokNRzpdSM8x8H_=w1920-h927-iv2" /></p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1S-xTqelx6ROOw7vKmxJjPjr3hfVkp4yw=w1920-h927-iv1" /></p>
+<h3 id="what-happens-after-the-execution">What happens after the execution?</h3>
+<h4 id="successful-execution">Successful Execution</h4>
+<p>If the execution is successful, the recommendation will be moved to the Optimization History. This ensures completed recommendations are properly archived, allowing users to track past optimizations and assess their impact over time. The Optimization History provides a consolidated view of all successfully executed recommendations, making it easier to review and analyze previous actions.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1JIzjwAAC9irD-aNx9JDMdfO_n1SX3gvw=w1920-h927-iv1" /></p>
+<h4 id="execution-error">Execution error</h4>
+<p>If an error occurs during execution, the status will update to <code>Execution Error</code>. Users can troubleshoot the issue by opening the recommendation's details modal, which provides a comprehensive error message. This message explains the nature of the error and helps users diagnose the root cause.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/13tCXXTmKaBYUGNpwhNHemr7hffKBZNnt=w1920-h927-iv1" /></p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/1xYH1al45oDla_8z29MXVDSf1D4kwqY6U=w1920-h927-iv1" /></p>
+<h3 id="re-try-execution">Re-try execution</h3>
+<p>Octo also allows users to retry execution only when the state is marked as an <code>Execution error</code>. This feature provides an easy way to handle failures and ensure tasks are completed successfully. To retry, click the three vertical dots or open the recommendation details modal and click <code>Re-try execution</code> This action will trigger a new attempt, allowing users to resolve any issues without needing to manually reconfigure the recommendation.</p>
+<p><img alt="" src="https://lh3.google.com/u/0/d/10R0-6Q_ofKyNahD_qzZY1vCu_NtWTmme=w1920-h927-iv1" /></p>
+<p>Once the error is resolved and the execution is retried successfully, the recommendation will be moved to the Optimization History, ensuring it is tracked and recorded for future reference.</p>
+<h3 id="current-recommendations-that-support-execution">Current recommendations that support execution</h3>
+<p>Currently, Octo supports the following recommendations below. More recommendations will be supported in the future.</p>
+<details class="note">
+<summary>Current recommendations that support execution</summary>
+<table>
+<thead>
+<tr>
+<th>Recommendation</th>
+<th>Source</th>
+<th>Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stop EC2 instance</td>
+<td>Cost Optimization Hub</td>
+<td>Stop</td>
+</tr>
+<tr>
+<td>Stop RDS DB instance</td>
+<td>Cost Optimization Hub</td>
+<td>Stop</td>
+</tr>
+<tr>
+<td>Low Utilization instance Amazon EC2 Instances</td>
+<td>Trusted Advisor</td>
+<td>Stop</td>
+</tr>
+<tr>
+<td>Rightsize EC2 instance</td>
+<td>Cost Explorer</td>
+<td>Rightsize</td>
+</tr>
+<tr>
+<td>Rightsize RDS DB instance</td>
+<td>Cost Optimization Hub</td>
+<td>Rightsize</td>
+</tr>
+<tr>
+<td>Rightsize ECS service</td>
+<td>Cost Optimization Hub</td>
+<td>Rightsize</td>
+</tr>
+<tr>
+<td>Rightsize Lambda function</td>
+<td>Cost Optimization Hub</td>
+<td>Rightsize</td>
+</tr>
+<tr>
+<td>Rightsize EC2 Auto Scaling group</td>
+<td>Cost Optimization Hub</td>
+<td>Rightsize</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Alphaus Cloud. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/alphaus/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/alphauslabs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>

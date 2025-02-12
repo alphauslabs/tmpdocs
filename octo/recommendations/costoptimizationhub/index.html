@@ -1,0 +1,3277 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../costexplorer/">
+      
+      
+        <link rel="next" href="../trustedadvisor/">
+      
+      
+      <link rel="icon" href="../../../assets/alphaus.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Cost Optimization Hub - Alphaus Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cost-optimization-hub" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Alphaus Documentation" class="md-header__button md-logo" aria-label="Alphaus Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alphaus Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cost Optimization Hub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/docs-ja/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  General
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ripple/" class="md-tabs__link">
+          
+  
+  Ripple
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Octo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blueapi/overview/" class="md-tabs__link">
+          
+  
+  Blue API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../guides/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://labs.alphaus.cloud/blog/" class="md-tabs__link">
+        
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Alphaus Documentation" class="md-nav__button md-logo" aria-label="Alphaus Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/alphaus.png" alt="logo">
+
+    </a>
+    Alphaus Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            General
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../products/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Our products
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IAM overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://labs.alphaus.cloud/wavedocs-ja/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave (Pro) ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://status.alphaus.cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System status ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Reference (non-Blue)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference (non-Blue)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/endpoint-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endpoint limits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/api-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API clients
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/authorization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authorization (RBAC)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apiref/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ripple
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Ripple
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concepts and terms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/trueunblended/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A primer on TrueUnblended
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://help.alphaus.cloud/en/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Knowledgebase ↗
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API Reference (non-Blue)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference (non-Blue)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/exchangerate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ExchangeRate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/billinggroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BillingGroup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/reseller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave for Reseller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/original-cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OriginalCost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/ri-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RI management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/recalculation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recalculation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/invoice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ripple/apiref/project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Octo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Octo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Registration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../multiple-account-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multiple Account API Access Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../account-registration-gcpbigquery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup BigQuery to register GCP billing account in Octo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../curs3payer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CUR and S3 Bucket Setup for Payer Accounts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../samlsso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAML SSO
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../costallocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Allocation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../costgroup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Groups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../channel-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Channel Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alerts-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alerts Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recommendation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Recommendation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Recommendation Feature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_2" id="__nav_3_11_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AWS Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            AWS Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../costexplorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Explorer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cost Optimization Hub
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cost Optimization Hub
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazonrds" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRDS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stop-amazon-rds-idle-db-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Amazon RDS Idle DB Instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-rds-db-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize RDS DB Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-rds-db-instance-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize RDS DB Instance Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-rds-db-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade RDS DB Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-rds-db-instance-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade RDS DB Instance Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrate-rds-db-instance-to-graviton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrate RDS DB Instance to Graviton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEC2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEC2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stop-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop EC2 Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-ec2-auto-scaling-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize EC2 Auto Scaling Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-ec2-auto-scaling-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade EC2 Auto Scaling Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrate-ec2-auto-scaling-group-to-graviton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrate EC2 Auto Scaling Group to Graviton
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade EC2 Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrate-ec2-instance-to-graviton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrate EC2 Instance to Graviton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEBS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEBS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-ebs-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade EBS Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-ebs-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize EBS Volume
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awslambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWSLambda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSLambda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-lambda-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize Lambda Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonecs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonECS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonECS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-ecs-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize ECS Service
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trustedadvisor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trusted Advisor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_3" id="__nav_3_11_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GCP Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_3">
+            <span class="md-nav__icon md-icon"></span>
+            GCP Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recommendationhub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recommendation Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11_4" id="__nav_3_11_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OCTO Generated Recommendations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_4">
+            <span class="md-nav__icon md-icon"></span>
+            OCTO Generated Recommendations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../octo/aws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../executerecommendation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execute Recommendation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unitcost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Cost Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blue API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blue API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/bluectl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLI: bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    APIs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            APIs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/org/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organization API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/iam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IAM API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/admin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/cost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/billing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Billing API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operations API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/apis/preferences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preferences API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blueapi/client-sdks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client SDKs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-register-payer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registering AWS payer accounts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-enable-api-access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enabling AWS payer API access
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-query-costs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Querying AWS costs using bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/invoice-calc-sched/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scheduling invoice calculations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/aws-cost-mods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding cost modifiers to the AWS calculator using bluectl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://labs.alphaus.cloud/blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#amazonrds" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonRDS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonRDS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stop-amazon-rds-idle-db-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Amazon RDS Idle DB Instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-rds-db-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize RDS DB Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-rds-db-instance-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize RDS DB Instance Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-rds-db-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade RDS DB Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-rds-db-instance-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade RDS DB Instance Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrate-rds-db-instance-to-graviton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrate RDS DB Instance to Graviton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonec2" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEC2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEC2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stop-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop EC2 Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-ec2-auto-scaling-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize EC2 Auto Scaling Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-ec2-auto-scaling-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade EC2 Auto Scaling Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrate-ec2-auto-scaling-group-to-graviton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrate EC2 Auto Scaling Group to Graviton
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-ec2-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade EC2 Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrate-ec2-instance-to-graviton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrate EC2 Instance to Graviton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonebs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonEBS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonEBS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-ebs-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrade EBS Volume
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-ebs-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize EBS Volume
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#awslambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWSLambda
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWSLambda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-lambda-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize Lambda Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazonecs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AmazonECS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AmazonECS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rightsize-ecs-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rightsize ECS Service
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cost-optimization-hub">Cost Optimization Hub</h1>
+<p>
+Cost Optimization Hub is a feature within AWS Billing and Cost Management that assists users in identifying and prioritizing ways to reduce their AWS expenses. It consolidates recommendations from various AWS services, such as Compute Optimizer, into a single dashboard. Octo retrieves all the data from the Cost Optimization Hub using an AWS API and displays it within Octo to eliminate the need for users to access their AWS console </p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To receive recommendations from cost optimization hub, this feature needs to be enabled first. Octo will automatically enable it once API access is set up. After activation, AWS typically takes 1 to 3 days to generate recommendations. If you have previously enabled the Cost Optimization Hub, recommendations should already be available.</p>
+</div>
+<p>Below are the recommendations offered by cost optimization hub</p>
+<h2 id="amazonrds">AmazonRDS</h2>
+<details class="info">
+<summary>Stop Amazon RDS Idle DB Instances</summary>
+<h3 id="stop-amazon-rds-idle-db-instances">Stop Amazon RDS Idle DB Instances</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Stop<br><br>
+    <b>Description</b><br>
+    Identifies Amazon RDS DB instances that are potentially idle.<br><br>
+    <b>Potential Savings</b><br>
+    100% savings based on the db instance cost.<br><br>
+    <b>Recommended Action</b><br>
+    •   Stop RDS DB Instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StopDBInstance.html" target="_blank">StopDBInstance</a> API in stopping the db instance.<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes. You can restart the instance through AWS Console/AWS CLI
+</p></p>
+</details>
+<details class="info">
+<summary>Rightsize RDS DB Instance</summary>
+<h3 id="rightsize-rds-db-instance">Rightsize RDS DB Instance</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    Adjust the size of the RDS DB instance to better match your workload requirements. This recommendation involves analyzing the past usage patterns, CPU utilization, memory usage, and I/O operations to determine if the instance is over-provisioned or under-provisioned.<br><br>
+    <b>Potential Savings</b><br>
+    Rightsizing RDS DB instance can lead to savings ranging from 20% to 50% of the current RDS costs, depending on how significantly over-provisioned the current instance is.<br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize RDS DB Instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Rightsize RDS DB Instance Storage</summary>
+<h3 id="rightsize-rds-db-instance-storage">Rightsize RDS DB Instance Storage</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance Storage<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    Rightsizing RDS DB instance storage involves adjusting the storage capacity to match the actual needs of the workload. This process ensures that the allocated storage is neither underutilized nor overprovisioned, optimizing the cost and performance balance. By carefully analyzing storage usage patterns and adjusting the storage size accordingly, businesses can achieve efficient resource utilization and maintain optimal database performance.<br><br>
+    <b>Potential Savings</b><br>
+    Rightsizing RDS DB instance storage can lead to significant cost savings by eliminating unnecessary storage overhead and reducing the expenses associated with overprovisioned resources. Depending on the initial storage configuration and the extent of optimization, potential savings can range from 10% to 30%. These savings stem from better-aligned storage capacity with actual usage, leading to more efficient and cost-effective database operations.<br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize RDS DB Instance storage<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Upgrade RDS DB Instance</summary>
+<h3 id="upgrade-rds-db-instance">Upgrade RDS DB Instance</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Upgrade<br><br>
+    <b>Description</b><br>
+    Upgrading the generation of RDS DB instances involves transitioning from older to newer instance types within Amazon's Relational Database Service (RDS). Newer generation instances typically offer improved performance, increased storage efficiency, and enhanced network capabilities at a lower cost. This process optimizes the database environment, leading to better resource utilization and reliability.<br><br>
+    <b>Potential Savings</b><br>
+    By upgrading to the latest generation of RDS DB instances, organizations can achieve cost savings ranging from 10% to 30%, depending on the specific instance types and workload requirements. The improved performance and efficiency of newer instances also contribute to indirect savings by reducing the need for additional resources and minimizing downtime..<br><br>
+    <b>Recommended Action</b><br>
+    •   Upgrade RDS DB Instance to newer generation<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Upgrade RDS DB Instance Storage</summary>
+<h3 id="upgrade-rds-db-instance-storage">Upgrade RDS DB Instance Storage</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance Storage<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Upgrade<br><br>
+    <b>Description</b><br>
+    Upgrading the storage for RDS DB instances involves increasing the storage capacity or transitioning to a more performant storage type. This enhancement addresses issues related to insufficient storage space, improving read/write performance, and ensuring database operations remain smooth and uninterrupted. Enhanced storage options, such as General Purpose SSD (gp3) or Provisioned IOPS SSD (io2), provide increased throughput and lower latency, leading to better overall database performance and reliability.<br><br>
+    <b>Potential Savings</b><br>
+    While upgrading RDS DB instance storage might involve an initial cost increase, it can lead to significant long-term savings by preventing costly downtime, reducing the need for frequent manual interventions, and improving application performance. Depending on the specific upgrade and workload characteristics, potential savings can range from 10% to 30%. This range reflects improved storage efficiency, better resource utilization, and cost-effective scaling options, which contribute to more efficient and economical database operations.<br><br>
+    <b>Recommended Action</b><br>
+    •   Upgrade RDS DB Instance storage<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Migrate RDS DB Instance to Graviton</summary>
+<h3 id="migrate-rds-db-instance-to-graviton">Migrate RDS DB Instance to Graviton</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    RDS DB Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Migrate<br><br>
+    <b>Description</b><br>
+    Migrating RDS DB instances to Graviton processors can significantly enhance the performance and cost-efficiency of database operations. Graviton processors, designed by AWS, deliver superior price-performance compared to traditional x86-based instances. By leveraging Graviton-based instances, businesses can achieve better throughput, reduced latency, and overall improved database performance.<br><br>
+    <b>Potential Savings</b><br>
+    Switching to Graviton processors can result in substantial cost savings, typically ranging from 20% to 30% compared to comparable x86-based instances. The exact savings will vary depending on the instance type and workload characteristics, but businesses can expect a notable reduction in their RDS costs while maintaining or even enhancing database performance.ts<br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize RDS DB Instance storage<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<h2 id="amazonec2">AmazonEC2</h2>
+<details class="info">
+<summary>Stop EC2 Instance</summary>
+<h3 id="stop-ec2-instance">Stop EC2 Instance</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Stop<br><br>
+    <b>Description</b><br>
+    This recommendation advises users to stop EC2 instances that are either underutilized or not in use to optimize cloud costs. Instances that are running but not actively contributing to business processes can incur unnecessary expenses. By stopping these instances, users can avoid charges for compute resources that are not being fully utilized.<br><br>
+    <b>Potential Savings</b><br>
+    Stopping an EC2 instance can result in savings of up to 100% of the instance's total cost. However, additional costs may still apply for associated resources such as EBS volumes.<br><br>
+    <b>Recommended Action</b><br>
+    •   Stop EC2 Instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StopInstances.html" target="_blank">StopInstances</a> API to temporarily stop the instance.<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes, users can restart the instance.
+</p></p>
+</details>
+<details class="info">
+<summary>Rightsize EC2 Auto Scaling Group</summary>
+<h3 id="rightsize-ec2-auto-scaling-group">Rightsize EC2 Auto Scaling Group</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Auto Scaling Group<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    The Rightsize EC2 Auto Scaling Group recommendation advises adjusting the instance types and sizes within an Auto Scaling Group to better match the application's resource requirements. By analyzing current usage patterns and performance metrics, this recommendation suggests more appropriate instance types that could lead to better performance or lower costs.<br><br>
+    <b>Potential Savings</b><br>
+    Implementing this recommendation can lead to significant cost savings by ensuring that resources are optimized for the application's needs. Users can expect reductions in monthly EC2 costs ranging from 20% to 50%, depending on the degree of over-provisioning.<br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize EC2 Auto Scaling Group<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Upgrade EC2 Auto Scaling Group</summary>
+<h3 id="upgrade-ec2-auto-scaling-group">Upgrade EC2 Auto Scaling Group</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Auto Scaling Group<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Upgrade<br><br>
+    <b>Description</b><br>
+    The Upgrade EC2 Auto Scaling Group recommendation suggests moving to newer generation EC2 instances within the Auto Scaling Group. Newer instance types often offer better performance, enhanced features, and cost-efficiency compared to older generations.<br><br>
+    <b>Potential Savings</b><br>
+    Upgrading to more recent instance types can lead to improved performance and cost savings. Users may see reductions in monthly EC2 costs of up to 30%, alongside gains in computational power and efficiency.<br><br>
+    <b>Recommended Action</b><br>
+    •  Upgrade EC2 Auto Scaling Group<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Migrate EC2 Auto Scaling Group to Graviton</summary>
+<h3 id="migrate-ec2-auto-scaling-group-to-graviton">Migrate EC2 Auto Scaling Group to Graviton</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Auto Scaling Group<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Migrate<br><br>
+    <b>Description</b><br>
+    The Migrate EC2 Auto Scaling Group to Graviton recommendation encourages transitioning from traditional x86-based EC2 instances to ARM-based Graviton instances. Graviton instances are designed to deliver significant cost savings and performance improvements for certain workloads.<br><br>
+    <b>Potential Savings</b><br>
+    Migrating to Graviton instances can result in cost reductions of up to 40% compared to traditional x86 instances, while also providing enhanced performance for specific applications optimized for ARM architecture.<br><br>
+    <b>Recommended Action</b><br>
+    •  Migrate EC2 Auto Scaling Group to Graviton<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Upgrade EC2 Instance</summary>
+<h3 id="upgrade-ec2-instance">Upgrade EC2 Instance</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Upgrade<br><br>
+    <b>Description</b><br>
+    This recommendation involves upgrading existing Amazon EC2 instances to newer, more efficient instance types to better match the performance needs of applications. It identifies instances that could benefit from transitioning to newer generations or different instance families, which can offer enhanced performance, better resource utilization, and improved cost-efficiency.<br><br>
+    <b>Potential Savings</b><br>
+    Upgrading EC2 instances can result in cost savings ranging from 10% to 25% of total instance costs. The savings depend on the extent to which performance and resource utilization are optimized through the upgrade. Newer instance types often provide better price-performance ratios, leading to reduced overall costs.<br><br>
+    <b>Recommended Action</b><br>
+    •   Upgrade EC2 Instance<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<details class="info">
+<summary>Migrate EC2 Instance to Graviton</summary>
+<h3 id="migrate-ec2-instance-to-graviton">Migrate EC2 Instance to Graviton</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EC2 Instance<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Migrate<br><br>
+    <b>Description</b><br>
+    This recommendation focuses on migrating existing EC2 instances to AWS Graviton processors. AWS identifies instances that could benefit from a transition to Graviton-based instances to leverage their cost-efficiency and performance advantages. Graviton processors offer improved price-performance ratios and can provide significant cost savings while maintaining or enhancing application performance.<br><br>
+    <b>Potential Savings</b><br>
+    Migrating to Graviton instances can lead to cost savings ranging from 20% to 40% compared to instances using Intel or AMD processors. The exact savings depend on the specific instance types being replaced and the workload requirements. Graviton instances provide a more cost-effective option without compromising performance.<br><br>
+    <b>Recommended Action</b><br>
+    •   Migrate EC2 Instance to Graviton<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<h2 id="amazonebs">AmazonEBS</h2>
+<details class="info">
+<summary>Upgrade EBS Volume</summary>
+<h3 id="upgrade-ebs-volume">Upgrade EBS Volume</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EBS Volume<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Upgrade<br><br>
+    <b>Description</b><br>
+    This recommendation suggests upgrading the type of Amazon Elastic Block Store (EBS) volumes to better align with the performance requirements of applications. It identifies volumes that could benefit from a transition to a higher-performance volume type, such as moving from standard SSD to provisioned IOPS SSD. Upgrading the volume type can enhance I/O performance and throughput, leading to more efficient application operations.<br><br>
+    <b>Potential Savings</b><br>
+    Upgrading EBS volume types can lead to cost savings by improving performance and efficiency, which can reduce the need for additional resources or mitigate performance-related issues. Potential savings typically range from 5% to 20% of total storage costs, depending on the performance improvements achieved and the volume types being compared.<br><br>
+    <b>Recommended Action</b><br>
+    •   Upgrade EBS Volume<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo begins by using the <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshot.html" target="_blank">CreateSnapshot</a> API to create a backup snapshot. Subsequently, it calls the <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html" target="_blank">ModifyVolume</a> API to adjust the volume configuration.<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes, users can revert to the previous state of the volume by restoring it from the snapshot created during the rightsizing operation.
+</p></p>
+</details>
+<details class="info">
+<summary>Rightsize EBS Volume</summary>
+<h3 id="rightsize-ebs-volume">Rightsize EBS Volume</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    EBS Volume<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    This recommendation focuses on optimizing the size of Amazon Elastic Block Store (EBS) volumes to better match the actual storage needs of applications. It identifies volumes that are either underutilized or over-provisioned, suggesting adjustments to their size to improve cost-efficiency. By rightsizing EBS volumes, users can enhance storage performance and reduce unnecessary costs associated with unused capacity.<br><br>
+    <b>Potential Savings</b><br>
+    Rightsizing EBS volumes can result in cost savings ranging from 10% to 30% of the total storage costs. The exact savings depend on the extent of over-provisioning and the adjustment in volume size.<br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize EBS Volume<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Not implemented yet.<br><br>
+    <b>Is rollback possible?</b><br>
+    Not implemented yet.
+</p></p>
+</details>
+<h2 id="awslambda">AWSLambda</h2>
+<details class="info">
+<summary>Rightsize Lambda Function</summary>
+<h3 id="rightsize-lambda-function">Rightsize Lambda Function</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    Lambda Function<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    This recommendation aims to optimize the configuration of AWS Lambda functions to ensure they are appropriately sized for their workload. It identifies functions that could benefit from adjustments to their memory allocation or timeout settings to enhance performance and reduce costs. By implementing Lambda rightsizing, organizations can achieve more efficient execution and potentially lower operational expenses.<br><br>
+    <b>Potential Savings</b><br>
+    Rightsizing AWS Lambda functions can lead to potential savings ranging from 20% to 50% by adjusting memory and timeout settings to match actual usage, thereby reducing over-provisioning and optimizing cost efficiency.<br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize Lambda Function<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo uses <a href="https://docs.aws.amazon.com/lambda/latest/api/API_UpdateFunctionConfiguration.html" target="_blank">UpdatetFunctionConfiguration</a> to modify the version-specific settings of a Lambda function<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes, rollback is possible after updating an AWS Lambda function configuration. AWS Lambda maintains a version history of the function code and configuration. Users can use this version history to roll back to a previous configuration or code version if the update does not work as intended. Rollback is done through AWSConsole/AWSCLI.
+</p></p>
+</details>
+<h2 id="amazonecs">AmazonECS</h2>
+<details class="info">
+<summary>Rightsize ECS Service</summary>
+<h3 id="rightsize-ecs-service">Rightsize ECS Service</h3>
+<p><p>
+    <b>AWS Resource Type</b><br>
+    ECS Service<br><br>
+    <b>Optimization Type</b><br>
+    Usage<br><br>
+    <b>Category</b><br>
+    Rightsize<br><br>
+    <b>Description</b><br>
+    AWS recommends rightsizing the ECS service to optimize resource usage and cost efficiency. By analyzing the current task definitions and their resource allocations, AWS identifies opportunities to adjust CPU and memory settings to better match the actual usage patterns of your services. This ensures that users are not over-provisioning or under-provisioning resources, leading to more efficient operations and potential cost savings.<br><br>
+    <b>Potential Savings</b><br>
+    Rightsizing Amazon ECS services can lead to potential savings ranging from 10% to 40% by aligning resource allocation more closely with actual usage, reducing over-provisioning, and minimizing unnecessary costs.
+    <br><br>
+    <b>Recommended Action</b><br>
+    •   Rightsize ECS Service<br><br>
+    <b>How will Octo implement the recommended action?</b><br>
+    Octo utilizes the <a href="https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServices.html" target="_blank">DescribeServices</a> API to retrieve task definitions linked to the ECS service. It then invokes the <a href="https://docs.aws.amazon.com/AmazonECS/latest/APIReferenc/API_DescribeTaskDefinition.html" target="_blank">DescribeTaskDefinition</a> API to obtain detailed information about the task definitions. Subsequently, the <a href="https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RegisterTaskDefinition.html" target="_blank">RegisterTaskDefinition</a> API is called to create a new version with the recommended data. Finally, the <a href="https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html" target="_blank">UpdateService</a> API is used to update the ECS service with the newly created task definition..<br><br>
+    <b>Is rollback possible?</b><br>
+    Yes, after rightsizing an ECS service, a rollback is possible. If the new resource configuration does not perform as expected, users can revert to the previous configuration by updating the service with the previous task definition using AWSConsole/AWSCLI.
+</p></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Alphaus Cloud. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/alphaus/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/alphauslabs" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
